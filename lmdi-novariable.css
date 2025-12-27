@@ -100,7 +100,6 @@ header:first-of-type {
   /* Première colonne */
   grid-row: 2;
   /* S'étend sur 2 lignes */
-  margin-top: 8px;
   width: max-content;
 }
 #fa_left {
