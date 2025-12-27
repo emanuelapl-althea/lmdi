@@ -227,7 +227,8 @@ a#fa_service {
 }
 .linkbar-nav a,
 .subjectbar-nav a {
-  color: var(--lien-menu);
+font-size: 0.65rem;
+font-weight:600; text-transform:uppercase; letter-spacing:.03em; opacity:.9;
 }
 /* .linkbar-nav a:hover, .subjectbar a:hover */
 /* ===== Intro (au-dessus du panneau) ===== */
@@ -247,8 +248,10 @@ a#fa_service {
   gap: 16px;
 }
 .box {
-  border: var(--border);
-  background: var(--ink-16);
+ min-height: 180px;
+    max-height: 180px;
+    border-radius: 12px;
+    padding: 8px;
 }
 .list {
   display: grid;
