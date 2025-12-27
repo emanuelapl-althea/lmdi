@@ -62,260 +62,2067 @@ header:first-of-type {
   max-width: 100%;
 }
 /* SCROLLBAR */
-
-/* SWITCHEROO */
-/* .switcheroo */
-.switcheroo::-webkit-scrollbar,
-.switcheroo::-webkit-scrollbar-thumb,
-.switcheroo::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-.switcheroo[position="static"] {
-  position: relative;
-}
-.switcheroo[position="top"],
-.switcheroo[position="bottom"] {
-  position: fixed;
-  z-index: 100;
-  bottom: 0;
-  left: 0;
-}
-.switcheroo[direction="vertical"] {
-  height: 100%;
-  overflow: auto;
-}
-.switcheroo__squircles {
-  display: flex;
-  margin: 0;
-  list-style: none;
-}
-.switcheroo[direction="vertical"] .switcheroo__squircles {
-  flex-direction: column;
-}
-.switcheroo[theme="discord"] .switcheroo__squircle {
-  display: flex;
+/* Scrollbar */
+/* Scrollbar box desc*/
+/******** NAVIGATION ********/
+/***** fa toolbar *****/
+#fa_toolbar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   align-items: center;
-  justify-content: center;
-  position: relative;
-  top: 100px;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  transition: border-radius 128ms var(--ease);
-  cursor: pointer;
+  justify-content: space-between;
+  gap: 0;
+  margin: 0 auto;
+  height: 50px;
+  z-index: 999;
+  width: 99%;
+  padding: 0 16px;
+  backdrop-filter: blur(6px);
 }
-.switcheroo[theme="discord"] .switcheroo__squircle:hover {
-  border-radius: 36%;
+.fa_fix {
+  position: sticky !important;
+  top: 0;
+  right: 0;
 }
-.switcheroo[theme="discord"][direction="vertical"]
-  .switcheroo__squircle:before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  border-radius: 4px;
-  position: absolute;
-  top: 50%;
-  transform: translate(-100%, -50%) scale(0);
-  transition: transform 128ms, opacity 64ms;
-  pointer-events: none;
-  opacity: 0;
+#fa_left,
+#fa_right {
+  display: inline-block !important;
+  visibility: visible !important;
+  height: auto !important;
+  /* Changed from 55px to auto for 2 rows */
+  line-height: 20px !important;
+  min-width: 200px;
 }
-.switcheroo[theme="discord"] .switcheroo__squircle.active {
-  border-radius: 36%;
-  cursor: default;
-}
-.switcheroo[theme="discord"][direction="vertical"]
-  .switcheroo__squircle:hover:before {
-  transform: translate(-100%, -50%) scale(0.5);
-  opacity: 1;
-}
-.switcheroo[theme="discord"][direction="vertical"]
-  .switcheroo__squircle.active:before {
-  border-radius: 50%;
-  transform: translate(-85%, -50%) scale(0.2);
-  opacity: 1;
-}
-.switcheroo__popper {
-  width: -webkit-max-content;
+#fa_right {
+  align-self: baseline;
+  grid-column: 1 / span 2;
+  /* Première colonne */
+  grid-row: 2;
+  /* S'étend sur 2 lignes */
+  margin-top: 8px;
   width: max-content;
-  padding: 0.68rem 1rem;
-  border-radius: 4px;
-  position: absolute;
-  z-index: 0;
-  opacity: 0;
-  transition: opacity 64ms var(--ease), transform 128ms var(--ease-bounce);
-  pointer-events: none;
 }
-.switcheroo[direction="vertical"] .switcheroo__popper {
-  left: 155%;
-  top: 50%;
-  transform-origin: left;
-  transform: translateY(-50%) scale(0.98);
+#fa_left {
+  grid-column: 1 / span 3;
+  grid-row: 1;
+  text-align: right;
+  text-transform: uppercase;
 }
-.switcheroo__popper:before {
-  content: "";
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  z-index: -1;
-}
-.switcheroo[direction="vertical"] .switcheroo__popper:before {
-  left: -2px;
-  top: 50%;
-  transform: translateY(-50%) rotate(-45deg);
-}
-.switcheroo[direction="vertical"]
-  .switcheroo__squircle:hover
-.switcheroo__popper {
-  opacity: 1;
-  transform: translateY(-50%) scale(1);
-}
-.switcheroo__squircle:hover:before {
-  opacity: 1;
-  transform: translate(-100%, -50%) scale(0.5);
-}
-/* avatar */
-.switcheroo[theme="discord"] .switcheroo__avatar {
+#fa_left table {
   width: 100%;
-  height: 100%;
-  border-radius: inherit;
+}
+#fa_left table td {
+  text-align: right;
+  padding: 5px;
+}
+#fa_left a {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 0.75rem;
+  transition: all 0.65s linear;
+  -webkit-transition: all 0.65s linear;
+}
+/* #fa_left a:hover */
+.fa_avatar {
+  float: left;
   position: relative;
+  z-index: 5;
+  margin-right: 5px;
+  margin-bottom: -10px;
+  width: 75px;
+  height: 75px;
+  border-radius: 999px;
   overflow: hidden;
 }
-.switcheroo[theme="discord"] .switcheroo__avatar img {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.fa_avatar img {
+  width: 75px;
 }
-.switcheroo[theme="discord"][direction="vertical"] .switcheroo__divider {
-  width: 100%;
-  height: 2px;
-  border-radius: 1px;
-  opacity: 0.06;
-  transform: scale(0.8);
+/* NOTIFICATIONS */
+/* #fa_welcome, #fa_right a.rightHeaderLink */
+#fa_welcome {
+  height: 30px;
 }
-.switcheroo[theme="discord"] .switcheroo__delete {
-  display: flex;
-  justify-content: center;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  position: absolute;
-  top: -2px;
-  right: -2px;
-  transform: scale(0);
-  opacity: 1;
-  transition: transform 128ms var(--ease), opacity 64ms var(--ease);
-  font-size: 0.813rem;
-  line-height: 14px;
-  cursor: pointer;
+#fa_welcome,
+#fa_right #fa_notifications {
+  line-height: 27px;
 }
-.switcheroo[theme="discord"] .switcheroo__squircle:hover .switcheroo__delete {
-  opacity: 1;
-  transform: scale(1);
+div#fa_usermenu {
+  display: none !important;
 }
-/********* logo ********/
-.switcheroo[theme="discord"] .switcheroo__logo img {
-  width: 32px;
+/* MENU DES NOTIFICATIONS */
+#notif_list {
+  margin-top: 0 !important;
+  left: 110px !important;
+  border: none !important;
 }
-/* .switcheroo[theme="discord"] .switcheroo__logo:hover */
-.switcheroo[theme="discord"] .switcheroo__squircle--button {
-  transition: border-radius 128ms var(--ease);
+ul#fa_menulist {
+  z-index: 3 !important;
+  padding-left: 16px;
+  margin-left: 100px;
+  border: none !important;
 }
-/* .switcheroo[theme="discord"] .switcheroo__squircle--button:hover */
-/* modal */
-.switcheroo__form {
-  padding: 48px;
+/* #fa_menulist a:link, #fa_menulist a:visited */
+#fa_toolbar #fa_right #fa_notifications.unread #notif_unread {
+  display: inline-block;
+  min-width: 28px;
+  padding: 6px 10px;
+  line-height: 1;
+  border-radius: 999px;
+  font-weight: 800;
 }
-.switcheroo__form-row {
-  display: flex;
-  flex-flow: column;
-  align-items: flex-start;
-  margin-bottom: 16px;
+#fa_right a#fa_notifications {
+  font-weight: 600;
 }
-.switcheroo__form-label {
-  margin-bottom: 8px;
-  font-size: 0.875rem;
-  text-transform: uppercase;
+/** menu search **/
+#search_menu {
+  top: 25px !important;
+  left: 5% !important;
 }
-.switcheroo__form-input {
-  width: 100% !important;
-  padding: 6px !important;
-  border-radius: 4px !important;
-  cursor: text !important;
+
+#search_menu a {
+  background: none !important;
+  border: none !important;
+  color: inherit !important;
 }
-.switcheroo__form-button {
-  align-self: flex-end;
-  padding: 8px;
-  box-shadow: none;
-  border: none;
-  border-radius: 8px;
-  outline: 0;
-  font-size: 0.875rem;
-  text-transform: uppercase;
+/** supression d'élément **/
+#navSIT,
+.mainmenu img,
+#fa_toolbar #fa_magnifier,
+#fa_toolbar #fa_fb,
+#fa_toolbar #fa_twitter,
+#fa_toolbar #fa_gp,
+#fa_toolbar #fa_mail,
+#fa_toolbar #fa_rss,
+#fa_toolbar #fa_hide,
+#fa_toolbar_hidden #fa_show,
+#fa_toolbar_hidden,
+#fa_share_text,
+#fa_search {
+  display: none;
 }
-.monomer-overlay {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: 0.2s opacity ease;
-}
-.monomer-modal {
-  width: 94%;
-  padding: 24px 20px;
-  border-radius: 2px;
-  position: fixed;
-  z-index: 999;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  transition: 0.2s opacity ease;
-  transform: translate(-50%, -50%);
-}
-.monomer-modal.monomer-open.monomer-anchored {
-  top: 20px;
-  transform: translate(-50%, 0);
-}
-.monomer-modal.monomer-open, .monomer-overlay.monomer-open {
-  opacity: 1;
-}
-.monomer-close {
-  width: 24px;
-  height: 24px;
-  padding: 0;
-  border: 0;
-  border-radius: 50%;
-  outline: 0;
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  font-size: 1.25rem;
-  font-weight: 700;
-  line-height: 24px;
-  text-align: center;
-  cursor: pointer;
-}
-.monomer-close:hover {
-  opacity: 0.8;
+#fa_icon,
+a#fa_service {
+  opacity: 0 !important;
 }
 /* header#lmdi-hero */
 /* header#lmdi-hero .lmid-hero */
-.bodylinewidth,
-#lmid-theme__moirae {
-  margin: 0 auto;
-  padding: clamp(12px, 2vw, 18px);
-  max-width: 850px;
-  width: 850px;
+/* .bodylinewidth, #lmid-theme__moirae */
+/* main#lmid-theme__moirae iframe:first-of-type? */
+.linkbar,
+.subjectbar {
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 10px 16px;
+  backdrop-filter: blur(6px);
 }
-main#lmid-theme__moirae iframe:first-of-type {
-  display: block;
+.linkbar-nav,
+.subjectbar-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
   margin: auto;
+}
+.linkbar-nav a,
+.subjectbar-nav a {
+  color: var(--lien-menu);
+}
+/* .linkbar-nav a:hover, .subjectbar a:hover */
+/* ===== Intro (au-dessus du panneau) ===== */
+.cards .intro-center,
+.cards .pa-center,
+.cards .wio-center {
+  border-radius: 14px;
+}
+.intro {
+  padding: 16px;
+}
+.intro-grid,
+.profile-header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 16px;
+}
+.box {
+  border: var(--border);
+  background: var(--ink-16);
+}
+.list {
+  display: grid;
+  gap: 8px;
+}
+.list .news li,
+.list a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 0.84rem;
+}
+ul#intro-info-list {
+  list-style: none;
+}
+/* .list .news li::marker */
+ul#intro-info-list a {
+  border: none;
+  background: none;
+}
+/* #intro-info > .box */
+.list ul,
+.intrigue p,
+.intro-credits p {
+  margin: 0;
+  padding: 0 8px 0;
+  min-height: 160px;
+  max-height: 160px;
+  overflow: auto;
+}
+/* .list li{margin:6px 0} */
+.list .news li {
+  display: block;
+}
+.news {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 280px;
+  overflow: auto;
+}
+.news .item {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 12px;
+}
+.news .date {
+  display: block;
+  font-variant: all-small-caps;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+.intro-credits > .box {
+  min-height: 89px;
+  max-height: 89px;
+}
+.intro-credits p {
+  min-height: 70px;
+  max-height: 70px;
+}
+/* .intro-credits span */
+/* Placement */
+.intro-credits {
+  grid-column: 1 / 3;
+  grid-row: 2;
+}
+.intro-yearblock {
+  grid-column: 3 / 4;
+  grid-row: 2;
+}
+/* .intro-credits a */
+/* === Placement dans ta grid === */
+.pa-yearblock {
+  grid-column: 3 / 4; /* 3e colonne */
+  grid-row: 2; /* 2e ligne   */
+  align-self: end;
+  justify-self: end;
+}
+/* === Style du bloc Année === */
+.hellas-year {
+  min-width: 220px;
+}
+/* éclairs décoratifs façon maquette */
+.before-emoji,
+.after-emoji,
+.welcome-emoji {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  transform: rotate(100deg);
+}
+.before-emoji,
+.after-emoji {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.before-emoji {
+  left: 12px;
+}
+.after-emoji {
+  right: 12px;
+}
+/* libellé du haut */
+.hellas-year .year-label {
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+/* gros nombre de l’année */
+.hellas-year .current-year {
+  display: block;
+  position: relative;
+  height: 40px;
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+#lmdi-current-year {
+  position: absolute;
+  top: -70%;
+  left: 60px;
+  display: block;
+  height: 40px;
+}
+/* petite description */
+.hellas-year .year-description {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  font-style: italic;
+  opacity: 0.9;
+}
+/* bulle profil */
+/* === Tooltips (sans JS) sur .tooltip === */
+/* .tooltipster-default, .award_tooltiptext, .fa_like_list, .fa_dislike_list, .option_voters_list span */
+.tooltip-actions {
+  background: transparent !important;
+}
+.tooltip-scope .tooltip {
+  position: relative;
+  cursor: help;
+}
+.tooltip-scope .tooltip::after {
+  content: attr(data-tip);
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 8px);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-50%) scale(0.95);
+  transform-origin: 50% 100%;
+  font-size: 0.78rem;
+  line-height: 1.25;
+  padding: 6px 8px;
+  border-radius: 8px;
+  white-space: nowrap;
+  transition: opacity 0.16s ease, transform 0.16s ease;
+  z-index: 5;
+}
+.tooltip-scope .tooltip:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+.tooltip-scope .tooltip:hover::before {
+  opacity: 1;
+}
+.intro-forums {
+  margin-top: 16px;
+}
+/* MENU BARRE */
+.linkbar,
+.subjectbar {
+  margin: 1rem auto;
+}
+/* ===== Panneau d’accueil ===== */
+.card h3 {
+  margin: 0 0 12px 0;
+  font-size: 0.97rem;
+  letter-spacing: 0.05em;
+}
+.btn,
+#followBtn,
+.followBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 12px;
+}
+/* .btn.primary, #followBtn, .followBtn */
+/* Grille principale 3 colonnes */
+.lmdi-pa-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+/* Cartes colonnes */
+.lmdi-card,
+.cards,
+.card {
+  padding: 16px;
+  font-size: 0.84rem;
+}
+.lmdi-card h3 {
+  margin: 0 0 12px 0;
+  font-size: 0.97rem;
+  letter-spacing: 0.05em;
+}
+/* Titre avec laurier */
+.lmdi-h-laurel {
+  position: relative;
+  display: inline-block;
+  padding-left: 28px;
+}
+.lmdi-h-laurel::before {
+  position: absolute;
+  top: 0;
+  left: -5px;
+  width: 20px;
+  height: 20px;
+  font-size: x-large;
+  transform: translateY(-50%);
+}
+/* ===== Colonne 1 : Contexte + Scénarios ===== */
+.lmdi-context {
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  gap: 14px;
+}
+.lmdi-context p {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+/* Image d’ambiance */
+.lmdi-image {
+  min-height: 110px;
+  border-radius: 14px;
+}
+/* Boutons PA */
+.lmdi-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+}
+/* Scénarios / prédéfinis */
+.lmdi-grid-3x3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.lmdi-tile {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  height: 48px;
+}
+.lmdi-tile img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.lmdi-label {
+  position: absolute;
+  inset: 0 5px 8px 5px;
+  padding: 6px 8px;
+  height: 40px;
+  border-radius: 0 0 10px 10px;
+  backdrop-filter: blur(4px);
+  font-size: 0.65rem;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+.lmdi-tile:hover .lmdi-label {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* ===== Colonne 2 : Staff + Membres du mois ===== */
+#staff-block {
+  display: grid;
+  gap: 10px;
+}
+/* ligne de chips staff */
+.lmdi-staffs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: -2px 0 2px;
+}
+/* chip staff */
+.lmdi-staff-card {
+  all: unset;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px;
+  max-width: 100%;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease,
+    transform 0.12s ease;
+}
+.lmdi-staff-card:hover {
+  transform: translateY(-1px);
+}
+.lmdi-staff-card:focus-visible {
+  outline-offset: 2px;
+}
+/* .lmdi-staff-card[aria-selected="true"] */
+/* portrait staff */
+.lmdi-portrait {
+  flex: 0 0 auto;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.lmdi-portrait img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* panneau détail staff */
+.lmdi-staff-detail {
+  padding: 10px;
+  border-radius: 12px;
+  display: none;
+}
+.lmdi-staff-detail.is-active {
+  display: block;
+}
+.lmdi-staff-detail .lmdi-meta {
+  padding: 0;
+}
+.lmdi-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 6px;
+}
+.lmdi-name {
+  text-align: center;
+  margin: 6px 0 0;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 0.84rem;
+  font-weight: 800;
+}
+.lmdi-role {
+  font-size: 0.8rem;
+}
+.lmdi-bio {
+  margin-top: 6px;
+  height: 60px;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+.lmdi-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+/* Membres du mois */
+.lmdi-members,
+.lmdi-profil--ind {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.lmdi-p {
+  overflow: hidden;
+  border-radius: 14px;
+}
+.lmdi-p img {
+  display: block;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.lmdi-meta {
+  padding: 10px;
+}
+/* ===== Colonne 3 : Topsites / Duel / Objets / Anniv  ===== */
+/* topsites */
+.lmdi-topsites-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.lmdi-icon-btn {
+  display: inline-grid;
+  place-items: center;
+  border-radius: 10px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease,
+    border-color 0.15s ease, background 0.15s ease;
+}
+/* .lmdi-icon-btn:hover */
+.lmdi-icon-btn:focus-visible {
+  outline-offset: 2px;
+}
+/* colonne ionique */
+.lmdi-icon--column {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+/* duel d’équipes */
+.lmdi-teams {
+  display: grid;
+  gap: 10px;
+}
+/* .lmdi-icon[data-type="bouzoukis"] */
+/* .lmdi-icon[data-type="flute"] */
+/* .lmdi-icon[data-type="lyre"] */
+.lmdi-icon--flute,
+.lmdi-icon--lyre {
+  padding-left: 1rem;
+}
+.lmdi-team {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-radius: 12px;
+}
+.lmdi-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.lmdi-score {
+  font-weight: 700;
+}
+/* objets divins */
+.lmdi-zone-objets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0;
+}
+.lmdi-image-box {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.lmdi-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: transform 0.3s ease;
+  border-radius: inherit;
+}
+.lmdi-image-box:hover .lmdi-overlay {
+  transform: scale(1);
+}
+/* habillage objets */
+.hellas-objets .lmdi-image-box {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.hellas-objets .lmdi-image-box:hover {
+  transform: scale(1.1);
+}
+.hellas-objets .lmdi-image-box img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/* .hellas-objets .lmdi-overlay */
+.hellas-objets .lmdi-text {
+  font-size: 0.65rem;
+  text-align: center;
+}
+/* .hellas-objets a */
+/* .hellas-objets a:hover */
+/* Anniversaires IRL */
+.lmdi-anniversaires {
+  display: grid;
+  gap: 8px;
+}
+.lmdi-anniv-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 14px;
+}
+.lmdi-emo {
+  font-size: 1.15rem;
+  line-height: 1;
+}
+/* .lmdi-anniv-text */
+/* .lmdi-anniversaires .lmdi-anniv-line + .lmdi-anniv-line */
+/* accent “aujourd’hui” */
+/* .lmdi-anniversaires .lmdi-anniv-line:first-child */
+.intro-forums img {
+  border-radius: 14px;
+}
+/* Séparateur */
+.sep {
+  height: 1px;
+  margin: 30px 0;
+}
+.subjectbar-nav {
+  gap: 0.5rem;
+}
+/* Listing Forums */
+header h2,
+.forums header h2,
+footer h2 {
+  letter-spacing: 0.18em;
+  margin: 0 0 6px;
+}
+header h2,
+footer h2 {
+  margin-top: 1rem;
+  font-size: 2.3rem;
+  text-align: center;
+}
+.category {
+  margin: 26px 0;
+}
+.category > header {
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+.category h2 {
+  font-size: 1.19rem;
+  margin: 0;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  text-align: left;
+  opacity: 0.95;
+}
+.forumrow {
+  display: block;
+  border: none;
+  background: transparent;
+  margin: 22px 0;
+  padding: 0;
+}
+.forumrow .fr-title {
+  font-size: 1.35rem;
+  letter-spacing: 0.06em;
+  margin: 0 0 10px 0;
+  display: inline-block;
+}
+/* h4.fr-title a */
+.forumrow .fr-grid {
+  display: grid;
+  grid-template-columns: 130px 1fr 280px 30px;
+  gap: 16px;
+  align-items: start;
+}
+.forumrow .desc,
+.forumrow .lastcard {
+  height: 160px;
+}
+div.lmdi-thumb {
+  background: var(--img-forum) center/cover no-repeat;
+  width: 130px;
+  height: 150px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.forumrow .desc p {
+  height: 130px;
+  overflow-y: auto;
+}
+img.lmdi-badge {
+  width: 30px;
+  height: 150px;
+  object-fit: cover;
+  object-position: right;
+  border-radius: 12px;
+}
+.forumrow .thumb {
+  width: 130px;
+  height: 150px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.forumrow .desc {
+  padding: 14px;
+  border-radius: 12px;
+  color: var(--text-on-dark);
+}
+.forumrow .desc b {
+  color: var(--text-on-dark);
+}
+.forumrow .lastcard {
+  background: var(--ink-40);
+  border: 1px solid var(--paper-18);
+  border-radius: 12px;
+  padding: 12px;
+}
+.forumrow .lastcard .mini {
+  margin-top: 8px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.forumrow .lastcard .lmdi-last--avatar img {
+  width: 64px;
+  height: 64px;
+  border-radius: 100px;
+  border: 3px solid var(--tone-light);
+  object-fit: cover;
+}
+.forumrow .counts {
+  margin-top: 8px;
+  color: var(--muted);
+  font-variant: all-small-caps;
+  letter-spacing: 0.06em;
+}
+.forumrow .subsline {
+  text-align: center;
+  margin-top: 10px;
+  text-align: left;
+  margin-top: 10px;
+  background: var(--ink-40);
+  border: 1px solid var(--paper-18);
+  border-right: 6px solid var(--highlight);
+  padding: 14px;
+  border-radius: 12px;
+  color: var(--text-on-dark);
+}
+.forumrow .subsline a {
+  color: var(--text-on-dark);
+}
+/* ===== Q.E.E.L (Version A: wio--cards) ===== */
+.cards .pa-grid,
+.cards .wio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 14px;
+}
+.cards .wio-group[data-type="benis"] {
+  background: linear-gradient(90deg, var(--benis-gradient), transparent);
+}
+.cards .wio-group .chip[data-type="benis-chip"] {
+  background: var(--benis-chip);
+  border: 1px solid var(--benis-chip-border);
+}
+.cards .wio-group[data-type="damnes"] {
+  background: linear-gradient(90deg, var(--damnes-gradient), transparent);
+}
+.cards .wio-group .chip[data-type="damnes-chip"] {
+  background: var(--damnes-chip);
+  border: 1px solid var(--damnes-chip-border);
+}
+.cards .wio-group[data-type="maudis"] {
+  background: linear-gradient(90deg, var(--maudis-gradient), transparent);
+}
+.cards .wio-group .chip[data-type="maudis-chip"] {
+  background: var(--maudis-chip);
+  border: 1px solid var(--maudis-chip-border);
+}
+.cards .wio-stat {
+  background: var(--ink-16);
+}
+.cards .wio-legend {
+  opacity: 0.85;
+}
+/* Base WIO (commune) */
+.wio {
+  position: relative;
+}
+.wio-head {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.wio-title {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  letter-spacing: 0.06em;
+  margin: 0;
+  text-align: center;
+}
+.wio-col h3.lmdi-h-laurel,
+.wio-center h3.lmdi-h-laurel:nth-of-type(2) {
+  padding-top: 12px;
+}
+.wio-col h3.lmdi-h-laurel::before,
+.wio-center h3.lmdi-h-laurel:nth-of-type(2)::before {
+  padding-top: 28px;
+}
+/* .wio-col.soft*/
+.wio-left {
+  position: relative;
+}
+p#lmdi-onlinembr,
+#lmdi-membrl24 .row1 {
+  height: 160px;
+  overflow: auto;
+}
+p#lmdi-onlinembr a,
+table#lmdi-membrl24 a {
+  margin: 0.5rem auto;
+}
+h3.wio-title {
+  font-family: var(--font-serif);
+  text-align: center;
+  margin: 16px 0 6px;
+}
+.wio-sub {
+  font-variant: all-small-caps;
+  letter-spacing: 0.08em;
+  color: var(--highlight);
+  margin: 4px 0 8px;
+}
+.wio-box {
+  min-height: 180px;
+  max-height: 180px;
+  border: var(--border);
+  border-radius: 12px;
+  padding: 8px;
+  background: var(--ink-16);
+}
+.wio-box.dotted {
+  border-style: dashed;
+}
+/* zone sous "Bienvenue à" */
+.wio-welcome {
+  display: flex;
+  gap: 2px;
+}
+/* puce pseudo */
+.welcome-chip {
+  display: inline;
+  width: 164px;
+  padding: 6px 4px 6px 0;
+  text-align: right;
+}
+.wio-welcome img {
+  object-fit: cover;
+  height: 84px;
+  width: 50px;
+  border-radius: 8px;
+  border: 3px solid var(--tone-light);
+}
+span#lmdi-lastjoin__avatar {
+  position: absolute;
+  bottom: 35px;
+  right: 20px;
+  margin-top: 8px;
+  display: flex;
+  gap: 2px;
+}
+.welcome-name:hover {
+  color: var(--tone-light);
+}
+.wio-groups {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+.wio-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.04);
+}
+.wio-group .label {
+  font-weight: 600;
+  font-size: 0.84rem;
+}
+.wio-stats {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+.wio-stat {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  font-size: 0.84rem;
+  border-radius: 12px;
+  border: var(--border);
+  background: var(--paper-04);
+}
+.wio-stat .n {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--highlight);
+}
+#lmdi-membrl24 .row1 {
+  vertical-align: top;
+}
+.wio-sentence {
+  font-size: 0.75rem;
+  text-align: center;
+  margin: 0;
+  color: var(--text-on-dark);
+}
+
+.desc h3 {
+  padding-left: 10px;
+  margin: 0;
+  margin-bottom: 10px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  opacity: 0.95;
+}
+/* ===== DESC en grille interne pour caler badge/titre/meta/extrait ===== */
+.forumrow .desc {
+  display: grid;
+  grid-template-rows: auto auto auto 1fr;
+  gap: 6px;
+  padding: 14px;
+  border-radius: 12px;
+  height: 160px; /* tu gardes ta hauteur fixe */
+}
+.lmdi-header-thread,
+.lmdi-header-posts,
+.lmdi-footer-thread,
+.lmdi-viewtopic__reply,
+.lmdi-viewtopic__pagination-bottom,
+.lmdi-viewtopic__pagination-top,
+.lmdi-watch,
+.lmdi-viewtopic__moderation-inner {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  align-items: anchor-center;
+  width: 95%;
+  height: 48px;
+}
+.lmdi-viewtopic__reply img {
+  width: 110px;
+  padding: 0 2px;
+}
+.topics {
+  margin-top: 2rem;
+}
+/* En-tête : badges */
+.topic-head {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+/* Titre du sujet */
+.topic-title {
+  margin: 0;
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
+}
+.topic-title a {
+  color: var(--text-on-dark);
+}
+/* .topic-title a:hover */
+/* Métadonnées */
+.topic-meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+/* .topic-meta a */
+/* .topic-meta a:hover */
+/* Extrait : prend la place restante, coupe proprement */
+.topic-excerpt {
+  margin: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  line-clamp: 3;
+  -webkit-line-clamp: 3; /* ~3 lignes dans 160px */
+  -webkit-box-orient: vertical;
+}
+.topicrow .desc .topic-excerpt {
+  height: 32px;
+}
+.topicrow .fr-grid{
+    grid-template-columns: 130px 1fr 170px 30px;
+}
+.topic-summary {
+    display: grid
+;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+/* Col 1 : dernier message + avatar */
+.strip-last{
+  grid-column: 1 / -1;  /* de la 1re à la dernière colonne */
+  grid-row: 2;          /* sur la 1re ligne */
+  height: 110px;
+  text-align: center;
+  background: linear-gradient(180deg, var(--paper-04), transparent);
+  border-radius:8px;
+  padding:10px 12px;
+  color: var(--text-dark);
+}
+.strip-last .who{
+  display:flex; align-items:center; gap:10px;
+}
+.strip-last .ava{
+  width:42px; height:42px; border-radius:100px;
+    border:1px solid var(--paper-18);
+}
+.ava img {
+    width: inherit;
+    height: inherit;
+    border-radius: 100px;
+    object-fit: cover;
+}
+.strip-last .text{display:flex; flex-wrap:wrap; gap:6px; align-items:baseline}
+.strip-last .time{color:var(--muted)}
+.strip-last .by a{color:var(--highlight); font-weight:700; text-decoration:none}
+.strip-last .by a:hover{color:var(--text-on-dark);}
+
+/* Col 2 & 3 : stats */
+.strip-stat{
+  display:flex; align-items:center; justify-content:center;
+  gap:6px;
+  border-radius:8px; padding:10px 0;
+  font-weight:800;
+  border: var(--border);
+}
+.strip-stat .n{font-size:.65rem}
+.strip-stat .u{opacity:.8}
+
+/* Col 4 : pages */
+.strip-pages{
+  color:var(--text-on-dark);
+  display:flex; align-items:center; gap:8px; justify-content:flex-end;
+  padding:0 8px;
+}
+.strip-pages .small{color:var(--muted); font-style:italic}
+.strip-pages a{color:var(--text-on-dark);}
+.strip-pages a:hover{color:var(--highlight)}
+
+/* ===== LMDI – Viewforum (palette root) ===== */
+.lmdi-viewforum {
+  display: grid;
+  margin: 0 auto;
+  width: 100%;
+}
+/* ====== Header ====== */
+/* ====== Fil d’Ariane avec .tag ====== */ 
+.lmdi-viewforum__breadcrumb {
+  display: flex;
+  align-items: center;
+    justify-content: space-between;
+  gap: 10px;
+}
+/* on réutilise La logique de base en la branchant sur Les vars */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  backdrop-filter: blur(8px);
+  font-size: .85rem;
+}
+/* .tag:hover */
+.tag__content {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: baseline;
+}
+.tag__content a.nav {
+  font-weight: 600;
+  opacity: .9;
+  transition: opacity .2s ease, color .2s ease;
+}
+.tag__content a.nav:hover {
+  opacity: 1;
+  color: var(--tone-light);
+}
+.tag__img{  display:inline-block; width: 33px;height: 20px;background:var(--img-temple) center/cover no-repeat; vertical-align:middle;}
+/* Bloc “menu plus” à droite */
+
+.lmdi-viewforum__tools {
+  display: flex;
+  justify-content: flex-end;
+  min-width: 0;
+}
+/* ====== Conteneur des topics ====== */
+
+.lmdi-viewforum__topics {
+  min-height: 40px;
+}
+/* ====== Bloc infos (ouvert/fermé) ====== */
+
+.lmdi-viewforum__info {
+  background: transparent;
+}
+
+.forum-meta {
+  display: grid;
+}
+/* .forum-meta__block */
+.forum-meta__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 6px;
+}
+
+.forum-meta__row:last-child {
+  border-bottom: none;
+}
+
+.forum-meta__label {
+  font-weight: 600;
+}
+
+/* .forum-meta__value */
+
+.forum-meta__row--online {
+  flex-direction: column;
+}
+
+.forum-meta__row--bottom {
+  align-items: center;
+}
+
+/* Bouton +/- */
+
+.forum-meta__toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.forum-meta__toggle img {
+  width: 22px;
+  height: 22px;
+}
+
+
+/* ====== Footer ====== */
+
+.lmdi-viewforum__footer, lmdi-viewtopic__main, .post-list {
+  display: grid;
+  background: transparent;
+  width:810px;
+}
+
+.lmdi-viewforum__footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lmdi-viewforum__footer-right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.sort-form,
+.jumpbox-form {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* input / select déjà stylés ailleurs chez toi normalement,
+   mais on ne touche pas aux classes forumactif ici (liteoption etc.) */
+
+/* ====== Légende ====== */
+
+/* .actions */
+
+.forum-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+.forum-legend__group {
+  display: grid;
+  gap: 6px;
+}
+
+.forum-legend__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.forum-legend__item img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+/* ====== Typo / confort ====== */
+
+.lmdi-viewforum * {
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+}
+ /* ===== Liste des Membres ===== */
+.lmdi-lmembr__field {
+    display: inline-block;
+    padding: inherit;
+}
+.lmdi-lmembr__field label {
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    font-size: .7rem;
+}
+.lmdi-lmembr__field input[type="text"], .lmdi-lmembr__field select {
+    font-family: inherit;
+    font-size: .8rem;
+    margin: 0 5px; 
+    padding: 5px 9px;
+    border-radius: 999px;
+    outline: none;
+}
+.members-list{
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 14px;
+      margin-top: 2rem;
+}
+
+/* carte */
+.member-card{
+  display:grid;
+  grid-template-columns: 84px 1fr;
+  gap: 14px;
+  padding: 12px;
+  border-radius: 14px;
+}
+
+/* avatar */
+.member-card .avatar{
+  width:84px; border-radius:12px; overflow:hidden;
+  display:block;
+}
+.member-card .avatar img{
+  width:100%; height:100%; object-fit:cover; display:block;
+}
+
+/* nom */
+.member-card .name{
+  margin:2px 0 6px;
+  font-size:1.05rem;
+  letter-spacing:.02em;
+}
+/*.member-card .name a*/
+.member-card .name a:hover{
+  color:var(--highlight);
+}
+/* stats */
+.member-card .stats{
+  list-style:none; margin:0 0 10px; padding:0;
+  display:grid; gap:4px;
+}
+.member-card .stats li{
+  display:flex; justify-content:space-between; gap:10px;
+  border-radius:8px; padding:6px 8px;
+}
+.member-card .stats .label{
+  color:var(--muted-soft); font-size:.85rem;  font-weight:800;
+}
+.member-card .stats .val{
+  font-weight:600; font-size:.9rem;
+}
+
+/* boutons */
+.member-card .actions{
+  display:flex; gap:8px; flex-wrap:wrap;
+}
+
+.member-card .actions > a:not(.btn) {
+  display: none !important;
+}
+.btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  padding:6px 10px;
+  border-radius:999px; border:1px solid;
+  text-decoration:none;
+  font-weight:700; font-size:.85rem; letter-spacing:.02em;
+}
+/* .btn--profile */
+/* .btn--profile:hover */
+/* .btn--player, .btn--mp */
+/* .btn--player:hover */
+ /* ===== Profil individuel ===== */
+.tag--profilpage{
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.profile-page{
+  display:flex; flex-direction:column; gap:24px;
+  padding:20px;
+}
+
+/* --- en-tête --- */
+.profile-header{
+grid-template-columns: 140px 1fr;
+gap:1rem;
+}
+.profile-header .avatar{
+  width:130px; height:130px; flex-shrink:0;
+  border-radius:100%; overflow:hidden;
+}
+.profile-header .avatar img{
+  width:100%; height:100%; object-fit:cover;
+}
+.profile-header .identity{
+grid-column: 2/ 4;
+    grid-row: 1;
+}
+/* ============================
+   ÉTAT : EN LIGNE (oracle doré)
+   ============================ */
+/* .identity .tag.lmdi-status.is-online */
+/* Halo sacré: respiration douce */
+.identity .tag.lmdi-status.is-online {
+    animation: sacred-breath 3.8s ease-in-out infinite;
+}
+
+/* ============================
+   ÉTAT : HORS LIGNE (marbre froid)
+   ============================ */
+
+/* .identity .tag.lmdi-status.is-offline */
+.role{
+  color:var(--highlight); font-style:italic;
+  margin-bottom:10px;
+}
+h2.username {
+    font-size: 2rem;
+}
+span.lmdi-last--profil {
+    padding-left: .5rem;
+    font-size: .65rem;
+}
+.contact-links{
+    display: flex;
+    height: 34px;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+.badges{
+grid-column: 1/ 4;
+    grid-row: 2;
+}
+.followBtn::before {
+  content: none !important;
+}
+    /* Profil bio */
+.lmdi-card__bio {
+    padding: 14px 18px;
+    max-height: 100px;
+    overflow: auto;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+section.lmdi-profil-bio {
+    padding-top: 2rem;
+}
+
+.lmdi-profil-bio-tab {
+    border: none;
+    padding: 4px 12px;
+    font-size: .8rem;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background .15s ease, color .15s ease;
+}
+
+/* .lmdi-profil-bio-tab-active */
+
+.lmdi-profil-bio-panels {
+    position: relative;
+}
+
+.lmdi-profil-bio-panel {
+    display: none;
+    height: 100px;
+}
+
+.lmdi-profil-bio-panel-active {
+    display: block;
+}
+/* ===== Colonnes Profil IRL / RP ===== */
+
+.lmdi-profil-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 colonnes égales */
+  gap: 32px;
+  margin-top: 20px;
+}
+.lmdi-profil-col:nth-of-type(2) {
+    padding-left: 1rem;
+}
+
+.section-title{
+  font-size:1.2rem;
+  margin-bottom:10px; padding-bottom:4px;
+}
+.lmdi-profil-col .section-title {
+  margin-bottom: 10px;
+}
+
+.lmdi-profil-col .section-body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* ===== Lignes de champ : "Label : valeur" sur une ligne ===== */
+
+#lmdi-irl > div,
+#lmdi-rp > div, .mini-stat-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+    border-radius: 8px;
+    padding: 6px 8px;
+    text-align: left;  
+}
+
+#lmdi-irl strong,
+#lmdi-rp strong {
+  flex: 0 0 auto;
+  font-weight: 700;
+}
+.mini-stat-line .label {
+  font-size: .75rem;
+  font-weight:800;
+}
+.mini-stat-line .label img {
+    width: 48px;
+}
+.mini-stat-line .value {
+  display:inline-block;
+  font-size: .78rem;
+  font-weight: 600;
+      width: -webkit-fill-available;
+  max-height: 200px;
+  overflow-y: auto;
+}
+/* Les valeurs prennent tout l'espace restant */
+#lmdi-irl .field_uneditable,
+#lmdi-irl .field_editable,
+#lmdi-rp .field_uneditable,
+#lmdi-rp .field_editable {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.mini-stat-line--badges .value {
+    display: block;
+    overflow-x: hidden;
+}
+/* ===== Bloc Contact personnage ===== */
+
+.lmdi-profil-contact {
+  margin-top: 24px;
+  border-radius: 0 0 12px 12px;
+  padding: 18px 22px;
+}
+
+.lmdi-profil-contact p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.lmdi-profil-contact p strong {
+  margin-right: 4px;
+}
+
+.lmdi-profil-contact img {
+    width: 56px;
+}
+.awards_block_simple {
+    padding: 5px;
+    text-align:left;
+}
+.awards_block_simple span.gen {
+    display: block;
+    height: 50px;
+}
+.awardspfil .gen div.award {
+    margin: 0 5px;
+    width: 25px;
+    height: 25px;
+}
+div.award {
+    display: inline-block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border-radius: 5px;
+    background-position: center;
+    margin: 3px;
+    background-size: cover;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+}
+
+.profil-grid{
+  display:grid;
+  gap:10px;
+}
+#lmdi-rp p {
+    position: relative;
+    height: 110px;
+  display: inline;
+    border-radius: 8px;
+    padding: 6px 8px;
+    padding-bottom: 1rem;
+    text-align: left;
+}
+#lmdi-rp p strong{
+  position: absolute;
+}
+#rpg-lien-line{
+    position: relative;
+    height: 110px;
+}
+textarea#rpg-lien {
+position: absolute;
+    left: -2px;
+    top: -5px;
+    text-indent: 2.3em;
+    width: 197px !important;
+    height: 109px !important;
+    padding-right: 2px;
+}
+textarea#rpg-lien:focus-visible {
+    border-radius: 0;
+    margin-top: .5rem;
+}
+#lmdi-rp p textarea#rpg-lien, textarea.post {
+    position: absolute;
+    resize: none !important;
+    left: 50px;
+    width: 300px !important;
+    height: 96px !important;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+/* ============================
+   LMDI / HELLAS – Viewtopic (2 colonnes)
+   ============================ */
+
+
+input.post {
+    color: var(--text-on-dark);
+}
+
+textarea.post{ 
+    position: relative;
+    width: fit-content !important;
+}
+select.post {
+    color: var(--text-on-dark);
+}
+.lmdi-viewtopic {
+  margin: 1.5rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Barre haute */
+
+.lmdi-viewtopic__topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 10px 16px;
+  background: linear-gradient(180deg, var(--paper-08), var(--paper-04)), var(--tone-dark);
+  border-radius: calc(var(--radius) + 8px);
+  border: var(--border);
+  box-shadow: var(--glow);
+}
+
+.lmdi-viewtopic__actions-left .nav img {
+  vertical-align: middle;
+}
+
+.lmdi-viewtopic__breadcrumb {
+  flex: 1;
+}
+
+.lmdi-viewtopic__tools {
+  white-space: nowrap;
+      text-align: right;
+}
+
+/* Header sujet */
+
+.lmdi-viewtopic__header {
+  border-radius: var(--radius);
+  border: var(--border);
+  background: var(--tone-darker);
+  padding: 8px 14px 10px;
+  box-shadow: var(--glow);
+}
+
+.lmdi-viewtopic__title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid var(--paper-08);
+  padding-bottom: 6px;
+}
+td.cat, td.catHead, td.catBottom{
+  border:none;
+}
+.lmdi-viewtopic__title .cattitle {
+  font-family: var(--font-title);
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  font-size: 1.05rem;
+}
+
+.lmdi-viewtopic__posters {
+  padding-top: 6px;
+}
+
+/* Pagination top & bottom */
+.lmdi-viewtopic__pagination-top, .lmdi-viewtopic__pagination-bottom, .lmdi-watch, .lmdi-viewtopic__reply {
+  margin-top: 4px;
+  width:100%;
+}
+.lmdi-viewtopic__pagination-bottom div, .lmdi-viewtopic__moderation-inner form {
+    text-align: right;    width: -webkit-fill-available;
+}
+.lmdi-watch form, .lmdi-viewtopic__moderation-inner form {
+    width: -webkit-fill-available;
+}
+.lmdi-viewtopic__moderation-inner {
+    width: 100%;
+}
+/* =========
+   POSTS
+   ========= */
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Carte post */
+
+.post {
+  border-radius: var(--radius);
+  border: var(--border);
+  background: linear-gradient(180deg, var(--paper-04), var(--paper-18));
+  box-shadow: var(--glow);
+  padding: 12px;
+  font-size: 0.86rem;
+}
+
+.post--hidden {
+  background: var(--ink-40);
+}
+
+/* Grille 2 colonnes */
+
+.post-grid {
+  display: grid;
+  grid-template-columns: 222px minmax(0, 1fr);
+  gap: 16px;
+  align-items: flex-start;
+  padding: 16px;
+  align-items: stretch; 
+}
+
+/* Colonne gauche : aside */
+
+.post-aside {
+      position: relative;
+      margin-top: 60px;
+  background: var(--ink-40);
+  border-radius: 14px;
+  border: 1px solid var(--paper-18);
+  padding: 10px;
+  text-align: center;
+}
+
+/* ======== ORBE (Doria's) cf autre css ===== */
+
+/* ======== AVATAR 200 × 320 ===== */
+
+.lmdi-avatar{
+  position:relative;
+  width:200px;
+  height:320px;
+  margin:0 auto 10px;
+  display:block;
+  overflow:hidden;
+  border-radius:18px;
+}
+
+.lmdi-avatar img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+/* ======== Nom + Rang ======== */
+.lmdi-name a
+.lmdi-name a:hover
+.lmdi-rank{
+  text-align:center;
+  font-size:.85rem;
+  margin-bottom:8px;
+}
+/* ======= points equipes (badge sous avatar) ======== */
+.lmdi-team-badge{
+  width:200px;
+  margin:12px auto;
+  padding:6px 12px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-radius:999px;
+}
+.lmdi-team-label{
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-size:.75rem;
+  font-weight: 800;
+}
+.lmdi-team-value{
+  font-weight:800;
+  font-size:1rem;
+}
+.lmdi-contact{
+  display:flex;
+      justify-content: center;
+  gap:.5rem;
+}
+.lmdi-contact img{
+  padding: 2px;
+  border-radius: 999px;
+  width:35px;
+}
+/* mini-stats : profil_field */
+.mini-stats {
+  display: grid;
+  gap: 4px;
+  margin-bottom: 8px;
+  text-align: left;
+}
+.mini-stat-line {
+    display: block;
+}
+/* awards + rpg */
+
+.post-awards {
+  margin-top: 6px;
+}
+
+.post-rpg {
+  margin-top: 6px;
+  font-size: .78rem;
+}
+/* Colonne droite : body */
+.post-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+/* head */
+.post-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+  padding-bottom: 4px;
+}
+.post-head .left {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px;
+}
+.post-permalink {
+  font-size: .8rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.post-permalink:hover
+.post-subject {
+  font-weight: 600;
+}
+.post-when {
+  font-size: .78rem;
+}
+.post-actions {
+  font-size: .8rem;
+  white-space: nowrap;
+}
+.post-actions img {
+  vertical-align: middle;
+}
+/* Bloc vote +/- */
+.post-vote {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+  margin-bottom: 2px;
+}
+.post-vote .vote-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: .8rem;
+}
+.post-vote .vote-button:hover
+.vote-bar {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 8px;
+  height: 28px;
+  border-radius: 999px;
+  overflow: hidden;
+}
+.vote-bar-plus
+.vote-bar-minus
+.vote-no-bar {
+  font-size: .8rem;
+}
+/* contenu */
+.post-content .postbody {
+  margin-top: 4px;
+}
+dl.codebox dt {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+/* réactions */
+.post-reactions {
+  display: flex;
+  justify-content: end;
+  gap: 4px;
+  margin-top: 4px;
+}
+.reactions-buttons {
+  display: flex;
+justify-content:end;
+  gap: .5rem;
+}
+.reactions-buttons img {
+    width: 30px;
+}
+.react {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px;
+  border-radius: 999px;
+  font-size: .78rem;
+  cursor: pointer;
+}
+.react span {
+  font-weight: 600;
+}
+.react.like {position: relative;}
+.react.dislike
+.rep-nb {    position: absolute;top: 78%;left: 20%;border-left:none;}
+/* pied */
+.post-foot {
+  margin-top: 6px;
+  padding-top: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-size: .8rem;
+}
+.post-nav a 
+.post-nav a:hover
+/* signature */
+.post-signature {
+  margin-top: 8px;
+  padding-top: 6px;
+  font-size: .8rem;
+  font-style: italic;
+}
+/* posts spéciaux */
+.post--empty .post-empty-inner,
+.post--hidden .post-hidden-inner {
+  padding: 10px;
+  text-align: center;
+}
+/* ======== Bas de page / blocs ======== */
+footer.lmdi-footer-thread {
+    grid-template-columns: 1fr;
+    height: auto;
+}
+.lmdi-viewtopic__bottom-title {
+  margin-top: 6px;
+  padding: 6px 10px;
+  border-radius: var(--radius);
+  border: var(--border);
+  background: var(--tone-dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lmdi-viewtopic__bottom-breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.lmdi-viewtopic__info {
+  margin-top: 10px;
+}
+
+.forum-rules-inner {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+/* Mod tools */
+
+.lmdi-viewtopic__moderation {
+  margin-top: 8px;
+  padding: 10px 12px;
 }
 
