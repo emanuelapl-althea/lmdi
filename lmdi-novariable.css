@@ -198,7 +198,7 @@ ul#fa_menulist {
 #fa_toolbar_hidden,
 #fa_share_text,
 #fa_search {
-  display: none;
+  display: none!important;
 }
 #fa_icon,
 a#fa_service {
