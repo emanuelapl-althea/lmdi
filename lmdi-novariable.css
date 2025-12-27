@@ -206,7 +206,10 @@ a#fa_service {
 }
 /* header#lmdi-hero */
 /* header#lmdi-hero .lmid-hero */
-/* .bodylinewidth, #lmid-theme__moirae */
+.bodylinewidth, #lmid-theme__moirae{
+  width: 850px;
+  padding: 1rem !important;
+}
 /* main#lmid-theme__moirae iframe:first-of-type? */
 .linkbar,
 .subjectbar {
