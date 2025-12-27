@@ -44,6 +44,7 @@ body {
 }
 /* LINKS */
 header,
+main,
 section,
 .linkbar,
 .subjectbar,
@@ -206,7 +207,7 @@ a#fa_service {
 /* header#lmdi-hero */
 /* header#lmdi-hero .lmid-hero */
 .bodylinewidth, #lmid-theme__moirae{
-  width: 850px !important;
+  width: 850px;
   padding: 1rem !important;
 }
 /* main#lmid-theme__moirae iframe:first-of-type? */
@@ -240,7 +241,7 @@ font-weight:600; text-transform:uppercase; letter-spacing:.03em; opacity:.9;
   border-radius: 14px;
 }
 .intro {
-  padding: 16px;
+    margin: 0 2px;
 }
 .intro-grid,
 .profile-header {
@@ -1897,8 +1898,8 @@ td.cat, td.catHead, td.catBottom{
   display:block;
 }
 /* ======== Nom + Rang ======== */
-.lmdi-name a
-.lmdi-name a:hover
+/* .lmdi-name a */
+/* .lmdi-name a:hover */
 .lmdi-rank{
   text-align:center;
   font-size:.85rem;
@@ -1979,7 +1980,7 @@ td.cat, td.catHead, td.catBottom{
   letter-spacing: .12em;
   text-transform: uppercase;
 }
-.post-permalink:hover
+/* .post-permalink:hover */
 .post-subject {
   font-weight: 600;
 }
@@ -2011,7 +2012,7 @@ td.cat, td.catHead, td.catBottom{
   font-weight: 700;
   font-size: .8rem;
 }
-.post-vote .vote-button:hover
+/* .post-vote .vote-button:hover */
 .vote-bar {
   display: inline-flex;
   flex-direction: column;
@@ -2021,8 +2022,8 @@ td.cat, td.catHead, td.catBottom{
   border-radius: 999px;
   overflow: hidden;
 }
-.vote-bar-plus
-.vote-bar-minus
+/* .vote-bar-plus */
+/* .vote-bar- */
 .vote-no-bar {
   font-size: .8rem;
 }
@@ -2063,7 +2064,7 @@ justify-content:end;
   font-weight: 600;
 }
 .react.like {position: relative;}
-.react.dislike
+/* .react.dislike */
 .rep-nb {    position: absolute;top: 78%;left: 20%;border-left:none;}
 /* pied */
 .post-foot {
@@ -2075,8 +2076,8 @@ justify-content:end;
   gap: 10px;
   font-size: .8rem;
 }
-.post-nav a 
-.post-nav a:hover
+/* .post-nav a */
+/* .post-nav a:hover */
 /* signature */
 .post-signature {
   margin-top: 8px;
@@ -2129,5 +2130,4 @@ footer.lmdi-footer-thread {
   margin-top: 8px;
   padding: 10px 12px;
 }
-
 
