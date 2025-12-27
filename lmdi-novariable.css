@@ -44,7 +44,6 @@ body {
 }
 /* LINKS */
 header,
-main,
 section,
 .linkbar,
 .subjectbar,
@@ -207,7 +206,7 @@ a#fa_service {
 /* header#lmdi-hero */
 /* header#lmdi-hero .lmid-hero */
 .bodylinewidth, #lmid-theme__moirae{
-  width: 850px;
+  width: 850px !important;
   padding: 1rem !important;
 }
 /* main#lmid-theme__moirae iframe:first-of-type? */
@@ -2130,4 +2129,5 @@ footer.lmdi-footer-thread {
   margin-top: 8px;
   padding: 10px 12px;
 }
+
 
