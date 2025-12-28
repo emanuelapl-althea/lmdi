@@ -1678,10 +1678,12 @@ section.lmdi-profil-bio {
 #lmdi-irl > div,
 #lmdi-rp > div,
 .mini-stat-line {
-  display: inline;
-  border-radius: 8px;
-  padding: 6px 8px;
-  text-align: left;
+    display: inline;
+    max-height: 200px;
+    border-radius: 8px;
+    padding: 6px 8px;
+    text-align: left;
+    overflow: auto;
 }
 
 #lmdi-irl strong,
