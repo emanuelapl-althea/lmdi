@@ -2051,7 +2051,7 @@ td.catBottom {
 .liens-rpg textarea.post.rpg-lien--dup {
     position: absolute;
     left: 35px;
-    top: -23px;
+    top: 30px;
 }
 /* Colonne droite : body */
 .post-body {
