@@ -2039,6 +2039,20 @@ td.catBottom {
   margin-top: 6px;
   font-size: 0.78rem;
 }
+.liens-rpg {
+    position: relative;
+    height: 120px;
+    font-weight: 700;
+}
+.liens-rpg  a {
+    display: inline-block;
+    margin-bottom: .84rem;
+}
+.liens-rpg textarea.post.rpg-lien--dup {
+    position: absolute;
+    left: 35px;
+    top: -23px;
+}
 /* Colonne droite : body */
 .post-body {
   display: flex;
