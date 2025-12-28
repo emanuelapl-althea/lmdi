@@ -197,7 +197,7 @@ ul#fa_menulist {
 #fa_toolbar_hidden,
 #fa_share_text,
 #fa_search {
-  display: none!important;
+  display: none !important;
 }
 #fa_icon,
 a#fa_service {
@@ -205,7 +205,8 @@ a#fa_service {
 }
 /* header#lmdi-hero */
 /* header#lmdi-hero .lmid-hero */
-.bodylinewidth, #lmid-theme__moirae{
+.bodylinewidth,
+#lmid-theme__moirae {
   width: 850px;
   padding: 1rem !important;
 }
@@ -229,8 +230,11 @@ a#fa_service {
 }
 .linkbar-nav a,
 .subjectbar-nav a {
-font-size: 0.65rem;
-font-weight:600; text-transform:uppercase; letter-spacing:.03em; opacity:.9;
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  opacity: 0.9;
 }
 /* .linkbar-nav a:hover, .subjectbar a:hover */
 /* ===== Intro (au-dessus du panneau) ===== */
@@ -240,7 +244,7 @@ font-weight:600; text-transform:uppercase; letter-spacing:.03em; opacity:.9;
   border-radius: 14px;
 }
 .intro {
-    margin: 0 2px;
+  margin: 0 2px;
 }
 .intro-grid,
 .profile-header {
@@ -250,10 +254,10 @@ font-weight:600; text-transform:uppercase; letter-spacing:.03em; opacity:.9;
   gap: 16px;
 }
 .box {
- min-height: 180px;
-    max-height: 180px;
-    border-radius: 12px;
-    padding: 8px;
+  min-height: 180px;
+  max-height: 180px;
+  border-radius: 12px;
+  padding: 8px;
 }
 .list {
   display: grid;
@@ -1152,65 +1156,98 @@ span#lmdi-lastjoin__avatar {
 .topicrow .desc .topic-excerpt {
   height: 32px;
 }
-.topicrow .fr-grid{
-    grid-template-columns: 130px 1fr 170px 30px;
+.topicrow .fr-grid {
+  grid-template-columns: 130px 1fr 170px 30px;
 }
 .topic-summary {
-    display: grid
-;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 10px;
 }
 /* Col 1 : dernier message + avatar */
-.strip-last{
-  grid-column: 1 / -1;  /* de la 1re à la dernière colonne */
-  grid-row: 2;          /* sur la 1re ligne */
+.strip-last {
+  grid-column: 1 / -1; /* de la 1re à la dernière colonne */
+  grid-row: 2; /* sur la 1re ligne */
   height: 110px;
   text-align: center;
   background: linear-gradient(180deg, var(--paper-04), transparent);
-  border-radius:8px;
-  padding:10px 12px;
+  border-radius: 8px;
+  padding: 10px 12px;
   color: var(--text-dark);
 }
-.strip-last .who{
-  display:flex; align-items:center; gap:10px;
+.strip-last .who {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-.strip-last .ava{
-  width:42px; height:42px; border-radius:100px;
-    border:1px solid var(--paper-18);
+.strip-last .ava {
+  width: 42px;
+  height: 42px;
+  border-radius: 100px;
+  border: 1px solid var(--paper-18);
 }
 .ava img {
-    width: inherit;
-    height: inherit;
-    border-radius: 100px;
-    object-fit: cover;
+  width: inherit;
+  height: inherit;
+  border-radius: 100px;
+  object-fit: cover;
 }
-.strip-last .text{display:flex; flex-wrap:wrap; gap:6px; align-items:baseline}
-.strip-last .time{color:var(--muted)}
-.strip-last .by a{color:var(--highlight); font-weight:700; text-decoration:none}
-.strip-last .by a:hover{color:var(--text-on-dark);}
+.strip-last .text {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: baseline;
+}
+.strip-last .time {
+  color: var(--muted);
+}
+.strip-last .by a {
+  color: var(--highlight);
+  font-weight: 700;
+  text-decoration: none;
+}
+.strip-last .by a:hover {
+  color: var(--text-on-dark);
+}
 
 /* Col 2 & 3 : stats */
-.strip-stat{
-  display:flex; align-items:center; justify-content:center;
-  gap:6px;
-  border-radius:8px; padding:10px 0;
-  font-weight:800;
+.strip-stat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-radius: 8px;
+  padding: 10px 0;
+  font-weight: 800;
   border: var(--border);
 }
-.strip-stat .n{font-size:.65rem}
-.strip-stat .u{opacity:.8}
+.strip-stat .n {
+  font-size: 0.65rem;
+}
+.strip-stat .u {
+  opacity: 0.8;
+}
 
 /* Col 4 : pages */
-.strip-pages{
-  color:var(--text-on-dark);
-  display:flex; align-items:center; gap:8px; justify-content:flex-end;
-  padding:0 8px;
+.strip-pages {
+  color: var(--text-on-dark);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: flex-end;
+  padding: 0 8px;
 }
-.strip-pages .small{color:var(--muted); font-style:italic}
-.strip-pages a{color:var(--text-on-dark);}
-.strip-pages a:hover{color:var(--highlight)}
+.strip-pages .small {
+  color: var(--muted);
+  font-style: italic;
+}
+.strip-pages a {
+  color: var(--text-on-dark);
+}
+.strip-pages a:hover {
+  color: var(--highlight);
+}
 
 /* ===== LMDI – Viewforum (palette root) ===== */
 .lmdi-viewforum {
@@ -1219,11 +1256,11 @@ span#lmdi-lastjoin__avatar {
   width: 100%;
 }
 /* ====== Header ====== */
-/* ====== Fil d’Ariane avec .tag ====== */ 
+/* ====== Fil d’Ariane avec .tag ====== */
 .lmdi-viewforum__breadcrumb {
   display: flex;
   align-items: center;
-    justify-content: space-between;
+  justify-content: space-between;
   gap: 10px;
 }
 /* on réutilise La logique de base en la branchant sur Les vars */
@@ -1234,7 +1271,7 @@ span#lmdi-lastjoin__avatar {
   padding: 6px 12px;
   border-radius: 999px;
   backdrop-filter: blur(8px);
-  font-size: .85rem;
+  font-size: 0.85rem;
 }
 /* .tag:hover */
 .tag__content {
@@ -1245,14 +1282,20 @@ span#lmdi-lastjoin__avatar {
 }
 .tag__content a.nav {
   font-weight: 600;
-  opacity: .9;
-  transition: opacity .2s ease, color .2s ease;
+  opacity: 0.9;
+  transition: opacity 0.2s ease, color 0.2s ease;
 }
 .tag__content a.nav:hover {
   opacity: 1;
   color: var(--tone-light);
 }
-.tag__img{  display:inline-block; width: 33px;height: 20px;background:var(--img-temple) center/cover no-repeat; vertical-align:middle;}
+.tag__img {
+  display: inline-block;
+  width: 33px;
+  height: 20px;
+  background: var(--img-temple) center/cover no-repeat;
+  vertical-align: middle;
+}
 /* Bloc “menu plus” à droite */
 
 .lmdi-viewforum__tools {
@@ -1317,13 +1360,14 @@ span#lmdi-lastjoin__avatar {
   height: 22px;
 }
 
-
 /* ====== Footer ====== */
 
-.lmdi-viewforum__footer, lmdi-viewtopic__main, .post-list {
+.lmdi-viewforum__footer,
+lmdi-viewtopic__main,
+.post-list {
   display: grid;
   background: transparent;
-  width:810px;
+  width: 810px;
 }
 
 .lmdi-viewforum__footer-top {
@@ -1356,7 +1400,7 @@ span#lmdi-lastjoin__avatar {
 .forum-legend {
   display: flex;
   flex-wrap: wrap;
-  justify-content:center;
+  justify-content: center;
 }
 
 .forum-legend__group {
@@ -1382,34 +1426,35 @@ span#lmdi-lastjoin__avatar {
   line-height: 1.45;
   -webkit-font-smoothing: antialiased;
 }
- /* ===== Liste des Membres ===== */
+/* ===== Liste des Membres ===== */
 .lmdi-lmembr__field {
-    display: inline-block;
-    padding: inherit;
+  display: inline-block;
+  padding: inherit;
 }
 .lmdi-lmembr__field label {
-    text-transform: uppercase;
-    letter-spacing: .08em;
-    font-size: .7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.7rem;
 }
-.lmdi-lmembr__field input[type="text"], .lmdi-lmembr__field select {
-    font-family: inherit;
-    font-size: .8rem;
-    margin: 0 5px; 
-    padding: 5px 9px;
-    border-radius: 999px;
-    outline: none;
+.lmdi-lmembr__field input[type="text"],
+.lmdi-lmembr__field select {
+  font-family: inherit;
+  font-size: 0.8rem;
+  margin: 0 5px;
+  padding: 5px 9px;
+  border-radius: 999px;
+  outline: none;
 }
-.members-list{
-  display:grid;
+.members-list {
+  display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 14px;
-      margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 /* carte */
-.member-card{
-  display:grid;
+.member-card {
+  display: grid;
   grid-template-columns: 84px 1fr;
   gap: 14px;
   padding: 12px;
@@ -1417,85 +1462,113 @@ span#lmdi-lastjoin__avatar {
 }
 
 /* avatar */
-.member-card .avatar{
-  width:84px; border-radius:12px; overflow:hidden;
-  display:block;
+.member-card .avatar {
+  width: 84px;
+  border-radius: 12px;
+  overflow: hidden;
+  display: block;
 }
-.member-card .avatar img{
-  width:100%; height:100%; object-fit:cover; display:block;
+.member-card .avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* nom */
-.member-card .name{
-  margin:2px 0 6px;
-  font-size:1.05rem;
-  letter-spacing:.02em;
+.member-card .name {
+  margin: 2px 0 6px;
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
 }
 /*.member-card .name a*/
-.member-card .name a:hover{
-  color:var(--highlight);
+.member-card .name a:hover {
+  color: var(--highlight);
 }
 /* stats */
-.member-card .stats{
-  list-style:none; margin:0 0 10px; padding:0;
-  display:grid; gap:4px;
+.member-card .stats {
+  list-style: none;
+  margin: 0 0 10px;
+  padding: 0;
+  display: grid;
+  gap: 4px;
 }
-.member-card .stats li{
-  display:flex; justify-content:space-between; gap:10px;
-  border-radius:8px; padding:6px 8px;
+.member-card .stats li {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 6px 8px;
 }
-.member-card .stats .label{
-  color:var(--muted-soft); font-size:.85rem;  font-weight:800;
+.member-card .stats .label {
+  color: var(--muted-soft);
+  font-size: 0.85rem;
+  font-weight: 800;
 }
-.member-card .stats .val{
-  font-weight:600; font-size:.9rem;
+.member-card .stats .val {
+  font-weight: 600;
+  font-size: 0.9rem;
 }
 
 /* boutons */
-.member-card .actions{
-  display:flex; gap:8px; flex-wrap:wrap;
+.member-card .actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .member-card .actions > a:not(.btn) {
   display: none !important;
 }
-.btn{
-  display:inline-flex; align-items:center; justify-content:center;
-  padding:6px 10px;
-  border-radius:999px; border:1px solid;
-  text-decoration:none;
-  font-weight:700; font-size:.85rem; letter-spacing:.02em;
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
 }
 /* .btn--profile */
 /* .btn--profile:hover */
 /* .btn--player, .btn--mp */
 /* .btn--player:hover */
- /* ===== Profil individuel ===== */
-.tag--profilpage{
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+/* ===== Profil individuel ===== */
+.tag--profilpage {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
-.profile-page{
-  display:flex; flex-direction:column; gap:24px;
-  padding:20px;
+.profile-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 20px;
 }
 
 /* --- en-tête --- */
-.profile-header{
-grid-template-columns: 140px 1fr;
-gap:1rem;
+.profile-header {
+  grid-template-columns: 140px 1fr;
+  gap: 1rem;
 }
-.profile-header .avatar{
-  width:130px; height:130px; flex-shrink:0;
-  border-radius:100%; overflow:hidden;
+.profile-header .avatar {
+  width: 130px;
+  height: 130px;
+  flex-shrink: 0;
+  border-radius: 100%;
+  overflow: hidden;
 }
-.profile-header .avatar img{
-  width:100%; height:100%; object-fit:cover;
+.profile-header .avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.profile-header .identity{
-grid-column: 2/ 4;
-    grid-row: 1;
+.profile-header .identity {
+  grid-column: 2/ 4;
+  grid-row: 1;
 }
 /* ============================
    ÉTAT : EN LIGNE (oracle doré)
@@ -1503,7 +1576,7 @@ grid-column: 2/ 4;
 /* .identity .tag.lmdi-status.is-online */
 /* Halo sacré: respiration douce */
 .identity .tag.lmdi-status.is-online {
-    animation: sacred-breath 3.8s ease-in-out infinite;
+  animation: sacred-breath 3.8s ease-in-out infinite;
 }
 
 /* ============================
@@ -1511,66 +1584,67 @@ grid-column: 2/ 4;
    ============================ */
 
 /* .identity .tag.lmdi-status.is-offline */
-.role{
-  color:var(--highlight); font-style:italic;
-  margin-bottom:10px;
+.role {
+  color: var(--highlight);
+  font-style: italic;
+  margin-bottom: 10px;
 }
 h2.username {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 span.lmdi-last--profil {
-    padding-left: .5rem;
-    font-size: .65rem;
+  padding-left: 0.5rem;
+  font-size: 0.65rem;
 }
-.contact-links{
-    display: flex;
-    height: 34px;
-    justify-content: start;
-    align-items: center;
-    gap: 10px;
+.contact-links {
+  display: flex;
+  height: 34px;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
 }
-.badges{
-grid-column: 1/ 4;
-    grid-row: 2;
+.badges {
+  grid-column: 1/ 4;
+  grid-row: 2;
 }
 .followBtn::before {
   content: none !important;
 }
-    /* Profil bio */
+/* Profil bio */
 .lmdi-card__bio {
-    padding: 14px 18px;
-    max-height: 100px;
-    overflow: auto;
-    font-size: 0.9rem;
-    line-height: 1.6;
+  padding: 14px 18px;
+  max-height: 100px;
+  overflow: auto;
+  font-size: 0.9rem;
+  line-height: 1.6;
 }
 section.lmdi-profil-bio {
-    padding-top: 2rem;
+  padding-top: 2rem;
 }
 
 .lmdi-profil-bio-tab {
-    border: none;
-    padding: 4px 12px;
-    font-size: .8rem;
-    border-radius: 999px;
-    cursor: pointer;
-    font-weight: 500;
-    transition: background .15s ease, color .15s ease;
+  border: none;
+  padding: 4px 12px;
+  font-size: 0.8rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.15s ease, color 0.15s ease;
 }
 
 /* .lmdi-profil-bio-tab-active */
 
 .lmdi-profil-bio-panels {
-    position: relative;
+  position: relative;
 }
 
 .lmdi-profil-bio-panel {
-    display: none;
-    height: 100px;
+  display: none;
+  height: 100px;
 }
 
 .lmdi-profil-bio-panel-active {
-    display: block;
+  display: block;
 }
 /* ===== Colonnes Profil IRL / RP ===== */
 
@@ -1581,12 +1655,13 @@ section.lmdi-profil-bio {
   margin-top: 20px;
 }
 .lmdi-profil-col:nth-of-type(2) {
-    padding-left: 1rem;
+  padding-left: 1rem;
 }
 
-.section-title{
-  font-size:1.2rem;
-  margin-bottom:10px; padding-bottom:4px;
+.section-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  padding-bottom: 4px;
 }
 .lmdi-profil-col .section-title {
   margin-bottom: 10px;
@@ -1601,13 +1676,14 @@ section.lmdi-profil-bio {
 /* ===== Lignes de champ : "Label : valeur" sur une ligne ===== */
 
 #lmdi-irl > div,
-#lmdi-rp > div, .mini-stat-line {
+#lmdi-rp > div,
+.mini-stat-line {
   display: flex;
   align-items: flex-start;
   gap: 6px;
-    border-radius: 8px;
-    padding: 6px 8px;
-    text-align: left;  
+  border-radius: 8px;
+  padding: 6px 8px;
+  text-align: left;
 }
 
 #lmdi-irl strong,
@@ -1616,17 +1692,17 @@ section.lmdi-profil-bio {
   font-weight: 700;
 }
 .mini-stat-line .label {
-  font-size: .75rem;
-  font-weight:800;
+  font-size: 0.75rem;
+  font-weight: 800;
 }
 .mini-stat-line .label img {
-    width: 48px;
+  width: 48px;
 }
 .mini-stat-line .value {
-  display:inline-block;
-  font-size: .78rem;
+  display: inline-block;
+  font-size: 0.78rem;
   font-weight: 600;
-      width: -webkit-fill-available;
+  width: -webkit-fill-available;
   max-height: 200px;
   overflow-y: auto;
 }
@@ -1639,8 +1715,8 @@ section.lmdi-profil-bio {
   min-width: 0;
 }
 .mini-stat-line--badges .value {
-    display: block;
-    overflow-x: hidden;
+  display: block;
+  overflow-x: hidden;
 }
 /* ===== Bloc Contact personnage ===== */
 
@@ -1662,92 +1738,92 @@ section.lmdi-profil-bio {
 }
 
 .lmdi-profil-contact img {
-    width: 56px;
+  width: 56px;
 }
 .awards_block_simple {
-    padding: 5px;
-    text-align:left;
+  padding: 5px;
+  text-align: left;
 }
 .awards_block_simple span.gen {
-    display: block;
-    height: 50px;
+  display: block;
+  height: 50px;
 }
 .awardspfil .gen div.award {
-    margin: 0 5px;
-    width: 25px;
-    height: 25px;
+  margin: 0 5px;
+  width: 25px;
+  height: 25px;
 }
 div.award {
-    display: inline-block;
-    position: relative;
-    width: 16px;
-    height: 16px;
-    border-radius: 5px;
-    background-position: center;
-    margin: 3px;
-    background-size: cover;
-    flex-shrink: 0;
-    scroll-snap-align: center;
+  display: inline-block;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border-radius: 5px;
+  background-position: center;
+  margin: 3px;
+  background-size: cover;
+  flex-shrink: 0;
+  scroll-snap-align: center;
 }
 
-.profil-grid{
-  display:grid;
-  gap:10px;
+.profil-grid {
+  display: grid;
+  gap: 10px;
 }
 #lmdi-rp p {
-    position: relative;
-    height: 110px;
+  position: relative;
+  height: 110px;
   display: inline;
-    border-radius: 8px;
-    padding: 6px 8px;
-    padding-bottom: 1rem;
-    text-align: left;
+  border-radius: 8px;
+  padding: 6px 8px;
+  padding-bottom: 1rem;
+  text-align: left;
 }
-#lmdi-rp p strong{
+#lmdi-rp p strong {
   position: absolute;
 }
-#rpg-lien-line{
-    position: relative;
-    height: 110px;
+#rpg-lien-line {
+  position: relative;
+  height: 110px;
 }
 textarea#rpg-lien {
-position: absolute;
-    left: -2px;
-    top: -5px;
-    text-indent: 2.3em;
-    width: 197px !important;
-    height: 109px !important;
-    padding-right: 2px;
+  position: absolute;
+  left: -2px;
+  top: -5px;
+  text-indent: 2.3em;
+  width: 197px !important;
+  height: 109px !important;
+  padding-right: 2px;
 }
 textarea#rpg-lien:focus-visible {
-    border-radius: 0;
-    margin-top: .5rem;
+  border-radius: 0;
+  margin-top: 0.5rem;
 }
-#lmdi-rp p textarea#rpg-lien, textarea.post {
-    position: absolute;
-    resize: none !important;
-    left: 50px;
-    width: 300px !important;
-    height: 96px !important;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+#lmdi-rp p textarea#rpg-lien,
+textarea.post {
+  position: absolute;
+  resize: none !important;
+  left: 50px;
+  width: 300px !important;
+  height: 96px !important;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 /* ============================
    LMDI / HELLAS – Viewtopic (2 colonnes)
    ============================ */
 
-
 input.post {
-    color: var(--text-on-dark);
+  color: var(--text-on-dark);
 }
 
-textarea.post{ 
-    position: relative;
-    width: fit-content !important;
+textarea.post {
+  position: relative;
+  width: fit-content !important;
 }
 select.post {
-    color: var(--text-on-dark);
+  color: var(--text-on-dark);
 }
 .lmdi-viewtopic {
   margin: 1.5rem auto;
@@ -1764,7 +1840,8 @@ select.post {
   justify-content: space-between;
   gap: 18px;
   padding: 10px 16px;
-  background: linear-gradient(180deg, var(--paper-08), var(--paper-04)), var(--tone-dark);
+  background: linear-gradient(180deg, var(--paper-08), var(--paper-04)),
+    var(--tone-dark);
   border-radius: calc(var(--radius) + 8px);
   border: var(--border);
   box-shadow: var(--glow);
@@ -1780,7 +1857,7 @@ select.post {
 
 .lmdi-viewtopic__tools {
   white-space: nowrap;
-      text-align: right;
+  text-align: right;
 }
 
 /* Header sujet */
@@ -1801,12 +1878,14 @@ select.post {
   border-bottom: 1px solid var(--paper-08);
   padding-bottom: 6px;
 }
-td.cat, td.catHead, td.catBottom{
-  border:none;
+td.cat,
+td.catHead,
+td.catBottom {
+  border: none;
 }
 .lmdi-viewtopic__title .cattitle {
   font-family: var(--font-title);
-  letter-spacing: .16em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   font-size: 1.05rem;
 }
@@ -1816,18 +1895,24 @@ td.cat, td.catHead, td.catBottom{
 }
 
 /* Pagination top & bottom */
-.lmdi-viewtopic__pagination-top, .lmdi-viewtopic__pagination-bottom, .lmdi-watch, .lmdi-viewtopic__reply {
+.lmdi-viewtopic__pagination-top,
+.lmdi-viewtopic__pagination-bottom,
+.lmdi-watch,
+.lmdi-viewtopic__reply {
   margin-top: 4px;
-  width:100%;
+  width: 100%;
 }
-.lmdi-viewtopic__pagination-bottom div, .lmdi-viewtopic__moderation-inner form {
-    text-align: right;    width: -webkit-fill-available;
+.lmdi-viewtopic__pagination-bottom div,
+.lmdi-viewtopic__moderation-inner form {
+  text-align: right;
+  width: -webkit-fill-available;
 }
-.lmdi-watch form, .lmdi-viewtopic__moderation-inner form {
-    width: -webkit-fill-available;
+.lmdi-watch form,
+.lmdi-viewtopic__moderation-inner form {
+  width: -webkit-fill-available;
 }
 .lmdi-viewtopic__moderation-inner {
-    width: 100%;
+  width: 100%;
 }
 /* =========
    POSTS
@@ -1861,14 +1946,14 @@ td.cat, td.catHead, td.catBottom{
   gap: 16px;
   align-items: flex-start;
   padding: 16px;
-  align-items: stretch; 
+  align-items: stretch;
 }
 
 /* Colonne gauche : aside */
 
 .post-aside {
-      position: relative;
-      margin-top: 60px;
+  position: relative;
+  margin-top: 60px;
   background: var(--ink-40);
   border-radius: 14px;
   border: 1px solid var(--paper-18);
@@ -1880,59 +1965,59 @@ td.cat, td.catHead, td.catBottom{
 
 /* ======== AVATAR 200 × 320 ===== */
 
-.lmdi-avatar{
-  position:relative;
-  width:200px;
-  height:320px;
-  margin:0 auto 10px;
-  display:block;
-  overflow:hidden;
-  border-radius:18px;
+.lmdi-avatar {
+  position: relative;
+  width: 200px;
+  height: 320px;
+  margin: 0 auto 10px;
+  display: block;
+  overflow: hidden;
+  border-radius: 18px;
 }
 
-.lmdi-avatar img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
+.lmdi-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 /* ======== Nom + Rang ======== */
 /* .lmdi-name a */
 /* .lmdi-name a:hover */
-.lmdi-rank{
-  text-align:center;
-  font-size:.85rem;
-  margin-bottom:8px;
+.lmdi-rank {
+  text-align: center;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
 }
 /* ======= points equipes (badge sous avatar) ======== */
-.lmdi-team-badge{
-  width:200px;
-  margin:12px auto;
-  padding:6px 12px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  border-radius:999px;
+.lmdi-team-badge {
+  width: 200px;
+  margin: 12px auto;
+  padding: 6px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 999px;
 }
-.lmdi-team-label{
-  text-transform:uppercase;
-  letter-spacing:.16em;
-  font-size:.75rem;
+.lmdi-team-label {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.75rem;
   font-weight: 800;
 }
-.lmdi-team-value{
-  font-weight:800;
-  font-size:1rem;
+.lmdi-team-value {
+  font-weight: 800;
+  font-size: 1rem;
 }
-.lmdi-contact{
-  display:flex;
-      justify-content: center;
-  gap:.5rem;
+.lmdi-contact {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
 }
-.lmdi-contact img{
+.lmdi-contact img {
   padding: 2px;
   border-radius: 999px;
-  width:35px;
+  width: 35px;
 }
 /* mini-stats : profil_field */
 .mini-stats {
@@ -1942,7 +2027,7 @@ td.cat, td.catHead, td.catBottom{
   text-align: left;
 }
 .mini-stat-line {
-    display: block;
+  display: block;
 }
 /* awards + rpg */
 
@@ -1952,7 +2037,7 @@ td.cat, td.catHead, td.catBottom{
 
 .post-rpg {
   margin-top: 6px;
-  font-size: .78rem;
+  font-size: 0.78rem;
 }
 /* Colonne droite : body */
 .post-body {
@@ -1975,8 +2060,8 @@ td.cat, td.catHead, td.catBottom{
   gap: 6px;
 }
 .post-permalink {
-  font-size: .8rem;
-  letter-spacing: .12em;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 /* .post-permalink:hover */
@@ -1984,10 +2069,10 @@ td.cat, td.catHead, td.catBottom{
   font-weight: 600;
 }
 .post-when {
-  font-size: .78rem;
+  font-size: 0.78rem;
 }
 .post-actions {
-  font-size: .8rem;
+  font-size: 0.8rem;
   white-space: nowrap;
 }
 .post-actions img {
@@ -2009,7 +2094,7 @@ td.cat, td.catHead, td.catBottom{
   height: 22px;
   border-radius: 999px;
   font-weight: 700;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 /* .post-vote .vote-button:hover */
 .vote-bar {
@@ -2024,16 +2109,16 @@ td.cat, td.catHead, td.catBottom{
 /* .vote-bar-plus */
 /* .vote-bar- */
 .vote-no-bar {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 /* contenu */
 .post-content .postbody {
   margin-top: 4px;
 }
 dl.codebox dt {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 /* réactions */
 .post-reactions {
@@ -2044,11 +2129,11 @@ dl.codebox dt {
 }
 .reactions-buttons {
   display: flex;
-justify-content:end;
-  gap: .5rem;
+  justify-content: end;
+  gap: 0.5rem;
 }
 .reactions-buttons img {
-    width: 30px;
+  width: 30px;
 }
 .react {
   display: inline-flex;
@@ -2056,15 +2141,23 @@ justify-content:end;
   gap: 4px;
   padding: 8px;
   border-radius: 999px;
-  font-size: .78rem;
+  font-size: 0.78rem;
   cursor: pointer;
 }
 .react span {
   font-weight: 600;
 }
-.react.like {position: relative;}
+.react.like {
+  position: relative;
+}
 /* .react.dislike */
-.rep-nb {    position: absolute;top: 78%;left: 20%;border-left:none;}
+.rep-nb {
+  position: absolute;
+  top: 78%;
+  left: 16%;
+  border-left: none;
+  font-size: 0.65rem;
+}
 /* pied */
 .post-foot {
   margin-top: 6px;
@@ -2073,7 +2166,7 @@ justify-content:end;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 /* .post-nav a */
 /* .post-nav a:hover */
@@ -2081,7 +2174,7 @@ justify-content:end;
 .post-signature {
   margin-top: 8px;
   padding-top: 6px;
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-style: italic;
 }
 /* posts spéciaux */
@@ -2092,8 +2185,8 @@ justify-content:end;
 }
 /* ======== Bas de page / blocs ======== */
 footer.lmdi-footer-thread {
-    grid-template-columns: 1fr;
-    height: auto;
+  grid-template-columns: 1fr;
+  height: auto;
 }
 .lmdi-viewtopic__bottom-title {
   margin-top: 6px;
@@ -2129,4 +2222,3 @@ footer.lmdi-footer-thread {
   margin-top: 8px;
   padding: 10px 12px;
 }
-
