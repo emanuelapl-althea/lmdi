@@ -1795,7 +1795,6 @@ textarea#rpg-lien {
     padding-right: 2px;
 }
 textarea#rpg-lien:focus-visible {
-  border-radius: 0;
   margin-top: 0.5rem;
 }
 #lmdi-rp p textarea#rpg-lien,
