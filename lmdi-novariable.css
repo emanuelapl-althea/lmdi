@@ -1798,9 +1798,7 @@ textarea#rpg-lien:focus-visible {
 }
 #lmdi-rp p textarea#rpg-lien,
 textarea.post {
-  position: absolute;
   resize: none !important;
-  left: 50px;
   width: 300px !important;
   height: 96px !important;
   background-color: transparent;
