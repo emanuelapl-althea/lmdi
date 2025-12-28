@@ -1787,10 +1787,12 @@ div.award {
   height: 110px;
 }
 textarea#rpg-lien {
-  text-indent: 2.3em;
-  width: 197px !important;
-  height: 109px !important;
-  padding-right: 2px;
+    position: absolute;
+    left: 35px;
+    top: 25px;
+    width: 170px !important;
+    height: 100px !important;
+    padding-right: 2px;
 }
 textarea#rpg-lien:focus-visible {
   border-radius: 0;
