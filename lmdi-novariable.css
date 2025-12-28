@@ -1794,9 +1794,6 @@ textarea#rpg-lien {
     height: 100px !important;
     padding-right: 2px;
 }
-textarea#rpg-lien:focus-visible {
-  margin-top: 0.5rem;
-}
 #lmdi-rp p textarea#rpg-lien,
 textarea.post {
   resize: none !important;
