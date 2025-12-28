@@ -1787,9 +1787,6 @@ div.award {
   height: 110px;
 }
 textarea#rpg-lien {
-  position: absolute;
-  left: -2px;
-  top: -5px;
   text-indent: 2.3em;
   width: 197px !important;
   height: 109px !important;
