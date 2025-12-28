@@ -1678,9 +1678,7 @@ section.lmdi-profil-bio {
 #lmdi-irl > div,
 #lmdi-rp > div,
 .mini-stat-line {
-  display: flex;
-  align-items: flex-start;
-  gap: 6px;
+  display: inline;
   border-radius: 8px;
   padding: 6px 8px;
   text-align: left;
@@ -1699,12 +1697,8 @@ section.lmdi-profil-bio {
   width: 48px;
 }
 .mini-stat-line .value {
-  display: inline-block;
   font-size: 0.78rem;
   font-weight: 600;
-  width: -webkit-fill-available;
-  max-height: 200px;
-  overflow-y: auto;
 }
 /* Les valeurs prennent tout l'espace restant */
 #lmdi-irl .field_uneditable,
@@ -2018,9 +2012,6 @@ td.catBottom {
   gap: 4px;
   margin-bottom: 8px;
   text-align: left;
-}
-.mini-stat-line {
-  display: block;
 }
 /* awards + rpg */
 
