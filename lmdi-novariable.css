@@ -1520,6 +1520,9 @@ lmdi-viewtopic__main,
 .member-card .actions > a:not(.btn) {
   display: none !important;
 }
+.actions .btn--profile.is-empty {
+  display: none;
+}
 .btn {
   display: inline-flex;
   align-items: center;
