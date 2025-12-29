@@ -1796,7 +1796,9 @@ textarea.post {
   height: 96px !important;
   background-color: transparent;
   border: none;
+  box-shadow: none;
   cursor: pointer;
+  overflow: hidden;
 }
 /* ============================
    LMDI / HELLAS – Viewtopic (2 colonnes)
