@@ -1791,14 +1791,20 @@ textarea#rpg-lien {
 }
 #lmdi-rp p textarea#rpg-lien,
 textarea.post {
-  resize: none !important;
-  width: 300px !important;
-  height: 96px !important;
-  background: transparent;
-  border: none;
-  box-shadow: none;
-  cursor: pointer;
-  overflow: hidden;
+    resize: none !important;
+    width: 319px !important;
+    height: 100px !important;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    overflow: auto
+}
+#lmdi-rp p textarea#rpg-lien {
+    position: absolute;
+    top: -4px;
+    margin-top: 0.5rem;
+    padding-top: 5px;
 }
 /* ============================
    LMDI / HELLAS – Viewtopic (2 colonnes)
