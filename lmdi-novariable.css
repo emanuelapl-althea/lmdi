@@ -1794,7 +1794,7 @@ textarea.post {
   resize: none !important;
   width: 300px !important;
   height: 96px !important;
-  background-color: transparent;
+  background: transparent;
   border: none;
   box-shadow: none;
   cursor: pointer;
@@ -2028,12 +2028,13 @@ td.catBottom {
 }
 .liens-rpg {
     position: relative;
-    height: 120px;
+    height: 130px;
     font-weight: 700;
 }
 .liens-rpg  a {
     display: inline-block;
     margin-bottom: .84rem;
+    padding-left: .84rem;
 }
 .liens-rpg textarea.post.rpg-lien--dup {
     position: absolute;
