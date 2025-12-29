@@ -2051,6 +2051,9 @@ td.catBottom {
     left: 35px;
     top: 30px;
 }
+.liens-rpg > .mini-stat-line:last-of-type {
+    height: 103px;
+}
 /* Colonne droite : body */
 .post-body {
   display: flex;
@@ -2234,4 +2237,3 @@ footer.lmdi-footer-thread {
   margin-top: 8px;
   padding: 10px 12px;
 }
-
