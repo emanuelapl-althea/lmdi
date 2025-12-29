@@ -1710,7 +1710,7 @@ section.lmdi-profil-bio {
   flex: 1 1 auto;
   min-width: 0;
 }
-.mini-stat-line--badges .value {
+.mini-stat-line--badges {
   overflow-x: hidden;
 }
 /* ===== Bloc Contact personnage ===== */
