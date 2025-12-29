@@ -1684,6 +1684,7 @@ section.lmdi-profil-bio {
     padding: 6px 8px;
     text-align: left;
     overflow: auto;
+    overflow-x: hidden;
 }
 
 #lmdi-irl strong,
