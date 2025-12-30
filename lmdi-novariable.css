@@ -2046,10 +2046,12 @@ td.catBottom {
     margin-bottom: .84rem;
     padding-left: .84rem;
 }
-.liens-rpg textarea.post.rpg-lien--dup {
+.liens-rpg textarea.post.rpg-lien--dup, .liens-rpg  textarea#rpg-lien {
     position: absolute;
-    left: 35px;
-    top: 30px;
+    left: 50px;
+    top: 42px;
+    padding: 3px 0 3px 3px;
+    width: fit-content !important;
 }
 .liens-rpg > .mini-stat-line:last-of-type {
     height: 103px;
