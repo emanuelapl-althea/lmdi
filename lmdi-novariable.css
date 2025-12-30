@@ -2034,8 +2034,27 @@ td.catBottom {
     margin-bottom: .84rem;
     padding-left: .84rem;
 }
+div#post-rpg .mini-stat-line, .mini-stats.post-rpg--dup .mini-stat-line {
+    max-width: 200px;
+}
+.liens-rpg > .mini-stat-line:last-of-type span.label {
+    position: absolute;
+    top: 0;
+}
 .liens-rpg > .mini-stat-line:last-of-type {
     height: 103px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+}
+.liens-rpg #rpg-lien, textarea.post.rpg-lien--dup{
+    margin-left: 35px;
+    width: 163px !important;
+    height: 101px !important;
+    padding: 0;
+    padding-left: 6px;
+    color: var(--text-on-dark);
+    display: inline;
 }
 /* Colonne droite : body */
 .post-body {
