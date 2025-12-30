@@ -1785,14 +1785,6 @@ div.award {
   position: relative;
   height: 110px;
 }
-textarea#rpg-lien {
-    position: absolute;
-    left: 35px;
-    top: 25px;
-    width: 170px !important;
-    height: 100px !important;
-    padding-right: 2px;
-}
 #lmdi-rp p textarea#rpg-lien,
 textarea.post {
     resize: none !important;
@@ -1802,13 +1794,15 @@ textarea.post {
     border: none;
     box-shadow: none;
     cursor: pointer;
-    overflow: auto
+    overflow: auto;
 }
 #lmdi-rp p textarea#rpg-lien {
     position: absolute;
     top: -4px;
+    left: 35px;
     margin-top: 0.5rem;
     padding-top: 5px;
+    padding-right: 2px;
 }
 /* ============================
    LMDI / HELLAS – Viewtopic (2 colonnes)
@@ -1816,11 +1810,6 @@ textarea.post {
 
 input.post {
   color: var(--text-on-dark);
-}
-
-textarea.post {
-  position: relative;
-  width: fit-content !important;
 }
 select.post {
   color: var(--text-on-dark);
