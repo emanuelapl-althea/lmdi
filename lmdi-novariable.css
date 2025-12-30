@@ -2040,6 +2040,7 @@ div#post-rpg .mini-stat-line, .mini-stats.post-rpg--dup .mini-stat-line {
 .liens-rpg > .mini-stat-line:last-of-type span.label {
     position: absolute;
     top: 0;
+    left: 8px;
 }
 .liens-rpg > .mini-stat-line:last-of-type {
     height: 103px;
@@ -2052,7 +2053,7 @@ div#post-rpg .mini-stat-line, .mini-stats.post-rpg--dup .mini-stat-line {
     width: 163px !important;
     height: 101px !important;
     padding: 0;
-    padding-left: 6px;
+    padding-left: 10px;
     color: var(--text-on-dark);
     display: inline;
 }
