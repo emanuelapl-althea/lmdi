@@ -2315,15 +2315,15 @@ footer.lmdi-footer-thread {
 .switcheroo__squircle:before {
   display: block;
   border-radius: 50%;
-  height: 48px;
-  width: 48px;
+  height: 50px;
+  width: 50px;
   opacity: 0;
   pointer-events: none;
   position: absolute;
-  top: -5px;
+  top: 0;
   bottom: 0;
   right: 0;
-  left: -5px;
+  left: -13px;
   z-index: -1;
 }
 
