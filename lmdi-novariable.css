@@ -347,15 +347,6 @@ ul#intro-info-list li {
 .hellas-year {
   min-width: 220px;
 }
-/* éclairs décoratifs façon maquette */
-.before-emoji,
-.after-emoji,
-.welcome-emoji {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  transform: rotate(100deg);
-}
 .before-emoji,
 .after-emoji {
   position: absolute;
@@ -432,6 +423,10 @@ ul#intro-info-list li {
 }
 .tooltip-scope .tooltip:hover::before {
   opacity: 1;
+}
+.tooltip-scope span.tooltip.js-season-tip::after{
+  left: 11%;
+  bottom: -230%;
 }
 .intro-forums {
   margin-top: 16px;
@@ -1628,7 +1623,9 @@ span.lmdi-last--profil {
 section.lmdi-profil-bio {
   padding-top: 2rem;
 }
-
+.lmdi-profil-bio-tabs{
+    width: fit-content;
+}
 .lmdi-profil-bio-tab {
   border: none;
   padding: 4px 12px;
