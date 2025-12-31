@@ -2431,8 +2431,8 @@ footer.lmdi-footer-thread {
 .monomer-overlay {
   position: fixed;
   z-index: 999;
-    top: 34%;
-    left: 31%;
+    top: 0;
+    left: 0;
   opacity: 0;
   width: 100%;
   height: 100%;
@@ -2486,8 +2486,6 @@ footer.lmdi-footer-thread {
 
 .monomer-modal.monomer-open, .monomer-overlay.monomer-open {
   opacity: 1;
-      max-width: 400px;
-    max-height: 280px;
 }
 /* Fermer la boîte de connexion */
 .monomer-close {
