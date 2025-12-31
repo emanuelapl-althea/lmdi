@@ -1620,7 +1620,7 @@ span.lmdi-last--profil {
 /* Profil bio */
 .lmdi-card__bio {
   padding: 14px 18px;
-  max-height: 100px;
+  height: 100px;
   overflow: auto;
   font-size: 0.9rem;
   line-height: 1.6;
