@@ -766,8 +766,8 @@ ul#intro-info-list li {
 }
 .lmdi-anniv-line {
   display: flex;
-  align-items: flex-start;
-  gap: 10px;
+  align-items:center;
+  gap: .5rem;
   padding: 10px 12px;
   border-radius: 14px;
 }
