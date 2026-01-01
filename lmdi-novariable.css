@@ -424,7 +424,7 @@ ul#intro-info-list li {
   left: unset !important;
   right: 100px !important;
 }
-.tooltip-scope .tooltip:hover::after, #search_menu:hover{
+.tooltip-scope .tooltip:hover::after{
   opacity: 1;
   transform: translateX(-50%) scale(1);
 }
