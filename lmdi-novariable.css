@@ -895,16 +895,10 @@ img.lmdi-badge {
   letter-spacing: 0.06em;
 }
 .forumrow .subsline {
-  text-align: center;
-  margin-top: 10px;
-  text-align: left;
-  margin-top: 10px;
-  background: var(--ink-40);
-  border: 1px solid var(--paper-18);
-  border-right: 6px solid var(--highlight);
-  padding: 14px;
-  border-radius: 12px;
-  color: var(--text-on-dark);
+    margin-top: 10px;
+    text-align: left;
+    min-height: 28px;
+    border-radius: 12px;
 }
 .forumrow .subsline a {
   color: var(--text-on-dark);
