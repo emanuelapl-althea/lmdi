@@ -1892,6 +1892,9 @@ td.catBottom {
   text-align: right;
   width: -webkit-fill-available;
 }
+.lmdi-viewtopic__pagination-bottom div.row1, .lmdi-viewtopic__pagination-top div.row1 {
+    grid-column: 1;
+}
 .lmdi-viewtopic__pagination-bottom div {
     grid-column: 2;
 }
