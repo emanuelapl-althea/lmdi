@@ -61,8 +61,7 @@ header:first-of-type {
   max-width: 100%;
 }
 th.thHead, th.thSides, th.thTop, th.thLeft, th.thRight, th.thBottom, th.thCornerL, th.thCornerR {
-    font-weight: 700;
-    border: none;
+border-style: none;
 }
 /* SCROLLBAR */
 /* Scrollbar */
