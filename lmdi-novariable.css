@@ -1099,7 +1099,6 @@ span#lmdi-lastjoin__avatar {
 }
 .lmdi-header-thread,
 .lmdi-header-posts,
-.lmdi-footer-thread,
 .lmdi-viewtopic__reply,
 .lmdi-viewtopic__pagination-bottom,
 .lmdi-viewtopic__pagination-top,
@@ -2205,10 +2204,6 @@ dl.codebox dt {
   text-align: center;
 }
 /* ======== Bas de page / blocs ======== */
-footer.lmdi-footer-thread {
-  grid-template-columns: 1fr;
-  height: auto;
-}
 .lmdi-viewtopic__bottom-title {
   margin-top: 6px;
   padding: 6px 10px;
