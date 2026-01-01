@@ -177,6 +177,7 @@ ul#fa_menulist {
   top: 100px !important;
   left: unset !important;
   right: 100px !important;
+  content: unset;
 }
 
 #search_menu a {
