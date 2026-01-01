@@ -173,12 +173,7 @@ ul#fa_menulist {
   font-weight: 600;
 }
 /** menu search **/
-#search_menu {
-  top: 100px !important;
-  left: unset !important;
-  right: 100px !important;
-  content: unset;
-}
+/* voir ligne 455 */
 
 #search_menu a {
   background: none !important;
@@ -402,7 +397,7 @@ ul#intro-info-list li {
   position: relative;
   cursor: help;
 }
-.tooltip-scope .tooltip::after, #search_menu {
+.tooltip-scope .tooltip::after {
   content: attr(data-tip);
   position: absolute;
   left: 50%;
@@ -411,13 +406,20 @@ ul#intro-info-list li {
   pointer-events: none;
   transform: translateX(-50%) scale(0.95);
   transform-origin: 50% 100%;
+  white-space: nowrap;
+  z-index: 5;
+}
+.tooltip-scope .tooltip::after, #search_menu {
   font-size: 0.78rem;
   line-height: 1.25;
   padding: 6px 8px;
   border-radius: 8px;
-  white-space: nowrap;
   transition: opacity 0.16s ease, transform 0.16s ease;
-  z-index: 5;
+}
+#search_menu {
+  top: 100px !important;
+  left: unset !important;
+  right: 100px !important;
 }
 .tooltip-scope .tooltip:hover::after, #search_menu:hover{
   opacity: 1;
