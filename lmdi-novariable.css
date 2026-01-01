@@ -1807,7 +1807,9 @@ textarea.post {
 /* ============================
    LMDI / HELLAS – Viewtopic (2 colonnes)
    ============================ */
-
+.lmdi-viewtopic__reply header h2, .lmdi-viewtopic__reply footer h2{
+  text-align: right;
+}
 input.post {
   color: var(--text-on-dark);
 }
