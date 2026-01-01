@@ -174,8 +174,9 @@ ul#fa_menulist {
 }
 /** menu search **/
 #search_menu {
-  top: 25px !important;
-  left: 5% !important;
+  top: 100px !important;
+  left: unset !important;
+  right: 100px !important;
 }
 
 #search_menu a {
@@ -282,7 +283,7 @@ ul#intro-info-list a {
 }
 /* .list #intro-info-list li::marker */
 ul#intro-info-list li {
-    padding-left: 6px;
+  padding-left: 6px;
 }
 /* #intro-info > .box */
 .list ul,
@@ -400,7 +401,7 @@ ul#intro-info-list li {
   position: relative;
   cursor: help;
 }
-.tooltip-scope .tooltip::after {
+.tooltip-scope .tooltip::after, #search_menu {
   content: attr(data-tip);
   position: absolute;
   left: 50%;
@@ -417,14 +418,14 @@ ul#intro-info-list li {
   transition: opacity 0.16s ease, transform 0.16s ease;
   z-index: 5;
 }
-.tooltip-scope .tooltip:hover::after {
+.tooltip-scope .tooltip:hover::after, #search_menu:hover{
   opacity: 1;
   transform: translateX(-50%) scale(1);
 }
 .tooltip-scope .tooltip:hover::before {
   opacity: 1;
 }
-.tooltip-scope span.tooltip.js-season-tip::after{
+.tooltip-scope span.tooltip.js-season-tip::after {
   left: 11%;
   bottom: -230%;
 }
@@ -761,8 +762,8 @@ ul#intro-info-list li {
 }
 .lmdi-anniv-line {
   display: flex;
-  align-items:center;
-  gap: .5rem;
+  align-items: center;
+  gap: 0.5rem;
   padding: 10px 12px;
   border-radius: 14px;
 }
@@ -895,10 +896,10 @@ img.lmdi-badge {
   letter-spacing: 0.06em;
 }
 .forumrow .subsline {
-    margin-top: 10px;
-    text-align: left;
-    min-height: 28px;
-    border-radius: 12px;
+  margin-top: 10px;
+  text-align: left;
+  min-height: 28px;
+  border-radius: 12px;
 }
 .forumrow .subsline a {
   color: var(--text-on-dark);
@@ -1616,8 +1617,8 @@ span.lmdi-last--profil {
 section.lmdi-profil-bio {
   padding-top: 2rem;
 }
-.lmdi-profil-bio-tabs{
-    width: fit-content;
+.lmdi-profil-bio-tabs {
+  width: fit-content;
 }
 .lmdi-profil-bio-tab {
   border: none;
@@ -1801,7 +1802,8 @@ textarea.post {
 /* ============================
    LMDI / HELLAS – Viewtopic (2 colonnes)
    ============================ */
-.lmdi-viewtopic__reply header h2, .lmdi-viewtopic__reply footer h2{
+.lmdi-viewtopic__reply header h2,
+.lmdi-viewtopic__reply footer h2 {
   text-align: right;
 }
 input.post {
@@ -1892,13 +1894,15 @@ td.catBottom {
   text-align: right;
   width: -webkit-fill-available;
 }
-.lmdi-viewtopic__pagination-bottom div.row1, .lmdi-viewtopic__pagination-top div.row1 {
-    grid-column: 1;
+.lmdi-viewtopic__pagination-bottom div.row1,
+.lmdi-viewtopic__pagination-top div.row1 {
+  grid-column: 1;
 }
-.lmdi-viewtopic__pagination-bottom div, .lmdi-viewtopic__pagination-top .lmdi-viewtopic__tools {
-    grid-column: 2;
+.lmdi-viewtopic__pagination-bottom div,
+.lmdi-viewtopic__pagination-top .lmdi-viewtopic__tools {
+  grid-column: 2;
 }
-.lmdi-watch form,
+.lmdi-viewtopic__pagination-top .lmdi-viewtopic__tools .lmdi-watch form,
 .lmdi-viewtopic__moderation-inner form {
   width: -webkit-fill-available;
 }
@@ -2304,7 +2308,6 @@ dl.codebox dt {
   cursor: default;
 }
 
-
 /* Indicateur de l'avatar survolé */
 .switcheroo__squircle:before {
   display: block;
@@ -2321,18 +2324,16 @@ dl.codebox dt {
   z-index: -1;
 }
 
-
 /* Indicateur du compte sélectionné/actif */
 .switcheroo__squircle.active:before {
-    opacity: 1;
-    border-radius: 8px;
+  opacity: 1;
+  border-radius: 8px;
 }
 
 .switcheroo__squircle:hover:before {
-    border-radius: 8px;
-    opacity: 1;
+  border-radius: 8px;
+  opacity: 1;
 }
-
 
 /* Bouton de suppression */
 .switcheroo__delete {
@@ -2343,7 +2344,7 @@ dl.codebox dt {
   height: 16px;
   top: -7px;
   right: -7px;
-  padding-bottom:20px;
+  padding-bottom: 20px;
   border-radius: 50%;
   transform: scale(0);
   opacity: 1;
@@ -2389,13 +2390,15 @@ dl.codebox dt {
   transform: translateY(-50%) rotate(-45deg);
 }
 /* Positionnement tooltip au survol */
-.switcheroo[direction="vertical"] .switcheroo__squircle:hover .switcheroo__popper {
+.switcheroo[direction="vertical"]
+  .switcheroo__squircle:hover
+  .switcheroo__popper {
   opacity: 1;
   transform: translateY(-50%) scale(1);
 }
 /* LOGO --- */
 .switcheroo__logo {
-  display: none
+  display: none;
 }
 
 /* DIVIDER : barre de séparation --- */
@@ -2425,8 +2428,8 @@ dl.codebox dt {
 .monomer-overlay {
   position: fixed;
   z-index: 999;
-    top: 0;
-    left: 0;
+  top: 0;
+  left: 0;
   opacity: 0;
   width: 100%;
   height: 100%;
@@ -2462,7 +2465,8 @@ dl.codebox dt {
 }
 
 /* Nom du champ */
-.switcheroo__form-label, label.switcheroo__form-label {
+.switcheroo__form-label,
+label.switcheroo__form-label {
   margin-bottom: 8px;
   font-size: 14px;
   text-transform: uppercase;
@@ -2470,7 +2474,8 @@ dl.codebox dt {
 }
 
 /* Zone de texte */
-.switcheroo__form-input, input.switcheroo__form-input {
+.switcheroo__form-input,
+input.switcheroo__form-input {
   padding: 6px;
   font-size: 16px;
   border-radius: 4px;
@@ -2478,7 +2483,8 @@ dl.codebox dt {
   cursor: text;
 }
 
-.monomer-modal.monomer-open, .monomer-overlay.monomer-open {
+.monomer-modal.monomer-open,
+.monomer-overlay.monomer-open {
   opacity: 1;
 }
 /* Fermer la boîte de connexion */
