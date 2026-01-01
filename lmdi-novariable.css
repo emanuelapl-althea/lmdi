@@ -1898,6 +1898,9 @@ td.catBottom {
   text-align: right;
   width: -webkit-fill-available;
 }
+.lmdi-viewtopic__pagination-bottom div {
+    grid-column: 2;
+}
 .lmdi-watch form,
 .lmdi-viewtopic__moderation-inner form {
   width: -webkit-fill-available;
