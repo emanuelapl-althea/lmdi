@@ -881,6 +881,7 @@ img.lmdi-badge {
   border: 1px solid var(--paper-18);
   border-radius: 12px;
   padding: 12px;
+  text-align: center;
 }
 .forumrow .lastcard .mini {
   margin-top: 8px;
@@ -900,6 +901,9 @@ img.lmdi-badge {
   color: var(--muted);
   font-variant: all-small-caps;
   letter-spacing: 0.06em;
+}
+.forumrow .counts span {
+    font-size: 1.1rem;
 }
 .forumrow .subsline {
   margin-top: 10px;
