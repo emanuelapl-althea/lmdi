@@ -1114,7 +1114,7 @@ span#lmdi-lastjoin__avatar {
   gap: 1rem;
   align-items: anchor-center;
   width: 95%;
-  height: 48px;
+  height: auto;
 }
 .lmdi-viewtopic__reply img {
   width: 110px;
@@ -1826,7 +1826,7 @@ select.post {
   margin: 1.5rem auto;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: .5rem;
 }
 
 /* Barre haute */
