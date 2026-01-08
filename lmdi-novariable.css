@@ -1159,8 +1159,10 @@ span#lmdi-lastjoin__avatar {
 .topicrow .desc .topic-excerpt {
   height: 32px;
 }
-.topicrow .fr-grid {
-  grid-template-columns: 130px 1fr 170px 30px;
+.post-list .topicrow .fr-grid {
+    grid-template-columns: 0 1fr 170px 30px;
+    border-radius: 12px;
+    padding: 12px 0;
 }
 .topic-summary {
   display: grid;
