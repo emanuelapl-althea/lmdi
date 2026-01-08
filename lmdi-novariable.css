@@ -2153,8 +2153,15 @@ textarea.post.rpg-lien--dup {
   font-size: 0.8rem;
 }
 /* contenu */
+.post-content{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    font-weight: 700 !important;
+}
 .post-content .postbody {
   margin-top: 4px;
+  flex: 1 1 auto;
 }
 dl.codebox dt {
   position: relative;
