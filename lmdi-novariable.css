@@ -2327,7 +2327,9 @@ dl.codebox dt {
 .switcheroo__squircle:hover {
   border-radius: 6px;
 }
-
+.switcheroo__avatar {
+    margin-left: .25rem;
+}
 /* Image de l'avatar */
 .switcheroo__avatar img {
   object-fit: cover;
