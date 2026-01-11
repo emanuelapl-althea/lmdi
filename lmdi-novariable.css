@@ -75,12 +75,11 @@ border-style: none;
 .hautbas a {
     display: block;
 }
-.hautbas span {
+.hautbas .lmdi-icon-top, .hautbas .lmdi-icon-top {
     display: block;
     width: 58px;
     height: 62px;
     object-fit: cover;
-    object-position: top;
 }
 
 /******** NAVIGATION ********/
