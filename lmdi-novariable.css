@@ -66,6 +66,22 @@ border-style: none;
 /* SCROLLBAR */
 /* Scrollbar */
 /* Scrollbar box desc*/
+.hautbas {
+    position: fixed;
+    z-index: 999;
+    bottom: .5rem;
+    right: .5rem;
+}
+.hautbas a {
+    display: block;
+}
+.hautbas img {
+    width: 58px;
+    height: 62px;
+    object-fit: cover;
+    object-position: top;
+}
+
 /******** NAVIGATION ********/
 /***** fa toolbar *****/
 #fa_toolbar {
