@@ -164,6 +164,9 @@ border-style: none;
 #fa_right #fa_notifications {
   line-height: 27px;
 }
+#fa_right.welcome #fa_menu #fa_welcome{
+  background-color: transparent;
+}
 div#fa_usermenu {
   display: none !important;
 }
