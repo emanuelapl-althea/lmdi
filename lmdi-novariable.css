@@ -2121,6 +2121,10 @@ textarea.post.rpg-lien--dup {
   align-items: baseline;
   gap: 6px;
 }
+.poster-list {
+    float: none;
+    padding: 0;
+}
 .post-permalink {
   font-size: 0.8rem;
   letter-spacing: 0.12em;
