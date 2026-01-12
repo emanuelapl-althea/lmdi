@@ -660,7 +660,7 @@ ul#intro-info-list li {
 }
 /* Membres du mois */
 .lmdi-members,
-.lmdi-profil--ind, .lmdi-button--mp {
+.lmdi-profil--ind, .lmdi-button--mp, .lmdi-grid.lmdi-grid--2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
