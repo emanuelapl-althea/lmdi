@@ -2557,7 +2557,8 @@ input.switcheroo__form-input {
 }
 .monomer-close:hover {
   font-weight: 700;
-}body.chatbox {
+}
+body.chatbox {
     padding: 0;
     margin: 0;
     max-height: 38px;
