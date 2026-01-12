@@ -60,26 +60,34 @@ header:first-of-type {
   width: 100% !important;
   max-width: 100%;
 }
-th.thHead, th.thSides, th.thTop, th.thLeft, th.thRight, th.thBottom, th.thCornerL, th.thCornerR {
-border-style: none;
+th.thHead,
+th.thSides,
+th.thTop,
+th.thLeft,
+th.thRight,
+th.thBottom,
+th.thCornerL,
+th.thCornerR {
+  border-style: none;
 }
 /* SCROLLBAR */
 /* Scrollbar */
 /* Scrollbar box desc*/
 .hautbas {
-    position: fixed;
-    z-index: 999;
-    bottom: .5rem;
-    right: .5rem;
+  position: fixed;
+  z-index: 999;
+  bottom: 0.5rem;
+  right: 0.5rem;
 }
 .hautbas a {
-    display: block;
+  display: block;
 }
-.hautbas .lmdi-icon-top, .hautbas .lmdi-icon-bottom {
-    display: block;
-    width: 58px;
-    height: 62px;
-    object-fit: cover;
+.hautbas .lmdi-icon-top,
+.hautbas .lmdi-icon-bottom {
+  display: block;
+  width: 58px;
+  height: 62px;
+  object-fit: cover;
 }
 
 /******** NAVIGATION ********/
@@ -164,7 +172,7 @@ border-style: none;
 #fa_right #fa_notifications {
   line-height: 27px;
 }
-#fa_right.welcome #fa_menu #fa_welcome{
+#fa_right.welcome #fa_menu #fa_welcome {
   background-color: transparent;
 }
 div#fa_usermenu {
@@ -243,8 +251,10 @@ a#fa_service {
 .linkbar-nav,
 .subjectbar-nav {
   display: flex;
-  flex-wrap: wrap;
-  gap: 18px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: inherit;
+  gap: 0.3rem;
   margin: auto;
 }
 .linkbar-nav a,
@@ -431,7 +441,8 @@ ul#intro-info-list li {
   white-space: nowrap;
   z-index: 5;
 }
-.tooltip-scope .tooltip::after, #search_menu {
+.tooltip-scope .tooltip::after,
+#search_menu {
   font-size: 0.78rem;
   line-height: 1.25;
   padding: 6px 8px;
@@ -443,7 +454,7 @@ ul#intro-info-list li {
   left: unset !important;
   right: 100px !important;
 }
-.tooltip-scope .tooltip:hover::after{
+.tooltip-scope .tooltip:hover::after {
   opacity: 1;
   transform: translateX(-50%) scale(1);
 }
@@ -660,7 +671,8 @@ ul#intro-info-list li {
 }
 /* Membres du mois */
 .lmdi-members,
-.lmdi-profil--ind, .lmdi-button--mp {
+.lmdi-profil--ind,
+.lmdi-button--mp {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
@@ -822,8 +834,9 @@ footer h2 {
   font-size: 2.3rem;
   text-align: center;
 }
-th.thBottom, td.catBottom {
-    border-width: 0;
+th.thBottom,
+td.catBottom {
+  border-width: 0;
 }
 .category {
   margin: 26px 0;
@@ -923,11 +936,11 @@ img.lmdi-badge {
   letter-spacing: 0.06em;
 }
 .forumrow .counts span {
-    font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 .forumrow .subsline {
   margin-top: 10px;
-  padding: .5rem;
+  padding: 0.5rem;
   text-align: left;
   min-height: 28px;
   border-radius: 12px;
@@ -1181,9 +1194,9 @@ span#lmdi-lastjoin__avatar {
   height: 32px;
 }
 .post-list .topicrow .fr-grid {
-    grid-template-columns: 0 1fr 170px 30px;
-    border-radius: 12px;
-    padding: 12px 0;
+  grid-template-columns: 0 1fr 170px 30px;
+  border-radius: 12px;
+  padding: 12px 0;
 }
 .topic-summary {
   display: grid;
@@ -1680,7 +1693,8 @@ section.lmdi-profil-bio {
 }
 /* ===== Colonnes Profil IRL / RP ===== */
 
-.lmdi-profil-columns, .lmdi-grid.lmdi-grid--2 {
+.lmdi-profil-columns,
+.lmdi-grid.lmdi-grid--2 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 colonnes égales */
   gap: 32px;
@@ -1850,7 +1864,7 @@ select.post {
   margin: 1.5rem auto;
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 /* Barre haute */
@@ -2123,8 +2137,8 @@ textarea.post.rpg-lien--dup {
   gap: 6px;
 }
 .poster-list {
-    float: none;
-    padding: 0;
+  float: none;
+  padding: 0;
 }
 .post-permalink {
   font-size: 0.8rem;
@@ -2179,11 +2193,11 @@ textarea.post.rpg-lien--dup {
   font-size: 0.8rem;
 }
 /* contenu */
-.post-content{
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 auto;
-    font-weight: 700 !important;
+.post-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  font-weight: 700 !important;
 }
 .post-content .postbody {
   margin-top: 4px;
@@ -2336,7 +2350,7 @@ dl.codebox dt {
   border-radius: 6px;
 }
 .switcheroo__avatar {
-    margin-left: .25rem;
+  margin-left: 0.25rem;
 }
 /* Image de l'avatar */
 .switcheroo__avatar img {
