@@ -469,10 +469,6 @@ ul#intro-info-list li {
   margin-top: 16px;
 }
 /* MENU BARRE */
-.linkbar,
-.subjectbar {
-  margin: 1rem auto;
-}
 /* ===== Panneau d’accueil ===== */
 .card h3 {
   margin: 0 0 12px 0;
@@ -947,6 +943,11 @@ img.lmdi-badge {
 }
 .forumrow .subsline a {
   color: var(--text-on-dark);
+}
+.catBottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
 }
 /* ===== Q.E.E.L (Version A: wio--cards) ===== */
 .cards .pa-grid,
@@ -2569,4 +2570,9 @@ input.switcheroo__form-input {
 }
 .monomer-close:hover {
   font-weight: 700;
+}
+/* MP */
+
+catBottom input.lmdi-button {
+  padding: .5rem;
 }
