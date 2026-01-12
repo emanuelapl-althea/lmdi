@@ -660,7 +660,7 @@ ul#intro-info-list li {
 }
 /* Membres du mois */
 .lmdi-members,
-.lmdi-profil--ind, .lmdi-button--mp, .lmdi-grid.lmdi-grid--2 {
+.lmdi-profil--ind, .lmdi-button--mp {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
@@ -1680,7 +1680,7 @@ section.lmdi-profil-bio {
 }
 /* ===== Colonnes Profil IRL / RP ===== */
 
-.lmdi-profil-columns {
+.lmdi-profil-columns, .lmdi-grid.lmdi-grid--2 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 colonnes égales */
   gap: 32px;
