@@ -2621,6 +2621,12 @@ input.switcheroo__form-input {
 }
 .fr-grid.fr-grid--mplist {
     grid-template-columns: 1fr 280px 30px 22px;
+    align-items: center;
+}
+.fr-grid--mplist .desc, .fr-grid--mplist aside.lastcard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .catBottom input.lmdi-button {
   padding: 0.5rem;
