@@ -1850,7 +1850,7 @@ textarea.post {
   padding-right: 2px;
 }
 .fr-grid--searchtopics {
-    grid-template-columns: 130px 400px 160px 30px;
+    grid-template-columns: 130px 400px 160px 30px!important;
 }
 /* ============================
    LMDI / HELLAS – Viewtopic (2 colonnes)
