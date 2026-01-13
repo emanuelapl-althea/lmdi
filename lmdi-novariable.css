@@ -194,7 +194,8 @@ ul#fa_menulist {
 #fa_toolbar #fa_right #fa_notifications.unread #notif_unread {
   display: inline-block;
   min-width: 28px;
-  padding: 6px 10px;
+  padding: 0.5rem 0.3rem;
+  padding-top: 0.3rem;
   line-height: 1;
   border-radius: 999px;
   font-weight: 800;
@@ -909,7 +910,7 @@ img.lmdi-badge {
   background: var(--ink-40);
   border: 1px solid var(--paper-18);
   border-radius: 12px;
-  padding: 12px;
+  padding: .5rem;
   text-align: center;
 }
 .forumrow .lastcard .mini {
@@ -1848,6 +1849,9 @@ textarea.post {
   padding-top: 5px;
   padding-right: 2px;
 }
+.fr-grid--searchtopics {
+    grid-template-columns: 130px 400px 160px 30px;
+}
 /* ============================
    LMDI / HELLAS – Viewtopic (2 colonnes)
    ============================ */
@@ -2573,48 +2577,51 @@ input.switcheroo__form-input {
 }
 /* MP */
 .box-size {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 
 .box-size__status {
-    padding: 4px;
+  padding: 4px;
 }
 
 .box-size__bar {
-    padding: 3px;
+  padding: 3px;
 }
 
 .box-size__bar-track {
-    width: 100%;
-    height: 8px;
-    position: relative;
+  width: 100%;
+  height: 8px;
+  position: relative;
 }
 
 .box-size__bar-fill {
-    height: 100%;
+  height: 100%;
 }
 
 .box-size__labels {
-    display: flex;
-    justify-content: space-between;
-    padding: 4px;
+  display: flex;
+  justify-content: space-between;
+  padding: 4px;
 }
 
 .box-size__label.is-center {
-    text-align: center;
-    flex: 1;
+  text-align: center;
+  flex: 1;
 }
 
 .box-size__label.is-right {
-    text-align: right;
+  text-align: right;
 }
 
 .linkbar-nav span.gen {
-    text-transform: uppercase;
-    font-size: .65rem;
+  text-transform: uppercase;
+  font-size: 0.65rem;
+}
+.fr-grid.fr-grid--mplist {
+    grid-template-columns: 1fr 280px 30px 22px;
 }
 .catBottom input.lmdi-button {
-  padding: .5rem;
+  padding: 0.5rem;
 }
