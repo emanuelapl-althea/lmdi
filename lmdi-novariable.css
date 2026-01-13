@@ -667,7 +667,7 @@ ul#intro-info-list li {
 /* Membres du mois */
 .lmdi-members,
 .lmdi-profil--ind,
-.lmdi-button--mp {
+.lmdi-button--mp,  {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
@@ -1013,7 +1013,6 @@ img.lmdi-badge {
 p#lmdi-onlinembr,
 #lmdi-membrl24 .row1 {
   height: 160px;
-  overflow: auto;
 }
 p#lmdi-onlinembr a,
 table#lmdi-membrl24 a {
@@ -1037,6 +1036,7 @@ h3.wio-title {
   border-radius: 12px;
   padding: 8px;
   background: var(--ink-16);
+  overflow: auto;
 }
 .wio-box.dotted {
   border-style: dashed;
