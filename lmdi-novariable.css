@@ -1012,7 +1012,7 @@ img.lmdi-badge {
 }
 p#lmdi-onlinembr,
 #lmdi-membrl24 .row1 {
-  height: 160px;
+  height: auto;
 }
 p#lmdi-onlinembr a,
 table#lmdi-membrl24 a {
