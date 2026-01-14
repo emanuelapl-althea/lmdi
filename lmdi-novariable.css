@@ -1198,7 +1198,7 @@ span#lmdi-lastjoin__avatar {
   border-radius: 12px;
   padding: 12px 0;
 }
-.topic-summary {
+.topic-summary, .lmdi-mp {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
