@@ -2631,3 +2631,26 @@ input.switcheroo__form-input {
 .catBottom input.lmdi-button {
   padding: 0.5rem;
 }
+/* fiche personnage formulaire*/
+.lmdi-grid.lmdi-grid--2 {
+    align-items: stretch;
+}
+.lmdi-grid--2 > * {
+    min-height: 100%;
+}
+input.post.lmdi-avatar-value {
+    width: 305px;
+}
+.lmdi-rpg-sheet span.lmdi-avatar {
+    position: relative;
+}
+.lmdi-rpg-sheet span.lmdi-avatar img {
+    position: absolute;
+    top: 0;
+}
+.mini-stat-line.lmdi-rp-lien{
+     max-height: 100%;
+}
+.lmdi-grid.lmdi-grid--2 textarea#rpg-lien {
+    height: 440px !important;
+}
