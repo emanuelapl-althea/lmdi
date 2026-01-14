@@ -2653,3 +2653,10 @@ input.post.lmdi-avatar-value {
 .lmdi-grid.lmdi-grid--2 textarea#rpg-lien {
     height: 460px !important;
 }
+/* formulaire profil */
+.lmdi-form input.post, .lmdi-form textarea {
+    width: 80% !important;
+}
+input.liteoption.post {
+    width: fit-content !important;
+}
