@@ -2654,7 +2654,7 @@ input.post.lmdi-avatar-value {
     height: 460px !important;
 }
 /* formulaire profil */
-.lmdi-form input.post, .lmdi-form textarea {
+#lmdi-form input.post, #lmdi-form textarea {
     width: 80% !important;
 }
 input.liteoption.post {
