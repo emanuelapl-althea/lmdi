@@ -2660,3 +2660,8 @@ input.post.lmdi-avatar-value {
 input.liteoption.post {
     width: fit-content !important;
 }
+.lmdi-avatarload input.post {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
