@@ -2657,7 +2657,7 @@ input.post.lmdi-avatar-value {
 #lmdi-form input.post, #lmdi-form textarea {
     width: 80% !important;
 }
-input.liteoption.post, .btn.btn--profilepost {
+input.liteoption.post, .btn.btn--profile.post {
     width: fit-content !important;
 }
 .lmdi-avatarload input.post {
@@ -2665,4 +2665,5 @@ input.liteoption.post, .btn.btn--profilepost {
     border: none;
     box-shadow: none;
 }
+
 
