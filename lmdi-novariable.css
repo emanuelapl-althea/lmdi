@@ -1836,7 +1836,7 @@ textarea.post {
   background: transparent;
   border: none;
   box-shadow: none;
-  cursor: pointer;
+  cursor: text;
   overflow: auto;
 }
 #lmdi-rp p textarea#rpg-lien {
