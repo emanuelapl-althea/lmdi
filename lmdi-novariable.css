@@ -231,6 +231,71 @@ a#fa_service {
 }
 /* header#lmdi-hero */
 /* header#lmdi-hero .lmid-hero */
+/* ===== LMDI Hero Picker (UI discrète, sans inline) ===== */
+#lmdi-hero-choice{
+  position: fixed;
+  right: 14px;
+  bottom: 14px;
+  z-index: 9999;
+  padding: 10px 12px;
+  border-radius: 14px;
+  backdrop-filter: blur(10px);
+  max-width: 280px;
+}
+
+#lmdi-hero-choice .lmdi-hero-title{
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+#lmdi-hero-choice .lmdi-hero-sub{
+  opacity: .85;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+
+#lmdi-hero-choice .lmdi-hero-sub .lmdi-hero-info{
+  cursor: help;
+  opacity: .6;
+  margin-left: 6px;
+}
+
+#lmdi-hero-choice .lmdi-hero-row{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+#lmdi-hero-choice select{
+  flex: 1;
+  color: #fff;
+  border-radius: 10px;
+  padding: 6px 8px;
+  outline: none;
+}
+
+#lmdi-hero-choice button{
+  border-radius: 10px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+#lmdi-hero-choice button:hover{
+  filter: brightness(1.08);
+}
+
+/* Calque rotator (fondu) */
+header#lmdi-hero{ position: relative; overflow: hidden; }
+header#lmdi-hero .lmdi-hero-rotator{
+  position: absolute;
+  inset: 0;
+  background-repeat: no-repeat;
+  background-position: top center;
+  opacity: 0;
+  transition: opacity .6s ease;
+  pointer-events: none;
+}
 .bodylinewidth,
 #lmid-theme__moirae {
   width: 850px;
@@ -2665,6 +2730,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
     border: none;
     box-shadow: none;
 }
+
 
 
 
