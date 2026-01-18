@@ -286,6 +286,16 @@ a#fa_service {
 #lmdi-hero-choice button:hover{
   filter: brightness(1.08);
 }
+#lmdi-hero-choice .lmdi-hero-status{
+  opacity: .85;
+  font-size: 12px;
+  margin-left: 8px;
+  white-space: nowrap;
+}
+
+#lmdi-hero-choice.is-locked button{
+  filter: brightness(1.12);
+}
 
 /* Calque rotator (fondu) */
 header#lmdi-hero{ position: relative; overflow: hidden; }
@@ -2732,6 +2742,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
     border: none;
     box-shadow: none;
 }
+
 
 
 
