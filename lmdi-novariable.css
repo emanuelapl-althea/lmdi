@@ -233,14 +233,16 @@ a#fa_service {
 /* header#lmdi-hero .lmid-hero */
 /* ===== LMDI Hero Picker (UI discrète, sans inline) ===== */
 #lmdi-hero-choice{
-  position: fixed;
-  right: 14px;
-  bottom: 14px;
-  z-index: 9999;
-  padding: 10px 12px;
-  border-radius: 14px;
-  backdrop-filter: blur(10px);
-  max-width: 280px;
+    position: fixed;
+    display: flex;
+    align-items: anchor-center;
+    gap: .5rem;
+    right: 100px;
+    top: 56px;
+    z-index: 9999;
+    padding: 10px 12px;
+    border-radius: 14px;
+    backdrop-filter: blur(10px);
 }
 
 #lmdi-hero-choice .lmdi-hero-title{
@@ -2730,6 +2732,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
     border: none;
     box-shadow: none;
 }
+
 
 
 
