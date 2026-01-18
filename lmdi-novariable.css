@@ -233,17 +233,25 @@ a#fa_service {
 /* header#lmdi-hero .lmid-hero */
 /* ===== LMDI Hero Picker (UI discrète, sans inline) ===== */
 #lmdi-hero-choice{
-    position: fixed;
-    display: flex;
-    align-items: anchor-center;
-    gap: .5rem;
-    right: 100px;
-    top: 56px;
-    z-index: 9999;
-    padding: 10px 12px;
-    border-radius: 14px;
-    backdrop-filter: blur(10px);
+  position: fixed;
+  right: 100px;
+  top: 56px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  padding: 10px 12px;
+  border-radius: 14px;
+  backdrop-filter: blur(10px);
+  transition: opacity .25s ease, transform .25s ease;
 }
+
+#lmdi-hero-choice.is-hidden{
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+}
+
 
 #lmdi-hero-choice .lmdi-hero-title{
   font-weight: 700;
@@ -2742,6 +2750,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
     border: none;
     box-shadow: none;
 }
+
 
 
 
