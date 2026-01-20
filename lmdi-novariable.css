@@ -591,8 +591,8 @@ ul#intro-info-list li {
 }
 .lmdi-h-laurel::before {
   position: absolute;
-    left: -5px;
-  width: 20px;
+  left: -5px;
+  top: 0;
   width: 20px;
   height: 20px;
   font-size: x-large;
@@ -2752,6 +2752,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
     top: 10px;
     left: 0;
 }
+
 
 
 
