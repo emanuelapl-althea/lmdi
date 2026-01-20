@@ -555,7 +555,7 @@ ul#intro-info-list li {
 }
 /* MENU BARRE */
 /* ===== Panneau d’accueil ===== */
-.card h3 {
+ .card h3, .lmdi-card h3, .cards h3 {
   margin: 0 0 12px 0;
   font-size: 0.97rem;
   letter-spacing: 0.05em;
@@ -582,11 +582,6 @@ ul#intro-info-list li {
 .card {
   padding: 16px;
   font-size: 0.84rem;
-}
-.lmdi-card h3 {
-  margin: 0 0 12px 0;
-  font-size: 0.97rem;
-  letter-spacing: 0.05em;
 }
 /* Titre avec laurier */
 .lmdi-h-laurel {
@@ -2751,6 +2746,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
     border: none;
     box-shadow: none;
 }
+
 
 
 
