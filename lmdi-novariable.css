@@ -1675,7 +1675,8 @@ lmdi-viewtopic__main,
 }
 
 /* --- en-tête --- */
-.profile-header {
+.profile-header, .fiche-footer {
+  display:grid;
   grid-template-columns: 140px 1fr;
   gap: 1rem;
 }
@@ -2751,6 +2752,9 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 
     top: 10px;
     left: 0;
+}
+.fiche-footer {
+  grid-template-columns: 1fr 140px;
 }
 
 
