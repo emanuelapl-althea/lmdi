@@ -1680,7 +1680,7 @@ lmdi-viewtopic__main,
   grid-template-columns: 140px 1fr;
   gap: 1rem;
 }
-.profile-header .avatar,  .pfFlip.lmdi-avatar {
+.profile-header .avatar{
   width: 130px;
   height: 130px;
   flex-shrink: 0;
@@ -2753,9 +2753,11 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
     top: 10px;
     left: 0;
 }
-.fiche-footer {
-  grid-template-columns: 1fr 140px;
+.pfFlip.lmdi-avatar {
+  height: 130px;
+  overflow: hidden;
 }
+
 
 
 
