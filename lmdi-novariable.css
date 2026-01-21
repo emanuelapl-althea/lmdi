@@ -2747,14 +2747,15 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
     border: none;
     box-shadow: none;
 }
-
+.lmdi-fiche .lmdi-avatar {
+    margin-bottom: 0;
+}
 .lmdi-fiche .lmdi-h-laurel::before{
 
     top: 10px;
     left: 0;
 }
 .lmdi-fiche .identity {
-    padding-top: 10px;
     display: flex;
     flex-direction: column;
     gap: .3rem;
@@ -2766,6 +2767,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
   height: 130px;
   overflow: hidden;
 }
+
 
 
 
