@@ -2758,6 +2758,9 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
   overflow: hidden;
 }
 
+.lmdi-card.lmdi-quote {
+    background: var(--highlight-18);
+}
 
 
 
