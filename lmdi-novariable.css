@@ -2753,14 +2753,20 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
     top: 10px;
     left: 0;
 }
+.lmdi-fiche .identity {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+.lmdi-card.lmdi-quote {
+    background: var(--highlight-18);
+}
 .pfFlip.lmdi-avatar {
   height: 130px;
   overflow: hidden;
 }
 
-.lmdi-card.lmdi-quote {
-    background: var(--highlight-18);
-}
 
 
 
