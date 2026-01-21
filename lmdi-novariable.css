@@ -401,7 +401,7 @@ ul#intro-info-list li, .lmdi-aura ul li{
 /* #intro-info > .box */
 .list ul,
 .intrigue p,
-.intro-credits p, .lmdi-aura {
+.intro-credits p, .lmdi-aura, .lmdi-physic {
   margin: 0;
   padding: 0 8px 0;
   min-height: 160px;
@@ -2767,6 +2767,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
   height: 130px;
   overflow: hidden;
 }
+
 
 
 
