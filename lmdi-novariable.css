@@ -386,7 +386,7 @@ header#lmdi-hero .lmdi-hero-rotator{
   border-radius: 12px;
   font-size: 0.84rem;
 }
-ul#intro-info-list {
+ul#intro-info-list, .lmdi-aura ul {
   list-style: none;
   padding-left: 11px;
 }
@@ -395,13 +395,13 @@ ul#intro-info-list a {
   background: none;
 }
 /* .list #intro-info-list li::marker */
-ul#intro-info-list li {
+ul#intro-info-list li, .lmdi-aura ul li{
   padding-left: 6px;
 }
 /* #intro-info > .box */
 .list ul,
 .intrigue p,
-.intro-credits p {
+.intro-credits p, .lmdi-aura {
   margin: 0;
   padding: 0 8px 0;
   min-height: 160px;
@@ -2767,6 +2767,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
   height: 130px;
   overflow: hidden;
 }
+
 
 
 
