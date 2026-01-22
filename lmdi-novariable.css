@@ -555,7 +555,7 @@ ul#intro-info-list li, .lmdi-irl li, .lmdi-aura li,.lmdi-trigger li, .lmdi-warni
 }
 /* MENU BARRE */
 /* ===== Panneau d’accueil ===== */
- .card h3, .lmdi-card h3, .cards h3, .lmdi-aura h4, .lmdi-trigger h4 {
+ .card h3, .lmdi-card h3, .cards h3, .lmdi-aura h4, .lmdi-trigger h4,  .lmdi-warning h4 {
   margin: 0 0 12px 0;
   font-size: 0.97rem;
   letter-spacing: 0.05em;
@@ -2777,6 +2777,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
     border-bottom: var(--border);
     padding: .5rem 0;
 }
+
 
 
 
