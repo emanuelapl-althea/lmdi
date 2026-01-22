@@ -2767,26 +2767,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
   height: 130px;
   overflow: hidden;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.lmdi-rps .lmdi-rps-list li {
+    border-bottom: var(--border);
+    padding: .5rem 0;
+}
