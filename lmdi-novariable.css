@@ -386,7 +386,7 @@ header#lmdi-hero .lmdi-hero-rotator{
   border-radius: 12px;
   font-size: 0.84rem;
 }
-ul#intro-info-list, .lmdi-irl ul, .lmdi-aura ul, .lmdi-rps .lmdi-rps-list ul {
+ul#intro-info-list, .lmdi-irl ul, .lmdi-aura ul, .lmdi-rps .lmdi-rps-list ul, .lmdi-trigger ul, lmdi-warning ul{
   list-style: none;
   padding-left: 11px;
 }
@@ -2777,6 +2777,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
     border-bottom: var(--border);
     padding: .5rem 0;
 }
+
 
 
 
