@@ -2768,10 +2768,12 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 }
 .pfFlip.lmdi-avatar {
   height: 130px;
+  width: 100%;
   overflow: hidden;
 }
 .lmdi-rps .lmdi-rps-list li {
     border-bottom: var(--border);
     padding: .5rem 0;
 }
+
 
