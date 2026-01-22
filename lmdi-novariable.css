@@ -579,7 +579,7 @@ ul#intro-info-list li, .lmdi-aura ul li{
 /* Cartes colonnes */
 .lmdi-card,
 .cards,
-.card {
+.card, .lmdi-soothes, .lmdi-crazy {
   padding: 16px;
   font-size: 0.84rem;
 }
@@ -2767,6 +2767,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
   height: 130px;
   overflow: hidden;
 }
+
 
 
 
