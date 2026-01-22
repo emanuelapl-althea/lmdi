@@ -1739,8 +1739,9 @@ span.lmdi-last--profil {
 }
 /* Profil bio */
 .lmdi-card__bio {
-  height: 100px;
-font-size: 0.9rem;
+    height: 100px;
+    font-size: 0.9rem;
+    font-weight: 400;
     border-radius: 8px;
     padding: 6px 8px;
     text-align: left;
@@ -2776,6 +2777,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
     border-bottom: var(--border);
     padding: .5rem 0;
 }
+
 
 
 
