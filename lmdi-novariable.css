@@ -555,7 +555,7 @@ ul#intro-info-list li, .lmdi-aura ul li{
 }
 /* MENU BARRE */
 /* ===== Panneau d’accueil ===== */
- .card h3, .lmdi-card h3, .cards h3,  .lmdi-physic h4, .lmdi-aura h4 {
+ .card h3, .lmdi-card h3, .cards h3,  .lmdi-physic h4, .lmdi-aura h4, .lmdi-trigger h4 {
   margin: 0 0 12px 0;
   font-size: 0.97rem;
   letter-spacing: 0.05em;
@@ -2767,6 +2767,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
   height: 130px;
   overflow: hidden;
 }
+
 
 
 
