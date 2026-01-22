@@ -395,7 +395,7 @@ ul#intro-info-list a {
   background: none;
 }
 /* .list #intro-info-list li::marker */
-ul#intro-info-list li, .lmdi-irl li, .lmdi-aura ul li{
+ul#intro-info-list li, .lmdi-irl li, .lmdi-aura ul li, , .lmdi-trigger li, lmdi-warning li{
   padding-left: 6px;
 }
 /* #intro-info > .box */
@@ -2777,6 +2777,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
     border-bottom: var(--border);
     padding: .5rem 0;
 }
+
 
 
 
