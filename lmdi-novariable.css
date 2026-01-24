@@ -611,7 +611,7 @@ ul#intro-info-list li, .lmdi-irl li, .lmdi-aura li,.lmdi-trigger li, .lmdi-warni
   line-height: 1.35;
 }
 /* Image d’ambiance */
-.lmdi-image {
+.lmdi-image, .lmdi-image--trombi {
   min-height: 110px;
   border-radius: 14px;
 }
@@ -2777,6 +2777,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
     border-bottom: var(--border);
     padding: .5rem 0;
 }
+
 
 
 
