@@ -899,13 +899,11 @@ ul#intro-info-list li, .lmdi-irl li, .lmdi-aura li,.lmdi-trigger li, .lmdi-warni
   gap: 0.5rem;
 }
 /* Listing Forums */
-header h2,
-.forums header h2,
-footer h2 {
+header h2,header.lmdi-section-head .lmdi-section-title, .forums header h2,footer h2 {
   letter-spacing: 0.18em;
   margin: 0 0 6px;
 }
-header h2,
+header h2,header.lmdi-section-head .lmdi-section-title,
 footer h2 {
   margin-top: 1rem;
   font-size: 2.3rem;
@@ -2777,6 +2775,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
     border-bottom: var(--border);
     padding: .5rem 0;
 }
+
 
 
 
