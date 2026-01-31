@@ -1791,8 +1791,8 @@ section.lmdi-profil-bio {
 }
 
 .section-title {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+  font-size: 1.2rem !important;
+  margin-bottom: 10px !important;
   padding-bottom: 4px;
 }
 .lmdi-profil-col .section-title {
@@ -2776,6 +2776,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
     border-bottom: var(--border);
     padding: .5rem 0;
 }
+
 
 
 
