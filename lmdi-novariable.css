@@ -2750,9 +2750,6 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
     border-bottom: var(--border);
     padding: .5rem 0;
 }
-
-
-
-
-
-
+.lmdi-trombi .lmdi-username {
+    text-align: center;
+}
