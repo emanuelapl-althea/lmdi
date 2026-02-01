@@ -935,6 +935,7 @@ td.catBottom {
 .forumrow .lmdi-title--section {
   letter-spacing: 0.06em;
   display: inline-block;
+  border-bottom:2px;
 }
 .forumrow .fr-grid {
   display: grid;
@@ -2738,3 +2739,4 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
     border-bottom: var(--border);
     padding: .5rem 0;
 }
+
