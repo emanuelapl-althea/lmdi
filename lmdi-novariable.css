@@ -2732,6 +2732,10 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
     flex-direction: column;
     gap: .3rem;
 }
+.lmdi-username {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
 .lmdi-card.lmdi-quote {
     background: var(--highlight-18);
 }
@@ -2744,6 +2748,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
     border-bottom: var(--border);
     padding: .5rem 0;
 }
+
 
 
 
