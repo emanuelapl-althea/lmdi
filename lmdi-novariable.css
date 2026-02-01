@@ -71,6 +71,11 @@ th.thCornerR {
 /* SCROLLBAR */
 /* Scrollbar */
 /* Scrollbar box desc*/
+.topictitle, h1, h2 {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: #;
+}
 .hautbas {
   position: fixed;
   z-index: 999;
@@ -2739,6 +2744,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
     border-bottom: var(--border);
     padding: .5rem 0;
 }
+
 
 
 
