@@ -1358,6 +1358,9 @@ span#lmdi-lastjoin__avatar {
   width: 100%;
 }
 /* on réutilise La logique de base en la branchant sur Les vars */
+.tag, .tag h2 {
+    font-size: 0.85rem;
+}
 .tag {
   display: inline-flex;
   align-items: center;
@@ -1365,7 +1368,6 @@ span#lmdi-lastjoin__avatar {
   padding: 6px 12px;
   border-radius: 999px;
   backdrop-filter: blur(8px);
-  font-size: 0.85rem;
 }
 /* .tag:hover */
 .tag__content {
@@ -2748,6 +2750,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
     border-bottom: var(--border);
     padding: .5rem 0;
 }
+
 
 
 
