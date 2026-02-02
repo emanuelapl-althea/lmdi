@@ -1887,7 +1887,6 @@ div.award {
 }
 #lmdi-rp p textarea#rpg-lien,
 textarea.post {
-  resize: none !important;
   width: 319px !important;
   height: 100px !important;
   background: transparent;
@@ -2762,5 +2761,6 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-trombi .lmdi-username {
     text-align: center;
 }
+
 
 
