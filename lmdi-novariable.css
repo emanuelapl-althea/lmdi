@@ -1896,6 +1896,15 @@ textarea.post {
   cursor: text;
   overflow: auto;
 }
+/* Quick reply : autoriser uniquement le resize vertical */
+.lmdi-viewtopic__quickreply .sceditor-container textarea.post,
+.lmdi-viewtopic__quickreply .sceditor-container textarea {
+  resize: vertical !important;
+    max-width: 100% !important;
+}
+.lmdi-viewtopic__quickreply .sceditor-grip {
+  cursor: ns-resize;
+}
 #lmdi-rp p textarea#rpg-lien {
   position: absolute;
   top: -4px;
@@ -2753,4 +2762,5 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-trombi .lmdi-username {
     text-align: center;
 }
+
 
