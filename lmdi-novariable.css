@@ -2748,7 +2748,9 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-card.lmdi-quote {
     background: var(--highlight-18);
 }
-
+.lmdi-fiche-irl .lmdi-avatar {
+    height: 130px;
+}
 .lmdi-card__lien {
     align-items: anchor-center;
 }
@@ -2759,6 +2761,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-trombi .lmdi-username {
     text-align: center;
 }
+
 
 
 
