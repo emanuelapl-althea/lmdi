@@ -2748,10 +2748,15 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-card.lmdi-quote {
     background: var(--highlight-18);
 }
-.lmdi-fiche-liens .lmdi-avatar {
-  height: 130px;
-  width: 100%;
-  overflow: hidden;
+
+.lmdi-card__lien {
+    align-items: anchor-center;
+}
+.link-card__content {
+    height: 180px;
+}
+.link-card__content .lmdi-card--bio {
+    overflow: auto;
 }
 .lmdi-rps .lmdi-rps-list li {
     border-bottom: var(--border);
