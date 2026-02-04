@@ -2755,9 +2755,6 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .link-card__content {
     height: 180px;
 }
-.link-card__content .lmdi-card--bio {
-    overflow: auto;
-}
 .lmdi-rps .lmdi-rps-list li {
     border-bottom: var(--border);
     padding: .5rem 0;
@@ -2765,4 +2762,5 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-trombi .lmdi-username {
     text-align: center;
 }
+
 
