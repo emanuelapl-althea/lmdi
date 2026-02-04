@@ -74,7 +74,6 @@ th.thCornerR {
 .topictitle, h1, h2 {
     font-weight: 800;
     font-size: 1.5rem;
-    color: #;
 }
 .hautbas {
   position: fixed;
@@ -372,13 +371,13 @@ header#lmdi-hero .lmdi-hero-rotator{
   grid-template-rows: repeat(2, auto);
   gap: 16px;
 }
-.box {
+.box, .lmdi-box {
   min-height: 180px;
   max-height: 180px;
   border-radius: 12px;
   padding: 8px;
 }
-.list {
+.list, .lmdi-list {
   display: grid;
   gap: 8px;
 }
@@ -560,7 +559,7 @@ ul#intro-info-list li, .lmdi-fiche li{
 }
 /* MENU BARRE */
 /* ===== Panneau d’accueil ===== */
- .card h3, .lmdi-card h3, .cards h3, .lmdi-title--serif {
+ .card h3, .lmdi-card h3, .cards h3, .lmdi-cards h3, .lmdi-title--serif {
   margin: 0 0 12px 0;
   font-size: 0.97rem;
   letter-spacing: 0.05em;
@@ -584,7 +583,7 @@ ul#intro-info-list li, .lmdi-fiche li{
 }
 /* Cartes colonnes */
 .lmdi-card,
-.cards,
+.cards, .lmdi-cards,
 .card, .lmdi-soothes, .lmdi-crazy {
   padding: 16px;
   font-size: 0.84rem;
@@ -1649,12 +1648,12 @@ lmdi-viewtopic__main,
 }
 
 /* --- en-tête --- */
-.profile-header, .fiche-footer {
+.profile-header, .lmdi-card__lien, .fiche-footer {
   display:grid;
   grid-template-columns: 140px 1fr;
   gap: 1rem;
 }
-.profile-header .avatar{
+.profile-header .avatar, .ldmi-card__lien .lmdi-avatar{
   width: 130px;
   height: 130px;
   flex-shrink: 0;
@@ -1666,7 +1665,7 @@ lmdi-viewtopic__main,
   height: 100%;
   object-fit: cover;
 }
-.profile-header .identity {
+.profile-header .identity, .lmdi-profile-header .lmdi-identity {
   grid-column: 2/ 4;
   grid-row: 1;
 }
@@ -1675,7 +1674,7 @@ lmdi-viewtopic__main,
    ============================ */
 /* .identity .tag.lmdi-status.is-online */
 /* Halo sacré: respiration douce */
-.identity .tag.lmdi-status.is-online {
+.identity .tag.lmdi-status.is-online, .lmdi-identity .tag.lmdi-status.is-online {
   animation: sacred-breath 3.8s ease-in-out infinite;
 }
 
@@ -1780,7 +1779,7 @@ section.lmdi-profil-bio {
 
 #lmdi-irl > div,
 #lmdi-rp > div,
-.mini-stat-line {
+.mini-stat-line, .lmdi-mini-stat-line {
   display: block;
   max-height: 200px;
   border-radius: 8px;
@@ -1795,14 +1794,14 @@ section.lmdi-profil-bio {
   flex: 0 0 auto;
   font-weight: 700;
 }
-.mini-stat-line .label {
+.mini-stat-line .label, .lmdi-mini-stat-line .lmdi-label {
   font-size: 0.75rem;
   font-weight: 800;
 }
-.mini-stat-line .label img {
+.mini-stat-line .label img, .lmdi-mini-stat-line .lmdi-label img {
   width: 48px;
 }
-.mini-stat-line .value {
+.mini-stat-line .value, .lmdi-mini-stat-line .lmdi-value {
   font-size: 0.78rem;
   font-weight: 600;
 }
@@ -1814,7 +1813,7 @@ section.lmdi-profil-bio {
   flex: 1 1 auto;
   min-width: 0;
 }
-.mini-stat-line--badges {
+.mini-stat-line--badges, .lmdi-mini-stat-line--badges {
   overflow-x: hidden;
 }
 /* ===== Bloc Contact personnage ===== */
@@ -2051,7 +2050,7 @@ td.catBottom {
 
 /* Grille 2 colonnes */
 
-.post-grid {
+.post-grid, .lmdi-post-grid {
   display: grid;
   grid-template-columns: 222px minmax(0, 1fr);
   gap: 16px;
@@ -2062,7 +2061,7 @@ td.catBottom {
 
 /* Colonne gauche : aside */
 
-.post-aside {
+.post-aside, .lmdi-post-aside {
   position: relative;
   margin-top: 60px;
   background: var(--ink-40);
@@ -2071,7 +2070,7 @@ td.catBottom {
   padding: 10px;
   text-align: center;
 }
-.mp-aside {
+.mp-aside, .lmdi-fiche-aside {
   margin-top: 0;
 }
 
@@ -2134,7 +2133,7 @@ td.catBottom {
   width: 35px;
 }
 /* mini-stats : profil_field */
-.mini-stats {
+.mini-stats, .lmdi-mini-stats {
   display: grid;
   gap: 4px;
   margin-bottom: 8px;
@@ -2159,8 +2158,8 @@ td.catBottom {
   margin-bottom: 0.84rem;
   padding-left: 0.84rem;
 }
-div#post-rpg .mini-stat-line,
-.mini-stats.post-rpg--dup .mini-stat-line {
+div#post-rpg .mini-stat-line, .lmdi-mini-stats#post-rpg .lmdi-mini-stat-line,
+.mini-stats.post-rpg--dup .mini-stat-line, .lmdi-mini-stats.post-rpg--dup .lmdi-mini-stat-line {
   max-width: 200px;
 }
 .liens-rpg > .mini-stat-line:last-of-type span.label {
@@ -2737,7 +2736,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
     top: 10px;
     left: 0;
 }
-.lmdi-fiche .identity {
+.lmdi-fiche .lmdi-identity, .link-card__content {
     display: flex;
     flex-direction: column;
     gap: .3rem;
@@ -2749,7 +2748,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-card.lmdi-quote {
     background: var(--highlight-18);
 }
-.pfFlip.lmdi-avatar {
+.lmdi-fiche-liens .lmdi-avatar {
   height: 130px;
   width: 100%;
   overflow: hidden;
@@ -2761,6 +2760,3 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-trombi .lmdi-username {
     text-align: center;
 }
-
-
-
