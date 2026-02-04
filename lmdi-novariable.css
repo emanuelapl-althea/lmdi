@@ -1653,7 +1653,7 @@ lmdi-viewtopic__main,
   grid-template-columns: 140px 1fr;
   gap: 1rem;
 }
-.profile-header .avatar, .ldmi-card__lien .lmdi-avatar{
+.profile-header .avatar, .lmdi-card__lien .lmdi-avatar{
   width: 130px;
   height: 130px;
   flex-shrink: 0;
