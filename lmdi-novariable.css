@@ -2050,9 +2050,9 @@ td.catBottom {
 
 /* Grille 2 colonnes */
 
-.post-grid, .lmdi-post-grid {
+.post-grid, .lmdi-post-grid, .lmdi-fixed-220 {
   display: grid;
-  grid-template-columns: 222px minmax(0, 1fr);
+  grid-template-columns: 220px minmax(0, 1fr);
   gap: 16px;
   align-items: flex-start;
   padding: 16px;
@@ -2761,6 +2761,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-trombi .lmdi-username {
     text-align: center;
 }
+
 
 
 
