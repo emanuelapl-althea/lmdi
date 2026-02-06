@@ -91,7 +91,23 @@ th.thCornerR {
   height: 62px;
   object-fit: cover;
 }
+/* moteur */
+.lmdi-grid {
+  display: grid;
+}
 
+/* comportement : la colonne 1 est spéciale */
+.lmdi-grid-col1 {
+  grid-template-columns: var(--lmdi-col1, 140px) minmax(0, 1fr);
+}
+
+/* valeurs : largeur de la colonne 1 */
+.lmdi-col1-130 { --lmdi-col1: 130px; }
+.lmdi-col1-140 { --lmdi-col1: 140px; }
+.lmdi-col1-200 { --lmdi-col1: 200px; }
+
+/* le strict nécessaire */
+.lmdi-gap { gap: 1rem; }
 /******** NAVIGATION ********/
 /***** fa toolbar *****/
 #fa_toolbar {
@@ -2761,6 +2777,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-trombi .lmdi-username {
     text-align: center;
 }
+
 
 
 
