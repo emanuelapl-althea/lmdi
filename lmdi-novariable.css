@@ -104,7 +104,7 @@ th.thCornerR {
 /* valeurs : largeur de la colonne 1 */
 .lmdi-col1-130 { --lmdi-col1: 130px; }
 .lmdi-col1-140 { --lmdi-col1: 140px; }
-.lmdi-col1-200 { --lmdi-col1: 220px; }
+.lmdi-col1-220 { --lmdi-col1: 220px; }
 
 /* le strict nécessaire */
 .lmdi-gap { gap: 1rem; }
@@ -2777,6 +2777,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-trombi .lmdi-username {
     text-align: center;
 }
+
 
 
 
