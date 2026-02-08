@@ -2071,7 +2071,7 @@ td.catBottom {
 
 /* Colonne gauche : aside */
 
-.post-aside, .lmdi-post-aside {
+.post-aside, .lmdi-aside {
   position: relative;
   margin-top: 60px;
   background: var(--ink-40);
@@ -2080,7 +2080,7 @@ td.catBottom {
   padding: 10px;
   text-align: center;
 }
-.mp-aside, .lmdi-fiche-aside {
+.mp-aside, .lmdi-aside--start {
   margin-top: 0;
 }
 
@@ -2771,6 +2771,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-trombi .lmdi-username {
     text-align: center;
 }
+
 
 
 
