@@ -737,7 +737,7 @@ ul#intro-info-list li, .lmdi-fiche li{
 .lmdi-staff-detail.is-active {
   display: block;
 }
-.lmdi-staff-detail .lmdi-meta {
+.lmdi-staff-detail .lmdi-username--highlight {
   padding: 0;
 }
 .lmdi-header {
@@ -787,7 +787,7 @@ ul#intro-info-list li, .lmdi-fiche li{
   height: 160px;
   object-fit: cover;
 }
-.lmdi-meta {
+.lmdi-username--highlight {
   padding: 10px;
 }
 /* ===== Colonne 3 : Topsites / Duel / Objets / Anniv  ===== */
@@ -2771,6 +2771,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-trombi .lmdi-username {
     text-align: center;
 }
+
 
 
 
