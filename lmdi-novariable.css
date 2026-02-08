@@ -2143,7 +2143,7 @@ td.catBottom {
   width: 35px;
 }
 /* mini-stats : profil_field */
-.mini-stats, .lmdi-mini-stats {
+.mini-stats, .lmdi-identity-infos {
   display: grid;
   gap: 4px;
   margin-bottom: 8px;
@@ -2168,8 +2168,8 @@ td.catBottom {
   margin-bottom: 0.84rem;
   padding-left: 0.84rem;
 }
-div#post-rpg .mini-stat-line, .lmdi-mini-stats#post-rpg .lmdi-mini-stat-line,
-.mini-stats.post-rpg--dup .mini-stat-line, .lmdi-mini-stats.post-rpg--dup .lmdi-mini-stat-line {
+div#post-rpg .mini-stat-line, .lmdi-identity-infos#post-rpg .lmdi-meta,
+.mini-stats.post-rpg--dup .mini-stat-line, .lmdi-identity-infos.post-rpg--dup .lmdi-meta {
   max-width: 200px;
 }
 .liens-rpg > .mini-stat-line:last-of-type span.label {
@@ -2771,6 +2771,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-trombi .lmdi-username {
     text-align: center;
 }
+
 
 
 
