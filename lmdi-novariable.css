@@ -1789,7 +1789,7 @@ section.lmdi-profil-bio {
 
 #lmdi-irl > div,
 #lmdi-rp > div,
-.mini-stat-line, .lmdi-mini-stat-line {
+.mini-stat-line, .lmdi-meta {
   display: block;
   max-height: 200px;
   border-radius: 8px;
@@ -1804,14 +1804,14 @@ section.lmdi-profil-bio {
   flex: 0 0 auto;
   font-weight: 700;
 }
-.mini-stat-line .label, .lmdi-mini-stat-line .label {
+.mini-stat-line .label, .lmdi-meta .label {
   font-size: 0.75rem;
   font-weight: 800;
 }
-.mini-stat-line .label img, .lmdi-mini-stat-line .lmdi-label img {
+.mini-stat-line .label img, .lmdi-meta .lmdi-label img {
   width: 48px;
 }
-.mini-stat-line .value, .lmdi-mini-stat-line .value {
+.mini-stat-line .value, .lmdi-meta .value {
   font-size: 0.78rem;
   font-weight: 600;
 }
@@ -2771,6 +2771,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-trombi .lmdi-username {
     text-align: center;
 }
+
 
 
 
