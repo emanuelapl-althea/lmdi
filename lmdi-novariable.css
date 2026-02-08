@@ -424,9 +424,8 @@ ul#intro-info-list li, .lmdi-fiche li{
 /* #intro-info > .box */
 .list ul,
 .intrigue p,
-.intro-credits p, .lmdi-aura, .lmdi-physic {
+.intro-credits p, .lmdi-aura, .lmdi-physic, .lmdi-h-160 {
   margin: 0;
-  padding: 0 8px 0;
   min-height: 160px;
   max-height: 160px;
   overflow: auto;
@@ -2771,6 +2770,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-trombi .lmdi-username {
     text-align: center;
 }
+
 
 
 
