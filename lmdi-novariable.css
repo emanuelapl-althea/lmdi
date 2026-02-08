@@ -387,7 +387,7 @@ header#lmdi-hero .lmdi-hero-rotator{
   grid-template-rows: repeat(2, auto);
   gap: 16px;
 }
-.box, , wio-box, .lmdi-inset {
+.box, .wio-box, .lmdi-inset {
   min-height: 180px;
   max-height: 180px;
   border-radius: 12px;
@@ -2771,6 +2771,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-trombi .lmdi-username {
     text-align: center;
 }
+
 
 
 
