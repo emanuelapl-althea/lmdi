@@ -387,11 +387,14 @@ header#lmdi-hero .lmdi-hero-rotator{
   grid-template-rows: repeat(2, auto);
   gap: 16px;
 }
-.box, .lmdi-box {
+.box, , wio-box, .lmdi-inset {
   min-height: 180px;
   max-height: 180px;
   border-radius: 12px;
   padding: 8px;
+}
+.wio-box {
+  overflow: auto;
 }
 .list, .lmdi-list {
   display: grid;
@@ -1105,15 +1108,6 @@ p#lmdi-onlinembr,
 p#lmdi-onlinembr a,
 table#lmdi-membrl24 a {
   margin: 0.5rem auto;
-}
-.wio-box {
-  min-height: 180px;
-  max-height: 180px;
-  border: var(--border);
-  border-radius: 12px;
-  padding: 8px;
-  background: var(--ink-16);
-  overflow: auto;
 }
 .wio-box.dotted {
   border-style: dashed;
@@ -2777,6 +2771,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-trombi .lmdi-username {
     text-align: center;
 }
+
 
 
 
