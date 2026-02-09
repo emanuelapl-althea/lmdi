@@ -1697,7 +1697,7 @@ lmdi-viewtopic__main,
   font-style: italic;
   margin-bottom: 10px;
 }
-.lmdi-edition-label {
+.lmdi-label--edition {
   font-size: 2rem;
 }
 span.lmdi-last--profil {
@@ -2773,3 +2773,4 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-ai-center {
   align-items: center;
 }
+
