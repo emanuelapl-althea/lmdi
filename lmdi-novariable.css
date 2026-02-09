@@ -1662,7 +1662,7 @@ lmdi-viewtopic__main,
   grid-template-columns: 140px 1fr;
   gap: 1rem;
 }
-.profile-header .avatar, .lmdi-card__lien .lmdi-avatar{
+.profile-header .avatar, .lmdi-card__lien .lmdi-avatar, .lmdi-avatar.lmdi-avatar--round{
   width: 130px;
   height: 130px;
   flex-shrink: 0;
@@ -2770,19 +2770,6 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-trombi .lmdi-username {
     text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.lmdi-ai-center {
+  align-items: center;
+}
