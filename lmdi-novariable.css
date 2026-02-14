@@ -2741,7 +2741,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-fiche .lmdi-avatar {
     margin-bottom: 0;
 }
-.lmdi-fiche .lmdi-title--ornament::before{
+.lmdi-fiche .lmdi-title--ornament::before, .lmdi-title--serif::before{
     top: 10px;
     left: 0;
 }
@@ -2773,4 +2773,5 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-ai-center {
   align-items: center;
 }
+
 
