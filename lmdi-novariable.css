@@ -983,6 +983,7 @@ div.lmdi-thumb {
 img.lmdi-badge {
   width: 30px;
   height: 150px;
+  padding: 0;
   object-fit: cover;
   object-position: right;
   border-radius: 12px;
@@ -2773,5 +2774,6 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-ai-center {
   align-items: center;
 }
+
 
 
