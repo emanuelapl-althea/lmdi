@@ -1798,6 +1798,40 @@ section.lmdi-profil-bio {
   overflow: auto;
   overflow-x: hidden;
 }
+.lmdi-h {
+  margin: 0;
+  max-height: var(--lmdi-h, 200px);
+  overflow: auto;
+  min-height: 0; /* utile si dans grid/flex */
+}
+.lmdi-h-36  { 
+  min-height: 36px;
+  max-height: 36px;
+}
+.lmdi-h-70  { 
+  min-height: 70px;
+  max-height: 70px;
+}
+.lmdi-h-130 { 
+  min-height: 130px;
+  max-height: 130px;
+}
+.lmdi-h-160 { 
+  min-height: 160px;
+  max-height: 160px;
+}
+.lmdi-h-240 { 
+  min-height: 240px;
+  max-height: 240px;
+}
+.lmdi-h-360 { 
+  min-height: 360px;
+  max-height: 360px;
+}
+.lmdi-h-400 { 
+  min-height: 400px;
+  max-height: 400px;
+}
 
 #lmdi-irl strong,
 #lmdi-rp strong {
@@ -2775,4 +2809,5 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-ai-center {
   align-items: center;
 }
+
 
