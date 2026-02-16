@@ -2707,6 +2707,7 @@ input.switcheroo__form-input {
 /* fiche personnage formulaire*/
 .lmdi-grid.lmdi-grid--2 {
     align-items: stretch;
+    margin: 0;
 }
 .lmdi-grid--2 > * {
     min-height: 100%;
@@ -2774,3 +2775,4 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-ai-center {
   align-items: center;
 }
+
