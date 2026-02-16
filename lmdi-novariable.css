@@ -1820,9 +1820,8 @@ section.lmdi-profil-bio {
   min-height: 160px;
   max-height: 160px;
 }
-.lmdi-h-240 { 
-  min-height: 240px;
-  max-height: 240px;
+.lmdi-h-200 { 
+  min-height: 200px;
 }
 .lmdi-h-360 { 
   min-height: 360px;
@@ -2809,5 +2808,6 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-ai-center {
   align-items: center;
 }
+
 
 
