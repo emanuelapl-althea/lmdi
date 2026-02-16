@@ -2764,20 +2764,13 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-fiche-irl .lmdi-avatar {
     height: 130px;
 }
-.lmdi-card__lien {
-    align-items: anchor-center;
-}
-.lmdi-rps .lmdi-rps-list li {
+.lmdi-fiche-rps .lmdi-rps-list li {
     border-bottom: var(--border);
     padding: .5rem 0;
 }
-.lmdi-trombi .lmdi-username {
+.lmdi-fiche-trombi .lmdi-username {
     text-align: center;
 }
 .lmdi-ai-center {
   align-items: center;
 }
-
-
-
-
