@@ -95,7 +95,14 @@ th.thCornerR {
 .lmdi-grid {
   display: grid;
 }
-
+/* fiche personnage formulaire*/
+.lmdi-grid.lmdi-grid--2 {
+    align-items: stretch;
+    margin: 0;
+}
+.lmdi-grid--2 > * {
+    min-height: 100%;
+}
 /* comportement : la colonne 1 est spéciale */
 .lmdi-grid-col1 {
   grid-template-columns: var(--lmdi-col1, 140px) minmax(0, 1fr);
@@ -2741,14 +2748,6 @@ input.switcheroo__form-input {
 .catBottom input.lmdi-button {
   padding: 0.5rem;
 }
-/* fiche personnage formulaire*/
-.lmdi-grid.lmdi-grid--2 {
-    align-items: stretch;
-    margin: 0;
-}
-.lmdi-grid--2 > * {
-    min-height: 100%;
-}
 input.post.lmdi-avatar-value {
     width: 305px;
 }
@@ -2812,6 +2811,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-ai-center {
   align-items: center;
 }
+
 
 
 
