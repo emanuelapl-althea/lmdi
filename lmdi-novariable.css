@@ -94,6 +94,10 @@ th.thCornerR {
 /* moteur */
 .lmdi-grid {
   display: grid;
+  gap: 1rem;
+}
+.lmdi-pad-16{
+  padding: 1rem;
 }
 /* fiche personnage formulaire*/
 .lmdi-grid.lmdi-grid--2 {
@@ -2811,6 +2815,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-ai-center {
   align-items: center;
 }
+
 
 
 
