@@ -727,8 +727,8 @@ ul#intro-info-list li, .lmdi-fiche li{
 /* portrait staff */
 .lmdi-portrait {
   flex: 0 0 auto;
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   border-radius: 100%;
   overflow: hidden;
 }
@@ -2811,6 +2811,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-ai-center {
   align-items: center;
 }
+
 
 
 
