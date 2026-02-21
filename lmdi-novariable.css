@@ -801,7 +801,7 @@ ul#intro-info-list li, .lmdi-fiche li{
 /* topsites */
 .lmdi-topsites-icons {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 5px;
 }
 .lmdi-icon-btn {
@@ -2812,6 +2812,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-ai-center {
   align-items: center;
 }
+
 
 
 
