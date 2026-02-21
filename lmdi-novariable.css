@@ -727,8 +727,8 @@ ul#intro-info-list li, .lmdi-fiche li{
 /* portrait staff */
 .lmdi-portrait {
   flex: 0 0 auto;
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   border-radius: 100%;
   overflow: hidden;
 }
@@ -762,6 +762,7 @@ ul#intro-info-list li, .lmdi-fiche li{
 }
 .lmdi-role {
   font-size: 0.8rem;
+  text-align:center;
 }
 .lmdi-bio {
   margin-top: 6px;
@@ -772,6 +773,7 @@ ul#intro-info-list li, .lmdi-fiche li{
 .lmdi-actions {
   display: flex;
   flex-wrap: wrap;
+  justify-content:center;
   gap: 8px;
   margin-top: 8px;
 }
@@ -2811,6 +2813,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-ai-center {
   align-items: center;
 }
+
 
 
 
