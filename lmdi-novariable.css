@@ -590,7 +590,7 @@ ul#intro-info-list li, .lmdi-fiche li{
 /* ===== Panneau d’accueil ===== */
  .card h3, .lmdi-card h3, .cards h3, .lmdi-cards h3, .lmdi-title--serif {
   margin: 0 0 12px 0;
-  font-size: 0.97rem;
+  font-size: 0.90rem;
   letter-spacing: 0.05em;
   color: inherit;
 }
@@ -640,7 +640,6 @@ ul#intro-info-list li, .lmdi-fiche li{
 }
 .lmdi-context p {
   margin-top: 6px;
-  font-size: 0.9rem;
   line-height: 1.35;
 }
 /* Image d’ambiance */
@@ -2813,6 +2812,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-ai-center {
   align-items: center;
 }
+
 
 
 
