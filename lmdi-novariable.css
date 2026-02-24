@@ -274,7 +274,7 @@ a#fa_service {
     gap: .5rem;
     padding: .5rem .5rem .5rem 1rem;
 }
-#lmdi-hero-choice, .liteoption {
+#lmdi-hero-choice, .liteoption, .lmdi-selectCodeBtn {
     border-radius: 14px;
     backdrop-filter: blur(10px);
     transition: opacity .25s ease, transform .25s ease;
@@ -2813,6 +2813,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-ai-center {
   align-items: center;
 }
+
 
 
 
