@@ -1215,6 +1215,7 @@ span#lmdi-lastjoin__avatar {
   padding: 14px;
   border-radius: 12px;
   height: 160px; /* tu gardes ta hauteur fixe */
+  text-align:justify;
 }
 .lmdi-header-thread,
 .lmdi-header-posts,
@@ -2813,6 +2814,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-ai-center {
   align-items: center;
 }
+
 
 
 
