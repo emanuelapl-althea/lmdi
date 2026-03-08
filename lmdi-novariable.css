@@ -442,6 +442,9 @@ ul#intro-info-list li, .lmdi-fiche li{
   max-height: 160px;
   overflow: auto;
 }
+.intrigue, #intro-info-list, #ctxText{
+text-align:justify;
+}
 /* .list li{margin:6px 0} */
 .list .news li {
   display: block;
@@ -2822,6 +2825,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-ai-center {
   align-items: center;
 }
+
 
 
 
