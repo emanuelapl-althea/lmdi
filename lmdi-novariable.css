@@ -2321,7 +2321,7 @@ textarea.post.rpg-lien--dup {
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
-  font-weight: 700 !important;
+  font-weight: 400 !important;
 }
 .post-content .postbody {
   margin-top: 4px;
@@ -2814,6 +2814,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-ai-center {
   align-items: center;
 }
+
 
 
 
