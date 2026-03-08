@@ -614,9 +614,13 @@ ul#intro-info-list li, .lmdi-fiche li{
 /* Cartes colonnes */
 .lmdi-card,
 .cards, .lmdi-cards,
-.card, .lmdi-soothes, .lmdi-crazy {
+.card, .lmdi-soothes, .lmdi-crazy, blockquote {
   padding: 16px;
   font-size: 0.84rem;
+}
+blockquote {
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
 }
 /* Titre avec laurier */
 .lmdi-title--ornament {
@@ -2814,6 +2818,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-ai-center {
   align-items: center;
 }
+
 
 
 
