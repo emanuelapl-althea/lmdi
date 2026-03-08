@@ -136,7 +136,7 @@ th.thCornerR {
   backdrop-filter: blur(6px);
 }
 .fa_fix {
-  position: sticky !important;
+  position: fixed !important;
   top: 0;
   right: 0;
 }
@@ -2825,6 +2825,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-ai-center {
   align-items: center;
 }
+
 
 
 
