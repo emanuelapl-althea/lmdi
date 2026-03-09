@@ -659,8 +659,9 @@ blockquote {
 .lmdi-btn {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 10px 14px;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
   border-radius: 12px;
   font-weight: 700;
   font-size: 0.85rem;
@@ -2825,6 +2826,7 @@ input.liteoption.post, #lmdi-form input.btn.btn--profile.post{
 .lmdi-ai-center {
   align-items: center;
 }
+
 
 
 
