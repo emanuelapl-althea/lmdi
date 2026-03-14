@@ -2227,8 +2227,9 @@ div#post-rpg .mini-stat-line, .lmdi-identity-infos#post-rpg .lmdi-meta,
 .mini-stats.post-rpg--dup .mini-stat-line, .lmdi-identity-infos.post-rpg--dup .lmdi-meta {
   max-width: 200px;
 }
-.mini-stat-line img{
+.mini-stat-line img, .scrollbar img{
 max-width:168px;
+max-height: 168px;
 }
 .liens-rpg > .mini-stat-line:last-of-type span.label {
   position: absolute;
