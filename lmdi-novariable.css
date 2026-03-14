@@ -2345,6 +2345,10 @@ dl.codebox dt {
   display: flex;
   justify-content: space-between;
 }
+.codebox .cont_code {
+  white-space: pre-wrap;
+  font-family: monospace;
+}
 /* réactions */
 .post-reactions {
   display: flex;
