@@ -1257,7 +1257,7 @@ span#lmdi-lastjoin__avatar {
 /* Métadonnées */
 .topic-meta {
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 0.65rem;
 }
 /* .topic-meta a */
 /* .topic-meta a:hover */
@@ -1317,6 +1317,7 @@ span#lmdi-lastjoin__avatar {
   flex-wrap: wrap;
   gap: 6px;
   align-items: baseline;
+  font-size: .65rem;
 }
 .strip-last .time {
   color: var(--muted);
