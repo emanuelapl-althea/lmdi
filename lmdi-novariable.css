@@ -2265,6 +2265,7 @@ textarea.post.rpg-lien--dup {
   align-items: baseline;
   gap: 10px;
   padding-bottom: 4px;
+  font-size: .56rem;
 }
 .post-head .left {
   display: flex;
@@ -2277,16 +2278,12 @@ textarea.post.rpg-lien--dup {
   padding: 0;
 }
 .post-permalink {
-  font-size: 0.8rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 /* .post-permalink:hover */
 .post-subject {
   font-weight: 600;
-}
-.post-when {
-  font-size: 0.78rem;
 }
 .post-actions {
   font-size: 0.8rem;
