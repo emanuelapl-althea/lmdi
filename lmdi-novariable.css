@@ -2428,9 +2428,11 @@ dl.codebox dt {
   justify-content: space-between;
   gap: 8px;
 }
-
 .lmdi-viewtopic__info {
-  margin-top: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .forum-rules-inner {
