@@ -995,7 +995,6 @@ div.lmdi-thumb {
 }
 .forumrow .desc p {
   height: 130px;
-  overflow-y: auto;
 }
 img.lmdi-badge {
   width: 30px;
@@ -1224,6 +1223,7 @@ span#lmdi-lastjoin__avatar {
   border-radius: 12px;
   height: 160px; /* tu gardes ta hauteur fixe */
   text-align:justify;
+  overflow-y: auto;
 }
 .lmdi-header-thread,
 .lmdi-header-posts,
