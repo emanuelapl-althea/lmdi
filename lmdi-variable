@@ -1,0 +1,1819 @@
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcCo3FwrK3iLTcviYwY.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/cinzel/v26/8vIJ7ww63mVu7gt79mT7.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: 'b_berlebaran_onlineregular';
+    font-style: normal;
+    font-weight: 400 900;
+    src: url('https://emanuelapl-althea.github.io/lmdi/bberlebaranonline-webfont.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+:root {
+  --img-logo: url('https://i.ibb.co/TqB5z1cB/Ban1.png');
+    /* Pool de bannières pour le JS */
+  --hero-bg-1: url("https://i.ibb.co/TqB5z1cB/Ban1.png");
+  /* tu peux continuer: --hero-bg-2, --hero-bg-3, etc. */
+  --img-context: url('https://i.pinimg.com/originals/e7/37/4b/e7374b5e63585642b8bbede448cae88e.gif');
+  --img-forum: url("https://i.postimg.cc/L61ZfdTC/Desc.jpg");
+  --img-temple: url("https://i.postimg.cc/W39tcP0V/temple128.png");
+  --arrow-top:  url("https://i.ibb.co/RGPp8DzD/Flechebas1.png");
+  --arrow-bottom: url("https://i.ibb.co/RGPp8DzD/Flechebas1.png");
+  --benis-gradient: rgba(36, 165, 212, 0.2);
+  --benis-chip: rgba(36, 165, 212, 0.13);
+  --benis-chip-border: rgba(36, 165, 212, 0.33);
+  --damnes-gradient: rgba(122, 87, 0, 0.2);
+  --damnes-chip: rgba(122, 87, 0, 0.13);
+  --damnes-chip-border: rgba(122, 87, 0, 0.33);
+  --maudis-gradient: rgba(186, 37, 0, 0.2);
+  --maudis-chip: rgba(186, 37, 0, 0.13);
+  --maudis-chip-border: rgba(186, 37, 0, 0.33);
+  /*Couleurs */
+  --text-on-light:var(--ink);
+  --text-on-dark:var(--paper);
+  --lien-menu:var(--ink);
+  --body:var(--paper);
+  --footer:var(--ink); /*pieds de list des sujet et messages */
+  --flagged:rgb(255 184 93); /* état nécessitant attention jm pas, note negative*/
+  --paper: rgb(239, 232, 210); 
+  --ink: rgb(139, 130, 128); /*le ton foncé design 1 marron */
+  --ink-16: rgba(139, 130, 128,.16);
+  --ink-40: rgba(139, 130, 128,.40);
+  --ink-80: rgba(139, 130, 128,.8);
+  --ink-92: rgba(139, 130, 128,.92);
+  --paper-04: rgba(239, 232, 210,.04);
+  --paper-08: rgba(239, 232, 210,.08);
+  --paper-18: rgba(239, 232, 210,.18);
+  --paper-24: rgba(239, 232, 210,.24);
+  --border-on-dark-inv:1px solid var(--paper-08); 
+  --tone-dark: rgb(239, 232, 210);
+  --tone-darker: rgb(219, 213, 193); /*Bas du forum du degradé mais pas que*/
+  --tone-lighter: rgb(7, 42, 138);/* bouton shadow box */
+  --tone-light: rgb(84, 64, 51); /*ligne description, sous categorie + titre categorie*/
+  /* Bleus clairs */
+--tone-light-15: rgba(12, 27, 67,.15);
+--tone-light-20: rgba(12, 27, 67,.20);
+--tone-light-40: rgba(12, 27, 67,.40);
+--tone-lighter-08: rgba(7, 42, 138,.08);
+--tone-lighter-16: rgba(7, 42, 138,.16);
+--tone-lighter-25: rgba(7, 42, 138,.25);
+--tone-lighter-80: rgba(7, 42, 138,.80);
+/* Bleus très sombres */
+--tone-dark-40: rgba(15,20,33,.40);
+--tone-dark-70: rgba(15,20,33,.70);
+--tone-darker-92: rgba(219, 213, 193,.92);
+  --highlight: rgb(216, 181, 111);
+  --highlight-soft:rgb(229, 217, 122);
+  --muted-soft:rgb(12, 27, 67);
+  --muted: var(--tone-lighter); /*border titre categori rappel couleur bouton rep*/
+  --muted-soft-08:rgba(12, 27, 67, 0.08);
+  --muted-soft-04:rgba(12, 27, 67, 184, 0.04);
+  --muted-75:var(--tone-lighter-80);
+  --muted-16:var(--tone-lighter-16);
+  --highlight-00:rgba(216,181,111,0);
+  --highlight-08:rgba(216,181,111,.08);
+  --highlight-18:rgba(216, 181,111,.18);
+  --highlight-24:rgba(216,181,111,.24);
+  --highlight-40:rgba(216,181,111,.4);
+  --highlight-80:rgba(216,181,111,.8);
+  --border: 1px solid var(--paper-18);
+  --glow: 0 0 0 1px var(--tone-light-20), 0 8px 30px var(--tone-light-15);
+  --gradient: linear-gradient(180deg, rgba(139, 130, 128) 25%, rgba(84, 64, 51, .5)); /*Fond cadre intérieur*/
+  --gradient-color: linear-gradient(90deg, transparent, var(--tone-light), var(--highlight), transparent);
+  --gradient-text: linear-gradient( 100deg, rgb(60, 42, 30) 0%, rgb(135, 105, 75) 45%, rgb(60, 42, 30) 100% );
+  --radius: 18px;
+  --font-s-serif: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",sans-serif;
+  --font-serif: "Cinzel", "Times New Roman", serif;
+  --font-cursive: "b_berlebaran_onlineregular", "Brush Script MT",
+    "Comic Sans MS", cursive;
+  --size: 16px;
+  --icon-size: 30px;
+    --switcheroo-ease: cubic-bezier(0.4, 0.0, 0.2, 1);
+    --switcheroo-ease-bounce: cubic-bezier(0.43, 0.09, 0.38, 2.56);
+    --switcheroo-img-width:40px;
+    --switcheroo-img-height:40px;
+    --jauge-charge: var(--tone-light);
+    --jauge-vide: var(--ink-40);
+}
+/* RESET GLOBAL BASE SAINE */
+/* * */
+/* fond global */
+
+/* ===== Fond du forum ===== */
+html, body {
+  color: var(--text-on-dark);
+  font-family:var(--font-s-serif);
+}
+/* #wrap, #page-body, #container, #content, .bodylinewidth, .pun */
+/* #wrap, #page-body, #container, #content, .pun */
+/* body */
+  a{color:var(--tone-light);text-decoration:none}
+  a:hover{text-decoration:underline}
+/* header, main, section, .linkbar, .subjectbar, form, footer, .topics, footer.lmdi-viewforum__footer, .lmdi-viewtopic */
+/* header:first-of-type */ 
+/* Scrollbar */
+::-webkit-scrollbar, .scrollbar::-webkit-scrollbar  { width: .92rem; overscroll-behavior: contain;}
+::-webkit-scrollbar-thumb {background-color: var(--tone-lighter-80);}
+::-webkit-scrollbar-track {background: var(--ink);}
+ /* Scrollbar box desc*/
+.scrollbar::-webkit-scrollbar-thumb {border-radius: 999px;background-color: var(--tone-lighter-80);}
+.scrollbar::-webkit-scrollbar-track {border-radius: 999px;background: var(--ink);}
+/* masque */
+.lmdi-masquer{display:none;}
+*:focus-visible {
+    outline: 2px solid var(--highlight);
+}
+img { max-width: 500px;}
+.spoiler_content img.resize_img {max-width: stretch;}
+/******** NAVIGATION ********/
+/***** fa toolbar *****/
+#fa_toolbar {
+  background: linear-gradient(180deg, var(--paper-08), var(--paper-04)), var(--tone-dark);
+  color: var(--text-dark);
+  box-shadow: var(--glow);
+  border: var(--border);
+  border-radius: calc(var(--radius) + 10px);
+}
+/* fa_fix */
+/* #fa_left, #fa_right */
+/* #fa_right  */
+/* #fa_left */
+/* #fa_left table */
+/* #fa_left table td */
+#fa_left a, #fa_right a.rightHeaderLink {
+  font-family: var(--font-s-serif);
+  color: var(--lien-menu)!important;
+}
+#fa_left a:hover, #fa_right a.rightHeaderLink:hover {
+  color: var(--muted) !important;
+}
+.fa_avatar {
+  border: 5px solid var(--tone-light);
+  outline: 1px solid var(--tone-light);
+}
+/* fa_avatar img */
+/* NOTIFICATIONS */
+/* #fa_welcome, #fa_right a.rightHeaderLink */
+/* #fa_welcome */
+/* #fa_welcome, #fa_right #fa_notifications */
+/* div#fa_usermenu */
+/* MENU DES NOTIFICATIONS */
+/* #notif_list */
+ul#fa_menulist {
+    background: var(--tone-dark);
+}
+#fa_menulist a:link, #fa_menulist a:visited {
+  color: var(--lien-menu) !important;
+}
+#fa_toolbar #fa_right #fa_notifications.unread #notif_unread {
+    color: var(--tone-lighter);  
+    border-color: var(--tone-lighter-40);
+    background: var(--tone-lighter-08);
+}
+#fa_right #fa_menu #fa_welcome, #fa_right a#fa_notifications {
+color: var(--lien-menu)!important;
+}
+/** menu search **/
+/* #search_menu */
+/* #search_menu a */
+/** supression d'élément **/
+/* #navSIT, .mainmenu img, #fa_toolbar #fa_magnifier, #fa_toolbar #fa_fb, #fa_toolbar #fa_twitter, #fa_toolbar #fa_gp, #fa_toolbar #fa_mail, #fa_toolbar #fa_rss, #fa_toolbar #fa_hide, #fa_toolbar_hidden #fa_show, #fa_toolbar_hidden, #fa_share_text, #fa_search */
+/* #fa_icon,a#fa_service */
+header#lmdi-hero, div.lmdi-hero {
+    background-image: var(--img-logo);
+    background-repeat: no-repeat, repeat;
+    background-color: transparent,transparent;
+    background-attachment: scroll, scroll;
+    background-position: top center;
+    height:817px;
+    position: relative;
+    overflow: hidden;
+}
+/* Le calque que le JS injecte pour faire le fondu */
+#lmdi-hero .lmdi-hero-rotator{
+  position: absolute;
+  inset: 0;
+    height:817px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: scroll;
+  /* IMPORTANT : pas de cover, pas de zoom */
+  background-size: auto;
+  opacity: 0;
+  transition: opacity .6s ease;
+  pointer-events: none;
+}
+/* ===== LMDI Hero Picker (UI discrète, sans inline) ===== */
+#lmdi-hero-choice, .liteoption, .lmdi-selectCodeBtn{
+  background: var(--gradient) !important;
+  border: var(--border);
+  color: var(--text-on-dark);
+  font: .65rem/1.25 var(--font-s-serif);
+  box-shadow: var(--glow);}
+#lmdi-hero-choice select{
+  background: rgba(255,255,255,.08);
+  color: var(--text-on-dark);
+  border: var(--border);
+}
+
+#lmdi-hero-choice button{
+  background: rgba(139,224,255,.18);
+  border: var(--border);
+  color: var(--text-on-dark);
+}
+header#lmdi-hero .lmid-hero {
+  display:block;
+  height:817px;
+}
+.userway_buttons_wrapper {
+    top: 56px!important
+}
+.bodylinewidth, #lmid-theme__moirae {
+    color: var(--text-on-dark);
+    font-family: var(--font-s-serif);
+  background: var(--gradient)!important;
+  border-radius: var(--radius);
+  box-shadow: var(--glow);
+}
+/* main#lmid-theme__moirae iframe:first-of-type */
+.linkbar, .subjectbar {
+  background: linear-gradient(180deg, var(--paper-08), var(--paper-04)) , var(--tone-dark);
+  border: var(--border);
+  border-radius: calc(var(--radius) + 10px);   /* gros border-radius */
+  box-shadow: var(--glow);
+}
+/* .linkbar-nav, .subjectbar-nav */
+.linkbar-nav, .subjectbar-nav, .linkbar-nav a, .subjectbar-nav a{color: var(--lien-menu); }
+.linkbar-nav a:hover, .subjectbar a:hover { color: var(--tone-light);   text-shadow: 0 0 8px var(--tone-light-20); }
+/* ===== Intro (au-dessus du panneau) ===== */
+  .cards .intro-center, .cards .pa-center, .cards .wio-center{background:var(--ink-40); padding:12px;border:var(--border);}
+  .intro{border:var(--border);border-radius:var(--radius);background:linear-gradient(180deg,var(--paper-08),var(--paper-04));box-shadow:var(--glow);}
+/* .intro-grid, .profile-header */
+  .box, .wio-box, .lmdi-inset{ border: var(--border);background: var(--ink-16);} 
+/* .list */
+.list .news  li,.list a{border:var(--border);background:var(--paper-04);}
+/* ul#intro-info-list */
+.list #intro-info-list li::marker {content:"\2948";color:var(--highlight); font-size: small;  font-family: "Segoe UI Symbol", "Noto Sans Symbols", sans-serif;}
+/* ul#intro-info-list a */
+#intro-info > .box {background-color: var(--ink-40);}
+/* .list ul, .intrigue p, .intro-credits p */
+  .list li{margin:6px 0}
+.list .news li { background-color: var(--ink-40);}
+/* .news */
+  .news .item{border:var(--border);background:var(--paper-04);}
+  .news .date{color:var(--highlight);}
+.intro-credits > .box {background-color: var(--ink-40);}
+/* .intro-credits p */
+.intro-credits span {color: var(--highlight);}
+/* Placement */
+/* .intro-credits */
+/* .intro-yearblock */
+/* Crédits (discret) */
+.intro-credits a{ color: var(--highlight);}
+/* === Placement dans ta grid === */
+/* .pa-yearblock */
+/* === Style du bloc Année (version Hellas) === */
+.hellas-year{
+  color: var(--text-on-dark);
+  background-color: var(--ink-80) !important;
+}
+/* .before-emoji,.after-emoji */
+/* .before-emoji */
+/* .after-emoji */
+/* libellé du haut */
+.hellas-year .year-label{
+  color: var(--text-on-dark);
+}
+/* gros nombre de l’année */
+.hellas-year .current-year{
+   font-family: var(--font-serif);color: var(--highlight);text-shadow: 0 0 14px var(--highlight-40);
+}
+/* #lmdi-current-year */
+/* petite description */
+.hellas-year .year-description{
+  color: var(--highlight);
+}
+/* bulle profil */
+/* === Tooltips (sans JS) sur .tooltip === */
+#search_menu, .tooltipster-default, .award_tooltiptext, .fa_like_list, .fa_dislike_list, .option_voters_list span, #lmdi-hero-choice .lmdi-hero-sub .lmdi-hero-info  {
+  background: var(--ink-92)!important;
+  border: 1px solid var(--highlight-40)!important;
+  color: var(--text-on-dark) !important;
+}
+/* .tooltip-actions */
+/* .tooltip-scope .tooltip */
+#search_menu, .tooltip-scope .tooltip::after{
+  background: var(--ink-92);
+  border: 1px solid var(--highlight-40);  
+  color: var(--text-on-dark);
+  box-shadow: 0 8px 18px var(--ink-40), 0 0 10px var(--highlight-18) inset;
+}
+/* .tooltip-scope .tooltip:hover::after */
+/* .tooltip-scope .tooltip:hover::before */
+/* .intro-forums */
+/* MENU BARRE */
+/* .linkbar, .subjectbar */
+ /* ===== Panneau d’accueil ===== */
+  .card h3, .lmdi-card h3, .cards h3, .lmdi-cards h3, .lmdi-title--serif{font-family:var(--font-serif);}
+  .btn, #followBtn, .followBtn{border:1px solid var(--paper-18);background:var(--tone-dark-70);}
+  .btn.primary, #followBtn, .followBtn{color: var(--text-on-dark);}
+/* Grille principale 3 colonnes */
+/* .lmdi-pa-grid */
+/* Cartes colonnes */
+.lmdi-card, .cards, .lmdi-cards, .card, #frame_chatbox, .lmdi-tab, .lmdi-tag, .lmdi-attr{
+  border-radius: var(--radius);
+  border: var(--border);
+  background: linear-gradient(180deg, var(--paper-08), var(--paper-04));
+  box-shadow: var(--glow);
+}
+/* Titre avec laurier */
+/* .lmdi-title--ornament */
+.lmdi-title--ornament::before, .lmdi-gr-benis::before, .lmdi-gr-maudis::before, .lmdi-gr-damnes::before{
+    content: "\2948";
+    color: var(--muted);
+    filter: drop-shadow(0 0 6px var(--muted-80));
+    font-family: "Segoe UI Symbol", "Noto Sans Symbols", sans-serif;
+}
+
+ /* ===== Colonne 1 : Contexte + Scénarios ===== */
+/* .lmdi-context */
+.lmdi-context p {
+  color: var(--text-on-dark)
+}
+/* Image d’ambiance */
+.lmdi-image {
+  border: var(--border);
+  background: var(--img-context) center / cover;
+}
+/* Boutons PA */
+.lmdi-btn {
+  border: 1px solid var(--paper-18);
+  background: var(--tone-dark-70);
+  color: var(--text-on-dark);
+}
+/* Scénarios / prédéfinis */
+/* .lmdi-grid-3x3 */
+.lmdi-tile {
+  border: var(--border);
+  background: var(--tone-dark);
+}
+/* .lmdi-tile img */
+.lmdi-label {
+  background: var(--ink-40);  
+  color: var(--text-on-dark);
+}
+/* .lmdi-tile:hover .lmdi-label */
+/* ===== Colonne 2 : Staff + Membres du mois ===== */
+/* #staff-block */
+/* ligne de chips staff */
+/* .lmdi-staffs */
+/* chip staff */
+.lmdi-staff-card {
+  border: 1px solid var(--paper-18);
+  background: var(--paper-04);
+}
+.lmdi-staff-card:hover {
+  background: var(--paper-04);
+}
+.lmdi-staff-card:focus-visible {
+  outline: 2px solid var(--tone-light);
+}
+.lmdi-staff-card[aria-selected="true"] {
+  border-color: var(--muted);
+  box-shadow: 0 0 0 2px var(--muted-16);
+  background: var(--paper-04);
+}
+/* portrait staff */
+.lmdi-portrait {
+  border: 1px solid var(--paper-18);
+}
+/* .lmdi-portrait img */
+/* panneau détail staff */
+.lmdi-staff-detail {
+  border: 1px solid var(--paper-18);
+  background: linear-gradient(180deg, var(--paper-04), var(--paper-04));
+}
+/* .lmdi-staff-detail.is-active */
+/* .lmdi-staff-detail .lmdi-meta */
+/* .lmdi-header */
+/* .lmdi-name */
+.lmdi-name {
+  text-align:center;
+  margin:6px 0 0;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  font-size: .84rem;
+  font-weight: 800;
+}
+.lmdi-role {
+  color: var(--muted-soft)
+}
+.lmdi-bio {
+  color: var(--text-on-dark)
+}
+/*.lmdi-actions */
+/* Membres du mois */
+/* .lmdi-members, .lmdi-profil--ind */
+.lmdi-p {
+  border: var(--border);
+  background: var(--tone-dark);
+}
+/* .lmdi-p img */
+.lmdi-username--highlight {
+  color: var(--highlight);
+}
+/* ===== Colonne 3 : Topsites / Duel / Objets / Anniv  ===== */
+/* topsites */
+/* .lmdi-topsites-icons  */
+.lmdi-icon-btn {
+  inline-size: var(--icon-size);
+  block-size: var(--icon-size);
+  border: 1px solid var(--paper-18);
+  background: var(--paper-04);
+  box-shadow: 0 2px 10px var(--ink-16);
+  color: var(--tone-light);
+}
+.lmdi-icon-btn:hover {
+  transform: translateY(-1px);
+  background: var(--paper-08);
+  border-color: var(--paper-24);
+}
+.lmdi-icon-btn:focus-visible {
+  outline: 2px solid var(--tone-light);
+}
+/* colonne ionique */
+/* .lmdi-icon--column */
+/* duel d’équipes */
+/* .lmdi-teams */
+.lmdi-icon[data-type="bouzoukis"] {
+    width: 33px;
+    height: 33px;
+    background: center / cover no-repeat url(https://i.postimg.cc/VL6PwBND/mandolin_6757426.png);
+}
+.lmdi-icon[data-type="flute"] {
+    width: 18px;
+    height: 25px;
+    background: center / cover no-repeat url(https://i.postimg.cc/jd5YTQjH/pan_flute_6757392.png);
+}
+.lmdi-icon[data-type="lyre"] {
+    width: 19px;
+    height: 25px;
+    background: center / cover no-repeat url(https://i.postimg.cc/NfMvt70P/lyre-6757312.png);
+}
+/* .lmdi-icon--flute, .lmdi-icon--lyre */
+.lmdi-team {
+  border: var(--border);
+  background: var(--paper-04);
+}
+/* .lmdi-left */
+.lmdi-score {
+    color: var(--highlight-80);
+}
+/* objets divins */
+/* .lmdi-zone-objets */
+/* .lmdi-image-box */
+/* .lmdi-overlay */
+/* .lmdi-image-box:hover .lmdi-overlay */
+/* habillage objets */
+.hellas-objets .lmdi-image-box {
+  border: 1px solid var(--tone-light);
+  background: radial-gradient(circle at 50% 50%, var(--paper-08), var(--tone-dark-40));
+  box-shadow:
+    0 0 6px var(--tone-light-20),
+    inset 0 0 10px var(--ink-16);
+}
+.hellas-objets .lmdi-image-box:hover {
+  border-color: var(--highlight-40);
+  box-shadow:
+    0 0 10px var(--highlight-40),
+    inset 0 0 8px var(--highlight-18);
+}
+/* .hellas-objets .lmdi-image-box img */
+.hellas-objets .lmdi-overlay {
+  background: radial-gradient(circle at center, var(--tone-darker-92), var(--ink-92));
+}
+.hellas-objets .lmdi-text {
+  font-family: var(--font-s-serif);
+  color: var(--text-on-dark);
+  text-shadow: 0 0 6px var(--highlight-40);
+}
+.hellas-objets a {
+  color: var(--tone-lighter);
+  border-bottom: 1px dashed var(--tone-lighter-40);
+}
+.hellas-objets a:hover {
+  color: var(--highlight);
+  border-bottom-color: var(--highlight-80);
+}
+/* Anniversaires IRL */
+/* .lmdi-anniversaires */
+.lmdi-anniv-line {
+  border: 1px solid var(--tone-light-20);
+  background: var(--tone-dark-40);
+}
+span.lmdi-bdaycake {
+    width: 40px;
+    height: 40px;
+    background: url(https://i.postimg.cc/Y0bf3k0t/delicious-decorated-birthday-cake.png) center / cover no-repeat;
+    display: inline-block;
+}
+.lmdi-anniv-text {
+  color: var(--text-on-dark);
+}
+.lmdi-anniversaires .lmdi-anniv-line + .lmdi-anniv-line {
+  box-shadow: 0 -2px 0 var(--tone-lighter-08) inset;
+}
+/* accent “aujourd’hui” */
+.lmdi-anniversaires .lmdi-anniv-line:first-child {
+  border-color: var(--highlight-40);
+  box-shadow: 0 0 0 1px var(--highlight-08) inset;
+}
+.intro-forums img {
+    border: var(--border);
+}
+  /* Séparateur */
+.sep{background:linear-gradient(90deg,transparent,var(--paper-18),transparent);}
+/* .subjectbar-nav */
+  /* Listing Forums */
+  header h2, header.lmdi-section-head .lmdi-section-label, .forums header h2, footer h2{font-family: var(--font-cursive);color:var(--text-on-dark);}
+  /* header h2, footer h2 */
+/* .category */
+  .category>header{border-left:4px solid var(--muted);}
+.category h2 {
+    font-family: var(--font-title) !important;
+}
+/* .forumrow */
+.post-list .topicrow .fr-grid {
+    border: 1px solid var(--paper-18);
+}
+.lmdi-title--section a{
+    color: var(--highlight);
+}
+/* .forumrow .desc, .forumrow .lastcard */
+div.lmdi-thumb {
+    background: var(--img-forum) center/cover no-repeat;
+    border: 1px solid var(--paper-18);
+    object-fit: cover;
+}
+/* .forumrow .desc p */
+img.lmdi-badge {
+    border: 1px solid var(--paper-18);
+}
+  .forumrow .thumb{width:130px;height:150px;border-radius:12px;border:1px solid var(--paper-18);object-fit:cover;background:var(--tone-dark)}
+  .forumrow .desc, .code.lmdi-card{background:var(--ink-40);border:1px solid var(--paper-18);border-left:6px solid var(--highlight);color:var(--text-on-dark);}
+  .forumrow .desc b{color:var(--text-on-dark);}
+  .forumrow .lastcard{background:var(--ink-40);border:1px solid var(--paper-18);}
+/* .forumrow .lastcard .mini */
+  .forumrow .lastcard .lmdi-last--avatar img{border:3px solid var(--tone-light);}
+  .forumrow .counts{margin-top:8px;color:var(--muted);font-variant:all-small-caps;letter-spacing:.06em}
+  .forumrow .subsline{
+    background: var(--ink-40);
+    border: 1px solid var(--paper-18);
+    border-right: 6px solid var(--highlight);
+    color: var(--text-on-dark);
+}
+  .forumrow .subsline a{color:var(--text-on-dark);}
+th.thBottom, td.catBottom {
+    border-width: 0;
+}
+  /* ===== Q.E.E.L (Version A: wio--cards) ===== */
+  .cards .pa-grid, .cards .wio-grid{display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px}
+  .cards .wio-group .chip {border-radius: 999px;width: 30px;height: 30px;}
+  .cards .wio-group[data-type="benis"] {background:linear-gradient(90deg, var(--benis-gradient), transparent)}
+  .cards .wio-group .chip[data-type="benis-chip"]{background:var(--benis-chip);border:1px solid var(--benis-chip-border);}
+  .cards .wio-group[data-type="damnes"] {background:linear-gradient(90deg, var(--damnes-gradient), transparent)}
+  .cards .wio-group .chip[data-type="damnes-chip"]{background:var(--damnes-chip);border:1px solid var(--damnes-chip-border);}
+  .cards .wio-group[data-type="maudis"] {background:linear-gradient(90deg, var(--maudis-gradient), transparent)}
+  .cards .wio-group .chip[data-type="maudis-chip"]{background:var(--maudis-chip);border:1px solid var(--maudis-chip-border);}
+  .cards .wio-stat{ background:var(--ink-16);}
+  /* .cards .wio-legend */
+  /* Base WIO (commune) */
+  .wio{position:relative}
+/* .wio-head */
+/* .wio-col h3.lmdi-title--ornament, .wio-center h3.lmdi-title--ornament:nth-of-type(2)*/
+.wio-col.soft{background:var(--paper-04)}
+/*.wio-left */
+/* p#lmdi-onlinembr, #lmdi-membrl24 .row1 */
+/* p#lmdi-onlinembr a, table#lmdi-membrl24 a */
+  .wio-sub{color:var(--highlight)!important;}
+/* .wio-box.dotted */
+/* zone sous "Bienvenue à" */
+/* .wio-welcome */
+/* puce pseudo */
+/* .welcome-chip */
+.wio-welcome img{ border: 3px solid var(--tone-light);}
+.season-emoji{
+  display:inline-block;
+  width: 20px;
+  height: 20px;
+  background: center / cover no-repeat;
+}
+
+/* ???? Printemps — 21 mars → 20 juin */
+body.season--spring .season-emoji{
+  background-image: url(https://i.ibb.co/B5XRZpdW/flower-12360289.png);
+}
+
+/* ☀️ Été — 21 juin → 20 septembre */
+body.season--summer .season-emoji{
+  background-image: url(https://i.ibb.co/21870CWp/sun-game-icon-illustration.png);
+}
+
+/* ???? Automne — 21 septembre → 20 décembre */
+body.season--autumn .season-emoji{
+  background-image: url(https://i.ibb.co/qZXJ5vD/feuille-pommier-128.png);
+}
+
+/* ❄️ Hiver — 21 décembre → 20 mars */
+body.season--winter .season-emoji{
+  background-image: url(https://i.ibb.co/N2CXNtXm/418976526-11709559.png);
+}
+
+/* span#lmdi-lastjoin__avatar */
+.welcome-name:hover{ color:var(--tone-light); }
+/*  .wio-groups */
+.wio-group{border:1px solid var(--paper-18);background:var(--paper-04);box-shadow:0 2px 10px var(--ink-16);}
+ /* .wio-group .label */
+ /* .wio-stats */
+  .wio-stat{border:var(--border);background:var(--paper-04);}
+  .wio-stat .n{color:var(--highlight)}
+/* #lmdi-membrl24 .row1 */
+  .wio-sentence{color:var(--text-on-dark);}
+  /* ===== Liste des Sujets ===== */
+  .lmdi-tag--global, .lmdi-tag{
+  font-family:Cinzel,serif;font-size:.75rem;font-weight:700;letter-spacing:.05em;
+  text-transform:uppercase;padding:4px 12px;border-radius:999px;border:1px solid;display:inline-flex;align-items:center
+}
+/* variantes par tag */
+.lmdi-top-sites   { color:#8be0ff;border-color:rgba(139,224,255,.4);background:rgba(139,224,255,.08) }
+.lmdi-reglement   { color:#ffe08a;border-color:rgba(255,224,138,.5);background:rgba(255,224,138,.08) }
+.lmdi-evenement   { color:#ffb3d1;border-color:rgba(255,179,209,.45);background:rgba(255,179,209,.10) }
+.lmdi-rp-libre    { color:#a8f3bf;border-color:rgba(168,243,191,.4);background:rgba(168,243,191,.10) }
+.lmdi-termine     { color:var(--muted-soft);border-color:rgba(12, 27, 67,.45);background:rgba(12, 27, 67,.10) }
+.lmdi-intrigue    { color:var(--tone-lighter);border-color:rgba(7, 42, 138,.45);background:rgba(7, 42, 138,.10) }
+.lmdi-pv-libre    { color:var(--tone-light);border-color:rgba(84, 64, 51,.45);background:rgba(84, 64, 51,.10) }
+.lmdi-pre-liens-libre { color:var(--tone-darker); border-color:rgba(219, 213, 193,.45);background:rgba(219, 213, 193,.10)}
+.lmdi-scenario-libre    { color:var(--flagged);border-color:rgba(229, 144, 118,.45);background:rgba(229, 144, 118,.10) }
+.desc h3{
+      border-left: 4px solid var(--highlight);
+    font-family: var(--font-serif);
+}
+/* ===== DESC en grille interne pour caler badge/titre/meta/extrait ===== */
+.forumrow .desc{
+  background: var(--ink-40);
+  border: 1px solid var(--paper-18);
+  border-left: 6px solid var(--highlight);
+  color: var(--text-on-dark);
+}
+/* .lmdi-header-thread, .lmdi-header-posts, .lmdi-viewtopic__reply, .lmdi-viewtopic__pagination-bottom, .lmdi-viewtopic__pagination-top,  .lmdi-watch, .lmdi-viewtopic__moderation-inner */
+/* .lmdi-viewtopic__reply img */
+/* .topics */
+/* En-tête : badges */
+/* .topic-head */
+/* Titre du sujet */
+.desc h3 a {color: var(--text-on-dark);}
+.desc h3 a:hover{ color:var(--highlight); }
+/* Métadonnées */
+.topic-meta{color: var(--muted);}
+.topic-meta a{ color:var(--muted-soft); }
+.topic-meta a:hover{ color:var(--tone-lighter); }
+/* Extrait : prend la place restante, coupe proprement */
+/* .topic-excerpt */
+/* .topicrow .desc .topic-excerpt */
+/*.topicrow .fr-grid */
+/* .topic-summary */
+/* Col 1 : dernier message + avatar */
+.strip-last{background: linear-gradient(180deg, var(--paper-04), transparent);color: var(--text-dark);}
+/* .strip-last .who */
+.strip-last .ava{ border:1px solid var(--paper-18);}
+.ava img {    border: 2px solid var(--tone-light);}
+/*.strip-last .text */
+.strip-last .time{color:var(--muted)}
+.strip-last .by a{color:var(--highlight); font-weight:700; text-decoration:none}
+.strip-last .by a:hover{color:var(--text-on-dark);}
+/* Col 2 & 3 : stats */
+.strip-stat{  border: var(--border);}
+/* .strip-stat .n */
+/* .strip-stat .u */
+/* Col 4 : pages */
+.strip-pages{  color:var(--text-on-dark);}
+.strip-pages .small{color:var(--muted); font-style:italic}
+.strip-pages a{color:var(--text-on-dark);}
+.strip-pages a:hover{color:var(--highlight)}
+/* ===== LMDI – Viewforum (palette root) ===== */
+.lmdi-viewforum {  gap: var(--size); color: var(--text-on-dark);font-family: var(--font-s-serif);}
+/* ====== Header ====== */
+/* ====== Fil d’Ariane avec .tag ====== */
+/* .lmdi-viewforum__breadcrumb */
+.tag { border: var(--border);background: var(--paper-04);}
+.tag:hover {  background: var(--paper-08);}
+/* .tag__content */
+.tag__content a.nav {
+  color: var(--text-on-dark);}
+
+.tag__content a.nav:hover {color: var(--tone-light);}
+.tag__img{ background:var(--img-temple) center/cover no-repeat;}
+/* Bloc “menu plus” à droite */
+/* lmdi-viewforum__tools */
+/* ====== Conteneur des topics ====== */
+/* lmdi-viewforum__topics */
+/* ====== Bloc infos (ouvert/fermé) ====== */
+/* .lmdi-viewforum__info */
+.forum-meta {
+  gap: var(--size);
+}
+.forum-meta__block{
+  border-radius: var(--radius);
+  border: var(--border);
+  box-shadow: var(--glow);
+      padding: var(--size);
+}
+.forum-meta__row {
+  gap: var(--size);
+  border-bottom: 1px solid var(--paper-04);
+}
+/* .forum-meta__row:last-child */
+.forum-meta__label {  color: var(--muted);}
+.forum-meta__value {  color: var(--text-on-dark);}
+/* .forum-meta__row--online */
+/* .forum-meta__row--bottom */
+/* Bouton +/- */
+/* .forum-meta__toggle */
+/*.forum-meta__toggle img */
+/* ====== Footer ====== */
+.lmdi-viewforum__footer, lmdi-viewtopic__main, .post-list {
+  gap: var(--size);}
+.lmdi-viewforum__footer-top {  gap: var(--size);}
+/* .lmdi-viewforum__footer-right */
+/* .sort-form,.jumpbox-form */
+/* input / select déjà stylés ailleurs chez toi normalement,
+   mais on ne touche pas aux classes forumactif ici (liteoption etc.) */
+#lmdi-poll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+/* ====== Légende ====== */
+.lmdi-viewforum__legend { background: var(--footer);border-radius: var(--radius);border: var(--border);}
+.forum-legend {  gap: var(--size);}
+/* .forum-legend__group */
+/* .forum-legend__item */
+/* .forum-legend__item img */
+/* ====== Typo / confort ====== */
+/* .lmdi-viewforum * */
+ /* ===== Liste des Membres ===== */
+/* .lmdi-lmembr__field */
+/*.lmdi-lmembr__field label */
+.lmdi-lmembr__field input[type="text"], .lmdi-lmembr__field select {
+    border: 1px solid var(--ink-16);
+}
+/* .members-list */
+/* carte */
+.member-card{
+  background: var(--ink-40);
+  border: 1px solid var(--paper-18);
+  box-shadow: 0 10px 24px var(--ink-16);
+}
+/* avatar */
+.member-card .avatar{
+    border:3px solid var(--tone-light);background:var(--tone-darker);
+}
+/* .member-card .avatar img */
+/* nom */
+.member-card .name{ font-family:var(--font-serif);}
+.member-card .name a{color:var(--text-on-dark); }
+.member-card .name a:hover{color:var(--highlight);}
+/* stats */
+/*.member-card .stats */
+.member-card .stats li{
+  background:var(--paper-04);
+  border:var(--border-on-dark-inv);
+}
+.member-card .stats .label{color:var(--muted-soft); }
+.member-card .stats .val{ color:var(--text-on-dark); }
+
+/* boutons */
+/* .member-card .actions */
+
+/* .member-card .actions > a:not(.btn) */
+/* .btn */
+.btn--profile, .btn--profile, .btn.btn--profile.post, .tag--type, .cb_connect_button span{ color:var(--tone-lighter); border-color:var(--tone-lighter-40); background:var(--tone-lighter-08);}
+.btn--profile:hover, .cb_connect_button span, .cb_connect_button span:hover{
+  box-shadow:0 0 8px var(--tone-lighter-40);
+}
+.btn--player, .btn--mp, .lmdi-tag--global{
+  color:var(--highlight);   border-color:var(--highlight-40); background:var(--highlight-08);
+}
+.btn--player:hover{
+  box-shadow:0 0 8px var(--highlight-40);
+}
+ /* ===== Profil individuel ===== */
+/* .tag--profilpage */
+/* .profile-page */
+/* --- en-tête --- */
+/* .profile-header */
+.profile-header .avatar, .pfFlip.lmdi-avatar{ border:3px solid var(--tone-light);}
+/* .profile-header .avatar img */
+/* .profile-header .identity */
+/* ===== ÉTAT : EN LIGNE (oracle doré) ===== */
+.identity .tag.lmdi-status.is-online, .lmdi-identity .tag.lmdi-status.is-online {
+    background: linear-gradient(
+        135deg,
+        var(--highlight-18),
+        var(--highlight-08)
+    );
+    border: 1px solid var(--highlight-24);
+    box-shadow: 0 0 6px var(--highlight-18);
+}
+/* Halo sacré: respiration douce */
+@keyframes sacred-breath {
+    0%, 100% {
+        box-shadow: 0 0 6px var(--highlight-18);
+    }
+    50% {
+        box-shadow: 0 0 12px var(--highlight-40);
+    }
+}
+
+/* .identity .tag.lmdi-status.is-online */
+/* ======== ÉTAT : HORS LIGNE (marbre froid) ======== */
+.identity .tag.lmdi-status.is-offline, .lmdi-identity .tag.lmdi-status.is-offline {
+    color: var(--muted-soft); /* argent bleuté */
+    background: linear-gradient(
+        135deg,
+        var(--muted-soft-08),
+        var(--muted-soft-04)
+    );
+    border: 1px solid var(--muted-16);
+}
+.role{ color:var(--highlight);}
+/* span.lmdi-last--profil */
+/* .contact-links */
+/* .badges */
+/* .followBtn::before */
+    /* Profil bio */
+/* .lmdi-card__bio */ 
+/* section.lmdi-profil-bio */
+.lmdi-profil-bio-tabs{
+  background-color: var(--muted-16);
+  border: var(--border);
+  border-radius: var(--radius);
+}
+.lmdi-profil-bio-tab {color: var(--text-on-dark);background-color: transparent;}
+.lmdi-profil-bio-tab-active { background-color: var(--muted-75) !important;}
+/* .lmdi-profil-bio-panels */
+/* .lmdi-profil-bio-panel */
+/* .lmdi-profil-bio-panel-active */
+/* ===== Colonnes Profil IRL / RP ===== */
+/* .lmdi-profil-columns */
+.lmdi-profil-col:nth-of-type(2) {
+    border-left: 1px solid var(--highlight-08);
+}
+.lmdi-title--section{
+    font-family: var(--font-serif) !important;color: var(--highlight) !important;border-bottom:1px solid var(--highlight-40);text-shadow: 0 0 1px rgba(60, 45, 35, 0.7), 0 1px 2px rgba(60, 45, 35, 0.4);}
+/* .lmdi-profil-col .lmdi-title--section */
+/* .lmdi-profil-col .section-body */
+/* ===== Lignes de champ : "Label : valeur" sur une ligne ===== */
+#lmdi-irl > div,#lmdi-rp > div, .mini-stat-line, .lmdi-meta {
+   background: var(--paper-04);
+    border: var(--border-on-dark-inv);
+    color: var(--text-on-dark);
+}
+#lmdi-irl strong,#lmdi-rp strong {color:var(--muted-soft);}
+.mini-stat-line .label, .lmdi-meta .label {color: var(--muted-soft);}
+/* .mini-stat-line .label img */
+.mini-stat-line .value, .lmdi-meta .value {color: var(--text-on-dark);}
+/* Les valeurs prennent tout l'espace restant */
+/* #lmdi-irl .field_uneditable,#lmdi-irl .field_editable,#lmdi-rp .field_uneditable,#lmdi-rp .field_editable */
+/* .mini-stat-line--badges .value */
+/* ===== Bloc Contact personnage ===== */
+.lmdi-profil-contact {background: var(--ink-16);}
+/* .lmdi-profil-contact p */
+/* .lmdi-profil-contact p strong */
+/* .lmdi-profil-contact img */
+/* .awards_block_simple */
+/* .awards_block_simple span.gen */
+/* .awardspfil .gen div.award */
+/* div.award */
+/* .profil-grid */
+#lmdi-rp p {background: var(--paper-04);border: var(--border-on-dark-inv);color: var(--text-on-dark);}
+/* #lmdi-rp p strong */
+/* #rpg-lien-line */
+#lmdi-rp p textarea#rpg-lien{
+      color: var(--text-on-dark);
+}
+textarea#rpg-lien:focus-visible, textarea.post.rpg-lien--dup:focus-visible {  border-radius: 0; outline: 0;border:0;}
+.mini-stat-line .mini-stat-line--rpg-lien:focus-visible{  border-radius: calc(var(--radius) - 10px); border: 2px solid var(--ink);outline: 2px solid var(--paper);}
+/* ===== LMDI / HELLAS – Viewtopic (2 colonnes) ===== */
+input.post {color: var(--text-on-dark);}
+/* textarea.post */
+select.post {color: var(--text-on-dark);}
+/* .lmdi-viewtopic */
+/* Barre haute */
+.lmdi-viewtopic__topbar {
+  background: linear-gradient(180deg, var(--paper-08), var(--paper-04)), var(--tone-dark);
+  border-radius: calc(var(--radius) + 8px);
+  border: var(--border);
+  box-shadow: var(--glow);}
+/* .lmdi-viewtopic__actions-left .nav img  */
+/* .lmdi-viewtopic__breadcrumb */
+/* .lmdi-viewtopic__tools */
+/* Header sujet */
+.lmdi-viewtopic__header {
+  border-radius: var(--radius);
+  border: var(--border);
+  background: var(--tone-darker);
+  box-shadow: var(--glow);
+}
+.lmdi-viewtopic__title-row {  border-bottom: 1px solid var(--paper-08);}
+/* td.cat, td.catHead, td.catBottom */
+/* .lmdi-viewtopic__posters */
+/* Pagination top & bottom */
+/* .lmdi-viewtopic__pagination-top, .lmdi-viewtopic__pagination-bottom, .lmdi-watch, .lmdi-viewtopic__reply */
+/* .lmdi-viewtopic__pagination-bottom div, .lmdi-viewtopic__moderation-inner form */
+/* .lmdi-watch form, .lmdi-viewtopic__moderation-inner form */
+/* .lmdi-viewtopic__moderation-inner */
+/* ======== POSTS ======== */
+/* .post-list/* 
+/* Carte post */
+.post, .lmdi_form textarea.post {
+  border-radius: var(--radius);
+  border: var(--border);
+  background: linear-gradient(180deg, var(--paper-04), var(--paper-18));
+  box-shadow: var(--glow);
+}
+.post--hidden {background: var(--ink-40);}
+/* Grille 2 colonnes */
+/*.post-grid */
+/* Colonne gauche : aside */
+.post-aside, .lmdi-post-aside {
+  background: var(--ink-40);
+  border: 1px solid var(--paper-18);
+}
+/* ======== ORBE (Doria's) ===== */
+.lmdi-orb{
+  position: absolute;
+  top: -70px;
+  left: 50px;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto -35px;   /* chevauchement sur l’avatar */
+  z-index: 3;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+/* halo tournant */
+.lmdi-orb::before{
+  content:"";
+  position:absolute;
+  inset:-4px;
+  border-radius:inherit;
+  background: conic-gradient(from 0deg, var(--highlight-00), var(--highlight-40), var(--highlight-18), /* paper léger = reflet */ var(--tone-light-40), /* bleu nuit */ var(--highlight-40), var(--highlight-00));
+  opacity:.85;
+  filter: blur(.7px);
+  animation:lmdi-orb-spin 14s linear infinite;
+  box-shadow: 0 0 18px rgba(0,0,0,.55), 0 0 26px var(--tone-light-20);
+}
+/* cœur de l’orbe */
+.lmdi-orb__inner{
+  width: 78%;
+  height: 78%;
+  border-radius: 50%;
+  border: 2px solid var(--paper-24);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background: radial-gradient(circle at 28% 25%, rgba(239,232,210,.22), transparent 58%), radial-gradient(circle at 75% 80%, var(--highlight-18), transparent 62%),radial-gradient(circle at 50% 112%, rgba(0,0,0,.55), var(--tone-dark-70));
+  box-shadow: 0 0 0 1px rgba(0,0,0,.55), 0 0 22px var(--tone-light-15);
+}
+.lmdi-orb__value{
+  font-size:1.5rem;
+  font-weight:700;
+  color: var(--paper);
+  text-shadow: 0 1px 0 rgba(0,0,0,.25);}
+.lmdi-orb__unit{
+  font-size:.7rem;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color: rgba(239,232,210,.92);
+  opacity:.95;
+}
+
+@keyframes lmdi-orb-spin{
+  0%{transform:rotate(0deg);}
+  100%{transform:rotate(360deg);}
+}
+/* option : si tu veux un rendu plus “médaille” (moins galaxie) */
+.lmdi-orb.lmdi-orb--medallion::before{
+  opacity:.7;
+  filter: blur(.5px);
+}
+.lmdi-orb.lmdi-orb--medallion .lmdi-orb__inner{
+  background: radial-gradient(circle at 30% 28%, rgba(239,232,210,.28), transparent 55%), radial-gradient(circle at 70% 75%, var(--highlight-24), transparent 60%), radial-gradient(circle at 50% 120%, rgba(0,0,0,.35), var(--tone-darker));
+}
+/* ======== AVATAR 200 × 320 ===== */
+
+.lmdi-avatar{
+  border:3px solid var(--tone-light);
+  box-shadow:0 8px 24px var(--ink-80);
+}
+.lmdi-avatar img
+/* ======== Nom + Rang ======== */
+.lmdi-name a{color:var(--highlight);}
+.lmdi-name a:hover{color:var(--tone-light);}
+.lmdi-rank{color:var(--muted);}
+/* ======= points equipes (badge sous avatar) ======== */
+.lmdi-team-badge{
+  border:1px solid var(--tone-lighter-80);
+background: var(--tone-lighter-25);
+box-shadow: 0 0 14px var(--tone-lighter-25), 0 8px 18px var(--ink-80);
+}
+.lmdi-team-label{color:var(--muted);}
+.lmdi-team-value{color:var(--highlight);}
+/* .lmdi-contact */
+.lmdi-contact img{
+  border: 1px solid var(--paper-18);
+  background: var(--ink-40);
+  border-color: var(--tone-lighter-40);
+}
+/* mini-stats : profil_field */
+/*  .mini-stats */
+/* .mini-stat-line */
+/* awards + rpg */
+/* .post-awards */
+.post-rpg {color: var(--muted);}
+.liens-rpg {
+    color: var(--muted-soft);
+}
+/* .liens-rpg  a */
+/*.liens-rpg textarea.post.rpg-lien--dup */
+/* Colonne droite : body */
+/* .post-body */
+/* head */
+.post-head {border-bottom: 1px solid var(--ink-80);}
+/* .post-head .left */
+.post-permalink {font-family: var(--font-title);color: var(--highlight);text-shadow: 0 0 1px rgba(60, 45, 35, 0.7), 0 1px 2px rgba(60, 45, 35, 0.4);}
+.post-permalink:hover {color: var(--tone-light);}
+/* .post-subject */
+.post-when {color: var(--muted);}
+/* .post-actions */
+/* .post-actions img */
+span.lmdi-action-text {
+    padding: 0 2px;
+    font-family: var(--font-s-serif);
+    font-size: .65rem;
+}
+/* Bloc vote +/- */
+/* .post-vote */
+.post-vote .vote-button {
+  border: 1px solid var(--paper-18);
+  background: var(--ink-40);
+  color: var(--text-on-dark);
+}
+.post-vote .vote-button:hover {background: var(--paper-18);}
+.vote-bar {background: var(--paper-08);}
+.vote-bar-plus {background: var(--tone-light);}
+.vote-bar-minus {background: var(--flagged);}
+/* .vote-no-bar */
+/* contenu */
+/* .post-content .postbody */
+/* dl.codebox dt */
+/* réactions */
+/* .post-reactions */
+/* .reactions-buttons */
+.rep-button:active {
+    border-radius: 100%;
+    padding: .60rem;
+    box-shadow: var(--glow);
+    color: var(--text-on-dark);
+    font-family: var(--font-s-serif);
+}
+/* .reactions-buttons img */
+.react, .rep-button:active {border: 1px solid var(--paper-18);background: var(--ink-40);}
+.react span, .rep-button:active span {color: var(--text-on-dark);}
+.react.like {border-color: var(--highlight);}
+.react.dislike {  border-color: var(--muted-soft);}
+/* .rep-nb */
+/* pied */
+.post-foot {border-top: var(--border-on-dark-inv);}
+.post-nav a {color: var(--muted);}
+.post-nav a:hover {color: var(--tone-light);}
+/* signature */
+.post-signature, .lmdi-fiche__signature {border-top: 1px dashed var(--ink-80);}
+/* posts spéciaux */
+/* .post--empty .post-empty-inner,.post--hidden .post-hidden-inner */
+/* ======== Bas de page / blocs ======== */
+/* footer.lmdi-footer-thread */
+.lmdi-viewtopic__bottom-title {
+  border-radius: var(--radius);
+  border: var(--border);
+  background: var(--tone-dark);
+}
+/* .lmdi-viewtopic__bottom-breadcrumb */
+/* .lmdi-viewtopic__info */
+/* .forum-rules-inner */
+/* Mod tools */
+.lmdi-viewtopic__moderation */
+/* ========== LMDI — Quick Reply (branché sur ton :root) ======== */
+/* wrapper */
+.lmdi-viewtopic__quickreply{
+  padding: 10px 0 18px;
+}
+
+/* on neutralise le tableau sans casser FA */
+.lmdi-viewtopic__quickreply #quick_reply{
+  max-width: 810px; /* tu as déjà max-width sur main/section, on s’aligne */
+  margin: 0 auto;
+}
+.lmdi-viewtopic__quickreply table{
+  width: 100% !important;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.lmdi-viewtopic__quickreply td.row2{
+  background: transparent !important;
+  border: 0 !important;
+  padding: 0 !important;
+}
+
+/* la “carte” SCEditor */
+.lmdi-viewtopic__quickreply .sceditor-container{
+  background: var(--ink) !important;
+  border: var(--border) !important;
+  border-radius: calc(var(--radius) + 6px) !important;
+  box-shadow: var(--glow);
+  overflow: hidden;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  position: relative;
+}
+
+/* petite frise divine */
+.lmdi-viewtopic__quickreply .sceditor-container::before, #chatbox_header::before{
+  content:"";
+  display:block;
+  height: 3px;
+  background: var(--gradient-color);
+  opacity: .9;
+}
+
+/* ======== FIX TOOLBAR SCEDITOR (layout) ========= */
+
+.lmdi-viewtopic__quickreply .sceditor-toolbar{
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  gap: 8px !important;
+  background: var(--ink-16) !important;
+  border-bottom: transparent !important;
+  padding: 10px 10px 6px !important;
+}
+.lmdi-viewtopic__quickreply .sceditor-group{
+  border: 0 !important;
+  background: transparent !important;
+  margin: 0 10px 6px 0 !important;
+  padding: 0 !important;
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+}
+.lmdi-viewtopic__quickreply .sceditor-button{
+  border: 1px solid var(--paper-18) !important;
+  background: var(--paper);
+  border-radius: 12px !important;
+  transition: transform .12s ease, background .12s ease, border-color .12s ease;
+    width: 25px !important;
+    height: 25px !important;
+    padding: 0 !important;
+    display: grid !important;
+    place-items: center !important;
+}
+
+.lmdi-viewtopic__quickreply .sceditor-button:hover{
+  transform: translateY(-1px);
+}
+/* zone d’édition */
+.lmdi-viewtopic__quickreply .sceditor-container textarea,
+.lmdi-viewtopic__quickreply .sceditor-container iframe{
+  background: transparent !important;
+}
+
+/* IMPORTANT: ton CSS global touche textarea.post ailleurs.
+   Ici on force un “look editor” propre sans casser tes textarea RP. */
+.lmdi-viewtopic__quickreply .sceditor-container textarea{
+  position: relative !important;
+  left: auto !important;
+  width: 97% !important;
+  min-height: 200px !important;          /* confortable */
+  padding: 14px 16px !important;
+  border: 0 !important;
+  background: linear-gradient(180deg, var(--paper-04), var(--paper-04)), var(--tone-dark) !important;
+  resize: vertical;                  /* tu peux mettre none si tu veux */
+  color: var(--text-on-light) !important;
+  font-family: var(--font-s-serif) !important;
+  font-size: .9rem !important;
+  line-height: 1.6 !important;
+  cursor:text;
+}
+
+/* grip (resize) */
+.lmdi-viewtopic__quickreply .sceditor-grip{
+  background: var(--paper-04)transparent !important;
+}
+.sceditor-container iframe {
+    resize: none !important;
+}
+/* boutons preview / envoyer */
+.switcheroo__form-button, button.switcheroo__form-button, .lmdi-viewtopic__quickreply input[type="submit"], .lmdi-button, .liteoption, .mainoption, .lmdi-selectCodeBtn{
+  appearance: none;
+  border-radius: 999px;
+  padding: 10px 16px;
+  font-family: var(--font-s-serif);
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  font-size: .72rem;
+  border: 1px solid var(--paper-18);
+  cursor: pointer;
+  transition: transform .12s ease, filter .12s ease, background .12s ease, border-color .12s ease;
+}
+.lmdi-viewtopic__quickreply input.liteoption:hover{
+  background: var(--paper-18);
+  transform: translateY(-1px);
+}
+
+.switcheroo__form-button, button.switcheroo__form-button, .lmdi-viewtopic__quickreply input.mainoption, .lmdi-button, #submit_button, .mainoption, #lmdi-poll .liteoption{
+  background: linear-gradient(180deg, var(--highlight), var(--highlight-80));
+  border-color: var(--highlight-40);
+  box-shadow: 0 10px 22px var(--ink-16);
+  color: var(--text-dark);
+}
+.lmdi-viewtopic__quickreply input.mainoption:hover{
+  transform: translateY(-1px);
+  filter: brightness(1.03);
+}
+
+.lmdi-viewtopic__quickreply .sceditor-group{  display: flex !important;  flex: 0 0 auto !important;  gap: 6px !important;  margin: 0 !important;}
+
+/* l’icône (sprite) au centre, texte caché proprement */
+.lmdi-viewtopic__quickreply .sceditor-button > div{  width: 16px !important;  height: 16px !important;  margin: 0 !important;  overflow: hidden !important;
+  text-indent: -9999px !important;  white-space: nowrap !important;  background-repeat: no-repeat !important;}
+.hautbas {position: fixed;z-index: 999;bottom: 50px;right: 50px;}
+.hautbas .lmdi-icon-top{background: center / cover no-repeat var(--arrow-top);}
+.hautbas .lmdi-icon-bottom{background: center / cover no-repeat var(--arrow-bottom);}
+/* BARRE SWITCHEROO --- */
+/* .switcheroo[position="static"] */
+/* si barre EN HAUT */
+/* .switcheroo[position="top"] */
+/* si barre A LA VERTICALE */
+/* .switcheroo[direction="vertical"] {
+  height: 100%;
+}*/
+/* Positionnement des ronds */
+.switcheroo__squircles {
+  padding: var(--size);
+  gap: var(--size);
+}
+/* .switcheroo[direction="vertical"] .switcheroo__squircles */
+/* BARRE --- */
+/* .switcheroo */
+/* AFFICHAGE DES COMPTES ---*/
+/* Rond */
+.switcheroo__squircle {
+  width: var(--switcheroo-img-width);
+  height: var(--switcheroo-img-height);
+  transition: border-radius 128ms var(--switcheroo-ease);
+}
+.switcheroo__squircle:last-of-type{ background-color: var(--tone-light);}
+/* Rond au survol */
+.switcheroo__squircle:last-of-type:hover {
+  background: var(--tone-light)
+}
+/* Image de l'avatar */
+.switcheroo__avatar img {
+  width: var(--switcheroo-img-width);
+  height: var(--switcheroo-img-height);
+  border: 3px solid var(--tone-light);
+  transition: border-radius 128ms var(--switcheroo-ease);
+}
+/* Image de l'avatar au survol */
+/* .switcheroo__avatar img:hover */
+/* Avatar du compte connecté */
+/* .switcheroo__squircle.active,
+.switcheroo__squircle.active img */
+/* Indicateur de l'avatar survolé */
+.switcheroo__squircle:before {
+  content: "⥈";
+  color:var(--text-on-light);
+  transform : 128ms var(--switcheroo-ease), opacity 64ms var(--switcheroo-ease);
+}
+.switcheroo__squircle:last-of-type::before {
+    content: "";
+}
+/* Indicateur du compte sélectionné/actif */
+/* .switcheroo__squircle.active:before */
+.switcheroo__squircle:hover:before {
+    transform : 128ms var(--switcheroo-ease), opacity 64ms var(--switcheroo-ease);
+}
+/* Bouton de suppression */
+.switcheroo__delete {
+  background-color: var(--flagged);
+  transition: transform 128ms var(--switcheroo-ease), opacity 64ms var(--switcheroo-ease);
+  color: var(--text-on-dark);
+}
+/* .switcheroo__squircle:hover .switcheroo__delete */
+/* TOOLTIP - INFOBULLE DU PSEUDO ---*/
+/* Conteneur du pseudo */
+.switcheroo__popper {
+  background-color: var(--text-on-light);
+  transition: opacity 64ms var(--switcheroo-ease), transform 128ms var(--switcheroo-ease-bounce);
+  color: var(--text-on-dark);
+}
+/* Conteneur du pseudo: si vertical */
+.switcheroo[direction="vertical"] .switcheroo__popper {
+  transform: translateY(-50%) scale(0.98);
+}
+/* Flèche tooltip */
+.switcheroo__popper:before {
+  content: "•";
+  background-color: var(--ink-40);
+}
+/* Flèche tooltip : si vertical */
+/* .switcheroo[direction="vertical"] .switcheroo__popper:before */
+/* Positionnement tooltip au survol */
+/* .switcheroo[direction="vertical"] .switcheroo__squircle:hover .switcheroo__popper */
+/* LOGO --- */
+/* .switcheroo__logo */
+/* DIVIDER : barre de séparation --- */
+.switcheroo__divider {
+  background-color: var(--tone-light);
+}
+/* Divider vertical */
+/* .switcheroo[direction="vertical"] .switcheroo__divider */
+/* AJOUTER UN COMPTE ---*/
+/* button : ajouter un compte */
+.switcheroo__squircle--button {
+  transition: border-radius 128ms var(--switcheroo-ease);
+  color: var(--text-on-light);
+}
+.switcheroo__squircle--button:hover {
+  color: var(--text-on-dark);
+}
+/* MODAL : FENETRE DE CONNEXION --- */
+/* Fond de l'afficage connexion */
+/* .monomer-overlay */
+/* Boîte de connexion */
+/* .monomer-modal */
+/* Formulaire */
+/* .switcheroo__form */
+/* Champs à remplir */
+/* .switcheroo__form-row */
+/* Nom du champ */
+.switcheroo__form-label, label.switcheroo__form-label {
+  color: var(--text-on-dark);
+}
+/* Zone de texte */
+.switcheroo__form-input, input.switcheroo__form-input {
+  background-color: var(--tone-light);
+  border: var(--border)!important;
+  border-bottom: 3px solid var(--border)!important;
+  color: var(--text-on-dark);
+}
+/* .monomer-modal.monomer-open, .monomer-overlay.monomer-open */
+.monomer-modal.monomer-open {
+    background-color: var(--ink-92);
+}
+/* Fermer la boîte de connexion */
+.monomer-close {
+  color: var(--text-on-dark);
+  background: var(--flagged);
+}
+/* .monomer-close:hover */
+body.chatbox {padding: 0; margin: 0;
+  background-color: var(--paper-08);}
+#chatbox_header{background-color: transparent;}
+#help-button, #divcolor, #divsmilies, #submit_button, .format-message + label {
+    background: var(--highlight) !important;border-radius: var(--radius) !important;}
+#chatbox, #chatbox_members, #chatbox_channels{background: linear-gradient(180deg, var(--paper-04), var(--paper-04)), var(--tone-dark) !important;color: var(--text-on-light) !important;font-size: .9rem !important;line-height: 1.6 !important;}
+#chatbox_members, #chatbox_channels {bottom: 40px;margin-left: 16px;}
+#chatbox {bottom: 40px;margin-right: 16px;}
+#chatbox_footer {height: 38px !important;}
+#message {padding: .3rem;}
+#submit_button{ padding:10px 16px;font-weight: 800;letter-spacing: .06em;text-transform: uppercase;font-size: .72rem;border: 1px solid var(--paper-18);cursor: pointer;transition: transform .12s ease, filter .12s ease, background .12s ease, border-color .12s ease; height: 32px !important;}
+/* MP */
+.box-size__bar-track {
+    background: var(--paper);
+    border-radius: var(--radius);
+}
+.box-size__bar-fill {
+    background: var(--tone-light); /* ajustable */
+    border-radius: var(--radius);
+}
+/* EMAI */
+#lmdi-email textarea{width:500px!important;}
+/* Formulaire fiche de personnage */
+
+.lmdi-grid.lmdi-grid--2 textarea#rpg-lien, #lmdi-form textarea, #lmdi-email textarea {
+    border-radius: var(--radius);
+    border: var(--border);
+    background: linear-gradient(180deg, var(--paper-04), var(--paper-18));
+    box-shadow: var(--glow);
+}
+/* mobil */
+.box-subtle, select.post option {background-color: var(--ink);}
+div#chatbox_portal, .chat-messages, .chat-row:nth-child(even), #chatbox > *:nth-child(even){background: var(--tone-dark)!important;}
+#chatbox_header {
+    background-color: transparent;
+    padding-top: 0;
+    background-color: var(--ink);
+}
+body.chatbox i.material-icons {
+    color: var(--tone-light) !important;
+}
+
+.lmdi-fiche .lmdi-username, .lmdi-fiche .lmdi-username a {
+    color: var(--tone-light);
+}
+.lmdi-label--edition {
+    color: var(--highlight);
+}
+.lmdi-panel{ display:none; }
+.lmdi-panel.is-active{ display:block; }
+
+.lmdi-panel.is-empty .lmdi-card{
+  min-height: 110px;
+}
+.lmdi-panel.is-empty .lmdi-card::after{
+  content: "À remplir…";
+  display:block;
+  margin-top: 10px;
+  opacity: .65;
+  font-style: italic;
+}
+.lmdi-tabs, .lmdi-attrs, .lmdi-staff__tabs {
+    margin: 10px auto;
+    display: grid;
+    gap: 8px;
+grid-template-columns: repeat(auto-fit, minmax(44px, 1fr));
+}
+.lmdi-attrs {
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+}
+.lmdi-attrs--5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+.lmdi-attrs--5 .lmdi-attr {
+    justify-content: center;
+}
+.lmdi-attr.lmdi-h-70{
+    grid-column: 1 / 4;
+}
+.lmdi-tabs--alpha {
+    grid-template-columns: repeat(auto-fit, 44px);
+}
+
+.lmdi-staff__tabs {
+    display: flex;
+}
+.lmdi-tab, .lmdi-attr, .lmdi-tags{
+  padding: 6px 10px;
+    display: flex;
+    gap: 8px;
+    align-items: baseline;
+}
+.lmdi-attr span.label {
+    font-size: .72rem;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: var(--text-on-dark);
+}
+
+.lmdi-fiche .lmdi-card .lmdi-quote__text {
+    font-family: var(--font-serif);
+    font-size: var(--size);
+    color: var(--text-on-dark);
+    margin: 0px;
+}
+
+.lmdi-tab {
+    padding: 7px 11px;
+    font-weight: 800;
+    letter-spacing: .02em;
+    transition: transform .15s ease, background .15s ease, border-color .15s ease;
+}
+button.lmdi-tab a {
+    color: var(--text-on-dark);
+}
+footer.lmdi-footer-thread {
+    width: 810px;
+}
+
+.lmdi-fiche:not(.lmdi-rps) li::marker{content:"\2948";color:var(--tone-light-40);font-size:1.4rem;  font-family: "Segoe UI Symbol", "Noto Sans Symbols", sans-serif;}
+.lmdi-card.lmdi-dfault {    border-color: var(--flagged);}
+span.is-active .label, .label a, a.is-activ:hover {color: var(--highlight);}
+.lmdi-inset.lmdi-list.lmdi-irl {padding-left: 0;overflow:auto;}
+.lmdi-inset.lmdi-list.lmdi-irl ul {padding-left: 20px;}
+.lmdi-inset.lmdi-list.lmdi-irl li {padding: 5px;}
+.lmdi-title--s-serif{font-size: .88rem;color: var(--muted-soft);text-transform: capitalize;opacity: .7;}
+.lmdi-fiche .lmdi-panel>.lmdi-card, .lmdi-fiche, .lmdi-fiche-staff .lmdi-panel>.lmdi-card {display: flex;flex-direction: column;align-items: stretch;gap: .96rem;}
+/* Notes smooth (details) */
+.notes-inner{
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(-6px);
+  transition: max-height .45s ease, opacity .45s ease, transform .45s ease;
+}
+.notes-inner .lmdi-grid--2 {
+    margin: 0 1rem;
+    margin-top: .5rem;
+    gap: .5rem !important;
+}
+/* juste pour virer le marker du summary (sinon triangle natif parfois) */
+.notes-panel > summary{ list-style: none; }
+.notes-panel > summary::-webkit-details-marker{ display:none; }
+.lmdi-liens .lmdi-name {
+    color: var(--tone-light);
+}
+.lmdi-rps-list li span {
+    color: var(--tone-dark-40);
+}.lmdi-figure img{
+  width:100%;
+  display:block;
+  border-radius: 14px;
+  border: var(--border);
+}
+.lmdi-image--trombi img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: var(--border);
+    border-radius: 14px;
+}
+.lmdi-trombi-list h4.name{text-align: center;}
+.lmdi-trombi-list .stat-line-link{min-height:50px;max-height: 50px;}
+.lmdi-trombi-list .lmdi-meta{max-height: 32px;}
+.lmdi-trombi-list .actions {text-align: center;}
+
+div.lmdi-hero.lmdi-hero--ml {
+    width: 100% !important;
+    background-size: cover;
+    background-position:center;
+    height: 330px;
+}
+.lmdi-card.lmdi-tabs {
+    padding: 4px;
+}
+.lmdi-fiche-mailing .lmdi-tabs, .lmdi-fiche-mailing .lmdi-badges {
+    gap: 4px;
+}
+.lmdi-fiche-general .lmdi-hero, .lmdi-fiche-rp .lmdi-hero{
+border-radius: 18px 18px 0 0;margin-bottom: 1rem;
+}
+
+.lmdi-intro{
+  margin: .25rem 0 1rem;
+}
+.lmdi-gr-benis::before, .lmdi-gr-maudis::before, .lmdi-gr-damnes::before{
+    content: "\0025B3";
+}
+.lmdi-gr-maudis::before{
+    content: "\002B28";
+}
+.lmdi-gr-damnes::before{
+    content: "\0025BD";
+}
+.lmdi-fiche__signature {
+    text-align: center;
+    opacity: .84;
+}
+/* Le sceau graphique */
+.lmdi-fiche::before {
+  all: unset;
+  content: "\2022\2014"; /* .- A de Althea */
+  font-family: ui-monospace, Consolas, monospace;
+    position: absolute;
+    top: 23px;
+    left: -25PX;
+    width: 23px;
+    height: 30px;
+    pointer-events: none;
+    opacity: .84;
+    transform: rotate(90deg);
+    letter-spacing: .25rem;
+}
+
+.lmdi-fiche-staff .lmdi-panel {
+  display: none;
+}
+
+.lmdi-fiche-staff .lmdi-panel.is-active {
+  display: block !important;
+}
+
+.lmdi-fiche-staff {
+  display: flex;
+  flex-direction: column;
+}
+gradient{
+    background: var(--gradient-text);
+     -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+dial{
+   color: var(--muted);
+   font-weight:800px;
+}
+.jauge-wrapper {
+  background-color: var(--jauge-vide);
+  color: white;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.jauge {
+  background-color: var(--jauge-charge);
+  color: white;
+  padding: .1rem .1rem;
+  text-align: right;
+  font-size: 15px;
+  border-radius: 15px;
+}
+
+span.lmdi-bullet {
+    background: none;
+}
+.lmdi-fiche-pub{
+  max-width:600px;
+  margin:auto;
+  display:grid;
+  gap:12px;
+  font-size:.85rem;
+}
+
+.lmdi-gazette{
+  max-width:620px;
+  margin:auto;
+  display:grid;
+  gap:12px;
+  font-size:.85rem;
+}
+
+/* BANNIÈRE */
+.gazette-banner img{
+  width:100%;
+  border-radius:14px;
+  border:var(--border);
+}
+
+/* HEADER */
+.gazette-header{
+  text-align:center;
+}
+.g-title{
+  font-family:var(--font-serif);
+  font-size:1.4rem;
+  letter-spacing:.15em;
+}
+.g-sub{
+  font-size:.7rem;
+  opacity:.7;
+  font-style:italic;
+}
+
+/* BLOCS */
+.g-block{
+  padding:12px;
+}
+
+/* TITRES */
+.g-section{
+  font-family:var(--font-serif);
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  font-size:.7rem;
+  color:var(--highlight);
+  margin-bottom:6px;
+}
+
+/* LISTES */
+.g-block ul{
+  padding-left:16px;
+}
+.g-block li{
+  margin:4px 0;
+}
+
+/* SCÉNARIOS */
+.g-scenarios{
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+}
+.g-scenarios span{
+  padding:5px 8px;
+  border-radius:999px;
+  border:var(--border);
+  background:var(--paper-04);
+  font-size:.7rem;
+}
+
+/* STATS */
+.g-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  text-align:center;
+}
+.g-grid strong{
+  color:var(--highlight);
+  font-size:1.2rem;
+}
+.g-note{
+  text-align:center;
+  font-size:.7rem;
+  opacity:.7;
+  margin-top:6px;
+}
+
+/* LIENS */
+.g-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+}
+.g-links a{
+  flex:1;
+  text-align:center;
+  padding:6px;
+  border-radius:999px;
+  border:var(--border);
+  background:var(--paper-04);
+  font-size:.7rem;
+}
+
+/* FOOTER */
+.g-footer{
+  text-align:center;
+  font-size:.65rem;
+  opacity:.6;
+  font-style:italic;
+}
+.lmdi-staff-mini{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px;
+}
+
+.staff-item{
+  display:flex;
+  gap:8px;
+  align-items:center;
+  padding:6px;
+  border:var(--border);
+  border-radius:10px;
+  background:var(--paper-04);
+}
+
+.staff-item img{
+  width:40px;
+  height:40px;
+  object-fit:cover;
+  border-radius:50%;
+}
+.g-header{
+  text-align:center;
+  padding:12px 10px 4px;
+}
+
+.g-sub{
+  font-size:.7rem;
+  opacity:.7;
+  font-style:italic;
+}
+
+.g-meta{
+  margin-top:6px;
+  font-size:.65rem;
+  opacity:.6;
+}
