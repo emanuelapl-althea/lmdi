@@ -1817,3 +1817,9 @@ span.lmdi-bullet {
   font-size:.65rem;
   opacity:.6;
 }
+.lmdi-fiche-gazette{
+    border-radius: var(--radius);
+    border: var(--border);
+    background: var(--gradient);
+    box-shadow: var(--glow);
+}
