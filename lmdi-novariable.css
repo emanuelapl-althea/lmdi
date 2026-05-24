@@ -71,7 +71,7 @@ th.thCornerR {
 /* SCROLLBAR */
 /* Scrollbar */
 /* Scrollbar box desc*/
-.topictitle, h1, h2 {
+.topictitle, h1, h2, p.lmdi-section-label {
     font-weight: 800;
     font-size: 1.5rem;
 }
