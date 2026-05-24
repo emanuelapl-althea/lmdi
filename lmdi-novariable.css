@@ -1850,7 +1850,9 @@ section.lmdi-profil-bio {
   min-height: 400px;
   max-height: 400px;
 }
-
+.lmdi-card.lmdi-h.lmdi-h-70 {
+    border-radius: 8px;
+}
 #lmdi-irl strong,
 #lmdi-rp strong {
   flex: 0 0 auto;
