@@ -1853,6 +1853,9 @@ section.lmdi-profil-bio {
 .lmdi-card.lmdi-h.lmdi-h-70 {
     border-radius: 8px;
 }
+.lmdi-card lmdi-h-130, .lmdi-inset .lmdi-h-130 {
+      border-radius: 5px;
+}
 #lmdi-irl strong,
 #lmdi-rp strong {
   flex: 0 0 auto;
